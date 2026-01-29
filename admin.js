@@ -78,6 +78,18 @@ function loadAdminAlbums() {
         author.innerHTML = '<strong>Autore:</strong> ';
         author.appendChild(document.createTextNode(album.author));
         
+        const translator = document.createElement('p');
+        if (album.translator) {
+            translator.innerHTML = '<strong>Traduttore:</strong> ';
+            translator.appendChild(document.createTextNode(album.translator));
+        }
+        
+        const illustrator = document.createElement('p');
+        if (album.illustrator) {
+            illustrator.innerHTML = '<strong>Illustratore:</strong> ';
+            illustrator.appendChild(document.createTextNode(album.illustrator));
+        }
+        
         const publisher = document.createElement('p');
         publisher.innerHTML = '<strong>Editore:</strong> ';
         publisher.appendChild(document.createTextNode(album.publisher));
@@ -108,6 +120,12 @@ function loadAdminAlbums() {
         
         info.appendChild(title);
         info.appendChild(author);
+        if (album.translator) {
+            info.appendChild(translator);
+        }
+        if (album.illustrator) {
+            info.appendChild(illustrator);
+        }
         info.appendChild(publisher);
         info.appendChild(year);
         info.appendChild(rating);
@@ -172,6 +190,8 @@ function editAlbum(albumId) {
     document.getElementById('album-id').value = album.id;
     document.getElementById('album-title').value = album.title;
     document.getElementById('album-author').value = album.author;
+    document.getElementById('album-translator').value = album.translator || '';
+    document.getElementById('album-illustrator').value = album.illustrator || '';
     document.getElementById('album-publisher').value = album.publisher;
     document.getElementById('album-year').value = album.year;
     document.getElementById('album-rating').value = album.rating;
@@ -204,6 +224,8 @@ function saveAlbum(event) {
         id: albumId ? parseInt(albumId) : getNextAlbumId(currentAlbums),
         title: sanitizeText(document.getElementById('album-title').value.trim()),
         author: sanitizeText(document.getElementById('album-author').value.trim()),
+        translator: sanitizeText(document.getElementById('album-translator').value.trim()),
+        illustrator: sanitizeText(document.getElementById('album-illustrator').value.trim()),
         publisher: sanitizeText(document.getElementById('album-publisher').value.trim()),
         year: parseInt(document.getElementById('album-year').value),
         rating: parseFloat(document.getElementById('album-rating').value),
