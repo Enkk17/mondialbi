@@ -46,16 +46,16 @@ function handleLogout() {
 
 // Load albums in admin panel
 function loadAdminAlbums() {
-    const currentAlbums = getAlbums();
+    const currentAlbi = getAlbi();
     const container = document.getElementById('admin-albums-list');
     container.innerHTML = '';
 
-    if (currentAlbums.length === 0) {
+    if (currentAlbi.length === 0) {
         container.innerHTML = '<p class="no-results">Nessun albo presente. Aggiungi il primo albo!</p>';
         return;
     }
 
-    currentAlbums.forEach(album => {
+    currentAlbi.forEach(albo => {
         const card = document.createElement('div');
         card.className = 'admin-album-card';
         
@@ -63,8 +63,8 @@ function loadAdminAlbums() {
         const cover = document.createElement('div');
         cover.className = 'admin-album-cover';
         const img = document.createElement('img');
-        img.src = album.coverImage;
-        img.alt = `Copertina di ${album.title}`;
+        img.src = albo.coverImage;
+        img.alt = `Copertina di ${albo.title}`;
         img.onerror = () => img.src = 'https://via.placeholder.com/300x400?text=Copertina+Non+Disponibile';
         cover.appendChild(img);
         
@@ -72,35 +72,35 @@ function loadAdminAlbums() {
         info.className = 'admin-album-info';
         
         const title = document.createElement('h3');
-        title.textContent = album.title;
+        title.textContent = albo.title;
         
         const author = document.createElement('p');
         author.innerHTML = '<strong>Autore:</strong> ';
-        author.appendChild(document.createTextNode(album.author));
+        author.appendChild(document.createTextNode(albo.author));
         
         const translator = document.createElement('p');
-        if (album.translator) {
+        if (albo.translator) {
             translator.innerHTML = '<strong>Traduttore:</strong> ';
-            translator.appendChild(document.createTextNode(album.translator));
+            translator.appendChild(document.createTextNode(albo.translator));
         }
         
         const illustrator = document.createElement('p');
-        if (album.illustrator) {
+        if (albo.illustrator) {
             illustrator.innerHTML = '<strong>Illustratore:</strong> ';
-            illustrator.appendChild(document.createTextNode(album.illustrator));
+            illustrator.appendChild(document.createTextNode(albo.illustrator));
         }
         
         const publisher = document.createElement('p');
         publisher.innerHTML = '<strong>Editore:</strong> ';
-        publisher.appendChild(document.createTextNode(album.publisher));
+        publisher.appendChild(document.createTextNode(albo.publisher));
         
         const year = document.createElement('p');
         year.innerHTML = '<strong>Anno:</strong> ';
-        year.appendChild(document.createTextNode(album.year));
+        year.appendChild(document.createTextNode(albo.year));
         
         const rating = document.createElement('p');
         rating.innerHTML = '<strong>Rating:</strong> ';
-        rating.appendChild(document.createTextNode(`${album.rating}/5`));
+        rating.appendChild(document.createTextNode(`${albo.rating}/5`));
         
         const actions = document.createElement('div');
         actions.className = 'admin-album-actions';
@@ -108,22 +108,22 @@ function loadAdminAlbums() {
         const editBtn = document.createElement('button');
         editBtn.className = 'btn-edit';
         editBtn.textContent = '✏️ Modifica';
-        editBtn.onclick = () => editAlbum(album.id);
+        editBtn.onclick = () => editAlbum(albo.id);
         
         const deleteBtn = document.createElement('button');
         deleteBtn.className = 'btn-delete';
         deleteBtn.textContent = '🗑️ Elimina';
-        deleteBtn.onclick = () => confirmDeleteAlbum(album.id);
+        deleteBtn.onclick = () => confirmDeleteAlbum(albo.id);
         
         actions.appendChild(editBtn);
         actions.appendChild(deleteBtn);
         
         info.appendChild(title);
         info.appendChild(author);
-        if (album.translator) {
+        if (albo.translator) {
             info.appendChild(translator);
         }
-        if (album.illustrator) {
+        if (albo.illustrator) {
             info.appendChild(illustrator);
         }
         info.appendChild(publisher);
@@ -138,9 +138,9 @@ function loadAdminAlbums() {
     });
 }
 
-// Get albums from localStorage or default data
-function getAlbums() {
-    const stored = localStorage.getItem('albums');
+// Get albi from localStorage or default data
+function getAlbi() {
+    const stored = localStorage.getItem('albi');
     if (stored) {
         try {
             return JSON.parse(stored);
@@ -152,9 +152,9 @@ function getAlbums() {
     return [];
 }
 
-// Save albums to localStorage
-function saveAlbums(albumsData) {
-    localStorage.setItem('albums', JSON.stringify(albumsData));
+// Save albi to localStorage
+function saveAlbi(albiData) {
+    localStorage.setItem('albi', JSON.stringify(albiData));
     // Note: storage event will automatically notify other tabs/windows
 }
 
@@ -173,10 +173,10 @@ function openAddAlbumModal() {
 
 // Open modal to edit album
 function editAlbum(albumId) {
-    const currentAlbums = getAlbums();
-    const album = currentAlbums.find(a => a.id === albumId);
+    const currentAlbi = getAlbi();
+    const albo = currentAlbi.find(a => a.id === albumId);
     
-    if (!album) {
+    if (!albo) {
         alert('Albo non trovato!');
         return;
     }
@@ -187,21 +187,21 @@ function editAlbum(albumId) {
     modalTitle.textContent = 'Modifica Albo';
     
     // Fill form with album data
-    document.getElementById('album-id').value = album.id;
-    document.getElementById('album-title').value = album.title;
-    document.getElementById('album-author').value = album.author;
-    document.getElementById('album-translator').value = album.translator || '';
-    document.getElementById('album-illustrator').value = album.illustrator || '';
-    document.getElementById('album-publisher').value = album.publisher;
-    document.getElementById('album-year').value = album.year;
-    document.getElementById('album-rating').value = album.rating;
-    document.getElementById('album-cover').value = album.coverImage;
-    document.getElementById('album-tags').value = album.tags ? album.tags.join(', ') : '';
-    document.getElementById('album-description').value = album.description;
-    document.getElementById('album-full-description').value = album.fullDescription;
-    document.getElementById('album-amazon').value = album.purchaseLinks?.amazon || '';
-    document.getElementById('album-feltrinelli').value = album.purchaseLinks?.feltrinelli || '';
-    document.getElementById('album-mondadori').value = album.purchaseLinks?.mondadori || '';
+    document.getElementById('album-id').value = albo.id;
+    document.getElementById('album-title').value = albo.title;
+    document.getElementById('album-author').value = albo.author;
+    document.getElementById('album-translator').value = albo.translator || '';
+    document.getElementById('album-illustrator').value = albo.illustrator || '';
+    document.getElementById('album-publisher').value = albo.publisher;
+    document.getElementById('album-year').value = albo.year;
+    document.getElementById('album-rating').value = albo.rating;
+    document.getElementById('album-cover').value = albo.coverImage;
+    document.getElementById('album-tags').value = albo.tags ? albo.tags.join(', ') : '';
+    document.getElementById('album-description').value = albo.description;
+    document.getElementById('album-full-description').value = albo.fullDescription;
+    document.getElementById('album-amazon').value = albo.purchaseLinks?.amazon || '';
+    document.getElementById('album-feltrinelli').value = albo.purchaseLinks?.feltrinelli || '';
+    document.getElementById('album-mondadori').value = albo.purchaseLinks?.mondadori || '';
     
     modal.style.display = 'block';
 }
@@ -218,10 +218,10 @@ function saveAlbum(event) {
     event.preventDefault();
     
     const albumId = document.getElementById('album-id').value;
-    const currentAlbums = getAlbums();
+    const currentAlbi = getAlbi();
     
     const albumData = {
-        id: albumId ? parseInt(albumId) : getNextAlbumId(currentAlbums),
+        id: albumId ? parseInt(albumId) : getNextAlbumId(currentAlbi),
         title: sanitizeText(document.getElementById('album-title').value.trim()),
         author: sanitizeText(document.getElementById('album-author').value.trim()),
         translator: sanitizeText(document.getElementById('album-translator').value.trim()),
@@ -243,18 +243,18 @@ function saveAlbum(event) {
         }
     };
     
-    let updatedAlbums;
+    let updatedAlbi;
     if (albumId) {
         // Update existing album
-        updatedAlbums = currentAlbums.map(album => 
-            album.id === albumData.id ? albumData : album
+        updatedAlbi = currentAlbi.map(albo => 
+            albo.id === albumData.id ? albumData : albo
         );
     } else {
         // Add new album
-        updatedAlbums = [...currentAlbums, albumData];
+        updatedAlbi = [...currentAlbi, albumData];
     }
     
-    saveAlbums(updatedAlbums);
+    saveAlbi(updatedAlbi);
     closeAlbumModal();
     loadAdminAlbums();
     
@@ -263,18 +263,18 @@ function saveAlbum(event) {
 }
 
 // Get next album ID
-function getNextAlbumId(currentAlbums) {
-    if (currentAlbums.length === 0) return 1;
-    const maxId = Math.max(...currentAlbums.map(a => a.id));
+function getNextAlbumId(currentAlbi) {
+    if (currentAlbi.length === 0) return 1;
+    const maxId = Math.max(...currentAlbi.map(a => a.id));
     return maxId + 1;
 }
 
 // Confirm delete album
 function confirmDeleteAlbum(albumId) {
-    const currentAlbums = getAlbums();
-    const album = currentAlbums.find(a => a.id === albumId);
+    const currentAlbi = getAlbi();
+    const albo = currentAlbi.find(a => a.id === albumId);
     
-    if (!album) {
+    if (!albo) {
         alert('Albo non trovato!');
         return;
     }
@@ -282,7 +282,7 @@ function confirmDeleteAlbum(albumId) {
     const modal = document.getElementById('confirm-modal');
     const titleElement = document.querySelector('.confirm-album-title');
     
-    titleElement.textContent = album.title;
+    titleElement.textContent = albo.title;
     modal.style.display = 'block';
     
     // Store album ID for deletion
@@ -294,10 +294,10 @@ function deleteAlbum() {
     const modal = document.getElementById('confirm-modal');
     const albumId = parseInt(modal.dataset.albumId);
     
-    const currentAlbums = getAlbums();
-    const updatedAlbums = currentAlbums.filter(album => album.id !== albumId);
+    const currentAlbi = getAlbi();
+    const updatedAlbi = currentAlbi.filter(albo => albo.id !== albumId);
     
-    saveAlbums(updatedAlbums);
+    saveAlbi(updatedAlbi);
     closeConfirmModal();
     loadAdminAlbums();
     

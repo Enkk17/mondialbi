@@ -246,6 +246,41 @@ header h1 {
     line-height: 1.5;
 }
 
+.album-author {
+    color: #667eea;
+    font-style: italic;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+.album-publisher {
+    color: #999;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.album-year {
+    color: #999;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.album-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tag {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
 .no-results {
     text-align: center;
     color: white;
@@ -422,6 +457,100 @@ header h1 {
     color: #666;
     font-style: italic;
     text-align: center;
+}
+
+.modal-album-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-album-info {
+    margin-top: 1rem;
+}
+
+.modal-album-info h2 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.modal-album-info p {
+    margin: 0.5rem 0;
+    line-height: 1.6;
+}
+
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.modal-description {
+    margin: 1.5rem 0;
+}
+
+.modal-description h3 {
+    color: #667eea;
+    margin-bottom: 0.5rem;
+}
+
+.modal-description p {
+    line-height: 1.8;
+    color: #333;
+}
+
+.modal-purchase-links {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #eee;
+}
+
+.modal-purchase-links h3 {
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.purchase-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.purchase-link {
+    flex: 1;
+    min-width: 120px;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    color: white;
+    display: inline-block;
+}
+
+.purchase-link.amazon {
+    background: #FF9900;
+}
+
+.purchase-link.amazon:hover {
+    background: #e88800;
+}
+
+.purchase-link.feltrinelli {
+    background: #E31E24;
+}
+
+.purchase-link.feltrinelli:hover {
+    background: #c71a1f;
+}
+
+.purchase-link.mondadori {
+    background: #003DA5;
+}
+
+.purchase-link.mondadori:hover {
+    background: #002f7f;
 }
 
 #modal-body p {
