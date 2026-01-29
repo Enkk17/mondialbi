@@ -25,12 +25,14 @@ function transformAirtableData(airtableRecords) {
         
         // Extract author - try "Autore" first, then "Author Name"
         // Handle both string and array formats
-        let author = fields.Autore || 'Autore Sconosciuto';
-        if (!author || author === 'Autore Sconosciuto') {
+        let author = fields.Autore;
+        if (!author) {
             if (Array.isArray(fields['Author Name']) && fields['Author Name'].length > 0) {
                 author = fields['Author Name'][0];
             } else if (fields['Author Name']) {
                 author = fields['Author Name'];
+            } else {
+                author = 'Autore Sconosciuto';
             }
         }
         
@@ -49,7 +51,7 @@ function transformAirtableData(airtableRecords) {
         }
         
         // Validate image URL
-        if (!coverImage || coverImage.trim() === '') {
+        if (!coverImage || typeof coverImage !== 'string' || coverImage.trim() === '') {
             coverImage = PLACEHOLDER_IMAGE;
         }
         
@@ -70,7 +72,7 @@ function transformAirtableData(airtableRecords) {
             publisher = fields.Publisher || fields.Editore;
         }
         
-        const year = fields['Publication Year'] || fields.Year || fields.Anno || new Date().getFullYear();
+        const year = fields['Publication Year'] || fields.Year || fields.Anno || null;
         const rating = fields.Rating || fields.Voto || 0;
         const description = fields.Synopsis || fields.Description || fields.Descrizione || '';
         const fullDescription = fields['Full Description'] || fields.Synopsis || fields.Description || '';
@@ -82,10 +84,15 @@ function transformAirtableData(airtableRecords) {
             mondadori: fields['Mondadori Link'] || fields.MondadoriLink || ''
         };
         
-        // Extract tags (empty for now as not in current data)
+        // Extract tags - handle both array and string formats
         const tags = [];
-        if (fields.Tags && Array.isArray(fields.Tags)) {
-            tags.push(...fields.Tags);
+        if (fields.Tags) {
+            if (Array.isArray(fields.Tags)) {
+                tags.push(...fields.Tags);
+            } else if (typeof fields.Tags === 'string') {
+                // Handle comma-separated string
+                tags.push(...fields.Tags.split(',').map(tag => tag.trim()).filter(tag => tag.length > 0));
+            }
         }
         
         return {
