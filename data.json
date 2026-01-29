@@ -1,0 +1,59 @@
+[
+  {
+    "id": "rec1",
+    "fields": {
+      "Title": "Il Piccolo Principe",
+      "Author": "Antoine de Saint-Exupéry",
+      "Translator": "Nini Bompiani Bregoli",
+      "Illustrator": "Antoine de Saint-Exupéry",
+      "Publisher": "Bompiani",
+      "Year": 1943,
+      "Rating": 4.8,
+      "CoverImage": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=600&fit=crop",
+      "Tags": ["classico", "filosofia", "avventura", "amicizia"],
+      "Description": "Un racconto poetico e filosofico che narra le avventure di un piccolo principe proveniente da un asteroide.",
+      "Full Description": "Il Piccolo Principe è un'opera che ha incantato lettori di tutte le età. Attraverso gli occhi innocenti del protagonista, esploriamo temi profondi come l'amore, l'amicizia, la solitudine e il significato della vita. Le illustrazioni originali dell'autore accompagnano magistralmente questo viaggio attraverso pianeti e incontri indimenticabili.",
+      "AmazonLink": "",
+      "FeltrinelliLink": "",
+      "MondadoriLink": ""
+    }
+  },
+  {
+    "id": "rec2",
+    "fields": {
+      "Title": "Nel Paese dei Mostri Selvaggi",
+      "Author": "Maurice Sendak",
+      "Translator": "Antonio Porta",
+      "Illustrator": "Maurice Sendak",
+      "Publisher": "Babalibri",
+      "Year": 1963,
+      "Rating": 4.7,
+      "CoverImage": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=600&fit=crop",
+      "Tags": ["immaginazione", "mostri", "emozioni", "famiglia"],
+      "Description": "La storia di Max e il suo viaggio immaginario nel regno dei mostri selvaggi.",
+      "Full Description": "Quando Max viene mandato a letto senza cena, la sua camera si trasforma in una foresta e poi in un oceano che lo porta nel Paese dei Mostri Selvaggi. Lì diventa il loro re, ma presto sente la nostalgia di casa. Un classico che esplora le emozioni infantili, la rabbia, l'immaginazione e il ritorno alla sicurezza dell'amore familiare.",
+      "AmazonLink": "",
+      "FeltrinelliLink": "",
+      "MondadoriLink": ""
+    }
+  },
+  {
+    "id": "rec3",
+    "fields": {
+      "Title": "Il Piccolo Bruco Maisazio",
+      "Author": "Eric Carle",
+      "Translator": "Laura Bongiovanni",
+      "Illustrator": "Eric Carle",
+      "Publisher": "Mondadori",
+      "Year": 1969,
+      "Rating": 4.9,
+      "CoverImage": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=600&fit=crop",
+      "Tags": ["natura", "educativo", "colori", "crescita"],
+      "Description": "Un bruco molto affamato mangia tutto ciò che trova prima di trasformarsi in una bellissima farfalla.",
+      "Full Description": "Questo albo illustrato iconico segue il viaggio di un piccolo bruco che nasce affamato e mangia attraverso una varietà di cibi durante la settimana. Le illustrazioni vivaci e colorate di Eric Carle, create con la sua tecnica del collage, rendono questo libro un capolavoro visivo che insegna ai bambini i giorni della settimana, i numeri e il ciclo di vita delle farfalle.",
+      "AmazonLink": "",
+      "FeltrinelliLink": "",
+      "MondadoriLink": ""
+    }
+  }
+]
