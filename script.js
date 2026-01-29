@@ -5,60 +5,102 @@ const albums = [
         title: "Il Piccolo Principe",
         author: "Antoine de Saint-Exupéry",
         publisher: "Bompiani",
+        year: 1943,
+        rating: 4.8,
+        coverImage: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=600&fit=crop",
         tags: ["classico", "filosofia", "avventura", "amicizia"],
         description: "Un racconto poetico e filosofico che narra le avventure di un piccolo principe proveniente da un asteroide.",
         fullDescription: "Il Piccolo Principe è un'opera che ha incantato lettori di tutte le età. Attraverso gli occhi innocenti del protagonista, esploriamo temi profondi come l'amore, l'amicizia, la solitudine e il significato della vita. Le illustrazioni originali dell'autore accompagnano magistralmente questo viaggio attraverso pianeti e incontri indimenticabili.",
-        icon: "👑"
+        purchaseLinks: {
+            amazon: "",
+            feltrinelli: "",
+            mondadori: ""
+        }
     },
     {
         id: 2,
         title: "Nel Paese dei Mostri Selvaggi",
         author: "Maurice Sendak",
         publisher: "Babalibri",
+        year: 1963,
+        rating: 4.7,
+        coverImage: "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=600&fit=crop",
         tags: ["immaginazione", "mostri", "emozioni", "famiglia"],
         description: "La storia di Max e il suo viaggio immaginario nel regno dei mostri selvaggi.",
         fullDescription: "Quando Max viene mandato a letto senza cena, la sua camera si trasforma in una foresta e poi in un oceano che lo porta nel Paese dei Mostri Selvaggi. Lì diventa il loro re, ma presto sente la nostalgia di casa. Un classico che esplora le emozioni infantili, la rabbia, l'immaginazione e il ritorno alla sicurezza dell'amore familiare.",
-        icon: "🐺"
+        purchaseLinks: {
+            amazon: "",
+            feltrinelli: "",
+            mondadori: ""
+        }
     },
     {
         id: 3,
         title: "Il Piccolo Bruco Maisazio",
         author: "Eric Carle",
         publisher: "Mondadori",
+        year: 1969,
+        rating: 4.9,
+        coverImage: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=600&fit=crop",
         tags: ["natura", "educativo", "colori", "crescita"],
         description: "Un bruco molto affamato mangia tutto ciò che trova prima di trasformarsi in una bellissima farfalla.",
         fullDescription: "Questo albo illustrato iconico segue il viaggio di un piccolo bruco che nasce affamato e mangia attraverso una varietà di cibi durante la settimana. Le illustrazioni vivaci e colorate di Eric Carle, create con la sua tecnica del collage, rendono questo libro un capolavoro visivo che insegna ai bambini i giorni della settimana, i numeri e il ciclo di vita delle farfalle.",
-        icon: "🐛"
+        purchaseLinks: {
+            amazon: "",
+            feltrinelli: "",
+            mondadori: ""
+        }
     },
     {
         id: 4,
         title: "Gatto con gli Stivali",
         author: "Charles Perrault",
         publisher: "EL",
+        year: 1697,
+        rating: 4.5,
+        coverImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop",
         tags: ["fiaba", "classico", "astuzia", "magia"],
         description: "Le avventure di un gatto astuto che aiuta il suo padrone a diventare ricco e potente.",
         fullDescription: "Un povero mugnaio lascia in eredità ai suoi tre figli un mulino, un asino e un gatto. Il figlio più giovane, che riceve solo il gatto, pensa di essere sfortunato, ma il gatto si rivela essere straordinariamente intelligente. Con l'astuzia e un paio di stivali, il gatto trasforma il suo padrone in un ricco marchese e conquista il cuore della principessa.",
-        icon: "🐱"
+        purchaseLinks: {
+            amazon: "",
+            feltrinelli: "",
+            mondadori: ""
+        }
     },
     {
         id: 5,
         title: "Alice nel Paese delle Meraviglie",
         author: "Lewis Carroll",
         publisher: "Rizzoli",
+        year: 1865,
+        rating: 4.6,
+        coverImage: "https://images.unsplash.com/photo-1519682337058-a94d519337bc?w=400&h=600&fit=crop",
         tags: ["fantasia", "avventura", "nonsense", "classico"],
         description: "Le straordinarie avventure di Alice in un mondo fantastico pieno di creature bizzarre.",
         fullDescription: "Seguendo un coniglio bianco sempre di fretta, Alice cade in una tana che la porta in un mondo magico e surreale. Incontra personaggi indimenticabili come il Cappellaio Matto, lo Stregatto, la Regina di Cuori e molti altri. Un viaggio attraverso logica e nonsense che ha affascinato generazioni di lettori con le sue illustrazioni fantasiose e la sua narrativa unica.",
-        icon: "🎩"
+        purchaseLinks: {
+            amazon: "",
+            feltrinelli: "",
+            mondadori: ""
+        }
     },
     {
         id: 6,
         title: "Il Gruffalo",
         author: "Julia Donaldson",
         publisher: "Emme Edizioni",
+        year: 1999,
+        rating: 4.8,
+        coverImage: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=400&h=600&fit=crop",
         tags: ["avventura", "coraggio", "animali", "umorismo"],
         description: "Un topo coraggioso inventa un mostro terrificante per spaventare i suoi predatori.",
         fullDescription: "Un piccolo topo furbo cammina nella foresta oscura, dove vari predatori vorrebbero mangiarlo. Per salvarsi, inventa la storia del Gruffalo, un mostro terribile che lo protegge. Ma cosa succede quando il Gruffalo si rivela essere reale? Un racconto brillante su intelligenza, coraggio e astuzia, accompagnato da illustrazioni vivaci e coinvolgenti.",
-        icon: "🐭"
+        purchaseLinks: {
+            amazon: "",
+            feltrinelli: "",
+            mondadori: ""
+        }
     }
 ];
 
@@ -97,7 +139,9 @@ function createAlbumCards(albumsToDisplay = albums) {
         };
         
         card.innerHTML = `
-            <div class="album-cover">${album.icon}</div>
+            <div class="album-cover">
+                <img src="${album.coverImage}" alt="Copertina di ${album.title}" onerror="this.style.display='none'">
+            </div>
             <div class="album-info">
                 <h3>${album.title}</h3>
                 <p class="author">di ${album.author}</p>
@@ -110,12 +154,36 @@ function createAlbumCards(albumsToDisplay = albums) {
     });
 }
 
+// Funzione per ordinare gli albi
+function sortAlbums(sortBy) {
+    let sorted = [...albums];
+    
+    switch(sortBy) {
+        case 'title':
+            sorted.sort((a, b) => a.title.localeCompare(b.title, 'it'));
+            break;
+        case 'author':
+            sorted.sort((a, b) => a.author.localeCompare(b.author, 'it'));
+            break;
+        case 'year':
+            sorted.sort((a, b) => b.year - a.year); // Più recenti prima
+            break;
+        case 'random':
+        default:
+            sorted = shuffleArray(sorted);
+            break;
+    }
+    
+    createAlbumCards(sorted);
+}
+
 // Funzione per cercare gli albi
 function searchAlbums(query) {
     if (!query.trim()) {
-        // Se la query è vuota, mostra tutti gli albi in ordine casuale
-        const randomized = shuffleArray(albums);
-        createAlbumCards(randomized);
+        // Se la query è vuota, applica l'ordinamento corrente
+        const sortSelect = document.getElementById('sort-select');
+        const sortBy = sortSelect ? sortSelect.value : 'random';
+        sortAlbums(sortBy);
         return;
     }
     
@@ -148,16 +216,54 @@ function searchAlbums(query) {
     createAlbumCards(filtered);
 }
 
+// Funzione per generare le stelle per il rating
+function generateStars(rating) {
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 >= 0.5;
+    let starsHTML = '';
+    
+    for (let i = 0; i < fullStars; i++) {
+        starsHTML += '⭐';
+    }
+    if (hasHalfStar) {
+        starsHTML += '½⭐';
+    }
+    
+    return starsHTML;
+}
+
 // Funzione per aprire il modal con i dettagli dell'albo
 function openModal(album) {
     const modal = document.getElementById('modal');
     const modalBody = document.getElementById('modal-body');
     
+    const purchaseLinksHTML = `
+        <div class="purchase-links">
+            <h3>Acquista questo libro</h3>
+            <div class="buy-buttons">
+                ${album.purchaseLinks.amazon ? `<a href="${album.purchaseLinks.amazon}" target="_blank" rel="noopener noreferrer" class="buy-button amazon">Amazon</a>` : '<a href="#" class="buy-button amazon disabled" onclick="return false;">Amazon</a>'}
+                ${album.purchaseLinks.feltrinelli ? `<a href="${album.purchaseLinks.feltrinelli}" target="_blank" rel="noopener noreferrer" class="buy-button feltrinelli">Feltrinelli</a>` : '<a href="#" class="buy-button feltrinelli disabled" onclick="return false;">Feltrinelli</a>'}
+                ${album.purchaseLinks.mondadori ? `<a href="${album.purchaseLinks.mondadori}" target="_blank" rel="noopener noreferrer" class="buy-button mondadori">Mondadori</a>` : '<a href="#" class="buy-button mondadori disabled" onclick="return false;">Mondadori</a>'}
+            </div>
+            <p class="affiliate-notice">I link potrebbero contenere codici affiliati</p>
+        </div>
+    `;
+    
     modalBody.innerHTML = `
-        <div class="modal-album-cover">${album.icon}</div>
+        <div class="modal-album-cover">
+            <img src="${album.coverImage}" alt="Copertina di ${album.title}" onerror="this.style.display='none'">
+        </div>
         <h2 id="modal-title">${album.title}</h2>
         <p class="author">di ${album.author}</p>
+        <div class="album-meta">
+            <p><strong>Casa Editrice:</strong> ${album.publisher}</p>
+            <p><strong>Anno di Pubblicazione:</strong> ${album.year}</p>
+            <div class="rating">
+                <strong>Valutazione:</strong> ${generateStars(album.rating)} <span class="rating-number">${album.rating}/5</span>
+            </div>
+        </div>
         <p id="modal-description">${album.fullDescription}</p>
+        ${purchaseLinksHTML}
     `;
     
     modal.style.display = 'block';
@@ -174,11 +280,45 @@ function closeModal() {
     modal.style.display = 'none';
 }
 
+// Funzione per mostrare il disclaimer sui referral link
+function showReferralDisclaimer() {
+    const disclaimerShown = localStorage.getItem('referralDisclaimerShown');
+    
+    if (!disclaimerShown) {
+        const disclaimer = document.getElementById('referral-disclaimer');
+        if (disclaimer) {
+            setTimeout(() => {
+                disclaimer.style.display = 'block';
+                localStorage.setItem('referralDisclaimerShown', 'true');
+            }, 2000); // Mostra dopo 2 secondi
+        }
+    }
+}
+
+// Funzione per chiudere il disclaimer
+function closeDisclaimer() {
+    const disclaimer = document.getElementById('referral-disclaimer');
+    if (disclaimer) {
+        disclaimer.style.display = 'none';
+    }
+}
+
 // Event listeners
 document.addEventListener('DOMContentLoaded', () => {
+    // Mostra il disclaimer sui referral link
+    showReferralDisclaimer();
+    
     // Carica gli albi in ordine casuale
     const randomizedAlbums = shuffleArray(albums);
     createAlbumCards(randomizedAlbums);
+    
+    // Gestione ordinamento
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', (e) => {
+            sortAlbums(e.target.value);
+        });
+    }
     
     // Gestione della barra di ricerca
     const searchInput = document.getElementById('search-input');

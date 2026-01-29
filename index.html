@@ -29,6 +29,15 @@
                     </svg>
                 </button>
             </div>
+            <div class="sort-section">
+                <label for="sort-select">Ordina per:</label>
+                <select id="sort-select" aria-label="Ordina albi">
+                    <option value="random">Casuale</option>
+                    <option value="title">Titolo (A-Z)</option>
+                    <option value="author">Autore (A-Z)</option>
+                    <option value="year">Anno di Pubblicazione</option>
+                </select>
+            </div>
         </section>
 
         <section class="intro">
@@ -44,6 +53,15 @@
             <div class="modal-content">
                 <span class="close" aria-label="Chiudi finestra">&times;</span>
                 <div id="modal-body"></div>
+            </div>
+        </div>
+
+        <div id="referral-disclaimer" class="referral-disclaimer">
+            <div class="disclaimer-content">
+                <span class="disclaimer-close" onclick="closeDisclaimer()" aria-label="Chiudi avviso">&times;</span>
+                <h3>ℹ️ Informativa</h3>
+                <p>Questo sito contiene link affiliati. Acquistando tramite questi link, potremmo ricevere una piccola commissione senza costi aggiuntivi per te.</p>
+                <button onclick="closeDisclaimer()" class="disclaimer-button">Ho capito</button>
             </div>
         </div>
     </main>
