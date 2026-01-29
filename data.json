@@ -1,59 +1,438 @@
 [
   {
-    "id": "rec1",
+    "id": "recCsJsJ8aaNSwwBo",
+    "createdTime": "2026-01-29T19:13:22.000Z",
     "fields": {
-      "Title": "Il Piccolo Principe",
-      "Author": "Antoine de Saint-Exupéry",
-      "Translator": "Nini Bompiani Bregoli",
-      "Illustrator": "Antoine de Saint-Exupéry",
-      "Publisher": "Bompiani",
-      "Year": 1943,
-      "Rating": 4.8,
-      "CoverImage": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=400&h=600&fit=crop",
-      "Tags": ["classico", "filosofia", "avventura", "amicizia"],
-      "Description": "Un racconto poetico e filosofico che narra le avventure di un piccolo principe proveniente da un asteroide.",
-      "Full Description": "Il Piccolo Principe è un'opera che ha incantato lettori di tutte le età. Attraverso gli occhi innocenti del protagonista, esploriamo temi profondi come l'amore, l'amicizia, la solitudine e il significato della vita. Le illustrazioni originali dell'autore accompagnano magistralmente questo viaggio attraverso pianeti e incontri indimenticabili.",
-      "AmazonLink": "",
-      "FeltrinelliLink": "",
-      "MondadoriLink": ""
+      "Title": "La strega Rossana",
+      "ISBN": "9788804668352",
+      "Author": [
+        "recafQSRrzE7YxwvK"
+      ],
+      "Illustrator": [
+        "recylE35VzTr4E0Q7"
+      ],
+      "Publication Year": 1993,
+      "Publisher": [
+        "rec7h2GfxHoXb19j7"
+      ],
+      "Synopsis": "Rossana è una strega pasticciona che vive con il suo gatto Serafino. Ogni volta che prova a fare una magia, qualcosa va storto in modo divertente. Ma quando deve aiutare gli animali del bosco, la sua magia imperfetta si rivela perfetta per risolvere i problemi.",
+      "Image Link": "https://example333.com/stregarossana.jpg",
+      "Amazon Link": "https://amazon.it/strega-rossana",
+      "Feltrinelli Link": "https://feltrinelli.it/strega-rossana",
+      "Mondadori Link": "https://mondadori.it/strega-rossana",
+      "Book Age (Years)": 33,
+      "Author Name": [
+        "Matteo Neri"
+      ],
+      "Illustrator Name": [
+        "Emilia Dziubak"
+      ],
+      "Publisher Name": [
+        "Piccola Luna Edizioni"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
     }
   },
   {
-    "id": "rec2",
+    "id": "recFEN1lwlnBpcvBK",
+    "createdTime": "2026-01-29T19:13:22.000Z",
     "fields": {
-      "Title": "Nel Paese dei Mostri Selvaggi",
-      "Author": "Maurice Sendak",
-      "Translator": "Antonio Porta",
-      "Illustrator": "Maurice Sendak",
-      "Publisher": "Babalibri",
-      "Year": 1963,
-      "Rating": 4.7,
-      "CoverImage": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=600&fit=crop",
-      "Tags": ["immaginazione", "mostri", "emozioni", "famiglia"],
-      "Description": "La storia di Max e il suo viaggio immaginario nel regno dei mostri selvaggi.",
-      "Full Description": "Quando Max viene mandato a letto senza cena, la sua camera si trasforma in una foresta e poi in un oceano che lo porta nel Paese dei Mostri Selvaggi. Lì diventa il loro re, ma presto sente la nostalgia di casa. Un classico che esplora le emozioni infantili, la rabbia, l'immaginazione e il ritorno alla sicurezza dell'amore familiare.",
-      "AmazonLink": "",
-      "FeltrinelliLink": "",
-      "MondadoriLink": ""
+      "Title": "La lepre e la tartaruga",
+      "ISBN": "9788804668413",
+      "Author": [
+        "recNS66Sms1piXQ3V"
+      ],
+      "Illustrator": [
+        "recHw7FXt8b92Ba8c"
+      ],
+      "Publication Year": 1997,
+      "Publisher": [
+        "recgokvR4Y8QT4qeV"
+      ],
+      "Synopsis": "La lepre veloce sfida la lenta tartaruga in una gara di corsa. Sicura di vincere facilmente, la lepre si ferma a riposare durante la gara. La tartaruga, lenta ma costante, continua a camminare e arriva prima al traguardo. Una lezione sulla perseveranza e l'umiltà.",
+      "Image Link": "https://example999.com/lepretartaruga.jpg",
+      "Amazon Link": "https://amazon.it/lepre-tartaruga",
+      "Feltrinelli Link": "https://feltrinelli.it/lepre-tartaruga",
+      "Mondadori Link": "https://mondadori.it/lepre-tartaruga",
+      "Book Age (Years)": 29,
+      "Author Name": [
+        "Luca Bianchi"
+      ],
+      "Illustrator Name": [
+        "Simona Mulazzani"
+      ],
+      "Publisher Name": [
+        "Sunrise Books"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
     }
   },
   {
-    "id": "rec3",
+    "id": "recFor0lUeqOtsAKI",
+    "createdTime": "2026-01-29T19:13:22.000Z",
     "fields": {
-      "Title": "Il Piccolo Bruco Maisazio",
-      "Author": "Eric Carle",
-      "Translator": "Laura Bongiovanni",
-      "Illustrator": "Eric Carle",
-      "Publisher": "Mondadori",
-      "Year": 1969,
-      "Rating": 4.9,
-      "CoverImage": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=600&fit=crop",
-      "Tags": ["natura", "educativo", "colori", "crescita"],
-      "Description": "Un bruco molto affamato mangia tutto ciò che trova prima di trasformarsi in una bellissima farfalla.",
-      "Full Description": "Questo albo illustrato iconico segue il viaggio di un piccolo bruco che nasce affamato e mangia attraverso una varietà di cibi durante la settimana. Le illustrazioni vivaci e colorate di Eric Carle, create con la sua tecnica del collage, rendono questo libro un capolavoro visivo che insegna ai bambini i giorni della settimana, i numeri e il ciclo di vita delle farfalle.",
-      "AmazonLink": "",
-      "FeltrinelliLink": "",
-      "MondadoriLink": ""
+      "Title": "Il pesciolino d'oro",
+      "ISBN": "9788804668383",
+      "Author": [
+        "recGFPszBLmUZRKGg"
+      ],
+      "Illustrator": [
+        "rectpyHgra60uqEem"
+      ],
+      "Translator": "Giulia Orecchia",
+      "Publication Year": 1995,
+      "Publisher": [
+        "reckrLXEQDeLh3qpy"
+      ],
+      "Synopsis": "Un pescatore trova un pesciolino d'oro che gli promette di esaudire tutti i suoi desideri in cambio della libertà. La moglie del pescatore diventa sempre più avida, chiedendo prima una casa, poi un castello, poi di diventare regina. Ma l'avidità porta alla rovina.",
+      "Image Link": "https://example666.com/pescioro.jpg",
+      "Amazon Link": "https://amazon.it/pesciolino-oro",
+      "Feltrinelli Link": "https://feltrinelli.it/pesciolino-oro",
+      "Mondadori Link": "https://mondadori.it/pesciolino-oro",
+      "Book Age (Years)": 31,
+      "Author Name": [
+        "Elena Verdi"
+      ],
+      "Illustrator Name": [
+        "Oliver Jeffers"
+      ],
+      "Publisher Name": [
+        "Éditions Petit Chêne"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
+    }
+  },
+  {
+    "id": "recMspr5eEMtvVnx6",
+    "createdTime": "2026-01-29T19:13:22.000Z",
+    "fields": {
+      "Title": "Il lupo che voleva fare il giro del mondo",
+      "ISBN": "9788804668369",
+      "Author": [
+        "recYiWBJmNvzvbTXZ"
+      ],
+      "Illustrator": [
+        "receNn4gC7tHoi3VF"
+      ],
+      "Translator": "Chiara Carminati",
+      "Publication Year": 2012,
+      "Publisher": [
+        "recTK9xARGBIJCJ3b"
+      ],
+      "Synopsis": "Il lupo è stufo della sua vita nella foresta e decide di viaggiare per il mondo. Visita Parigi, l'Africa, il Polo Nord e tanti altri luoghi, scoprendo culture diverse e facendo nuove amicizie. Alla fine capisce che casa è sempre il posto più bello, ma ora con una mente aperta.",
+      "Image Link": "https://example444.com/lupomondo.jpg",
+      "Amazon Link": "https://amazon.it/lupo-giro-mondo",
+      "Feltrinelli Link": "https://feltrinelli.it/lupo-giro-mondo",
+      "Mondadori Link": "https://mondadori.it/lupo-giro-mondo",
+      "Book Age (Years)": 14,
+      "Author Name": [
+        "Giulia Rossi"
+      ],
+      "Illustrator Name": [
+        "Christian Robinson"
+      ],
+      "Publisher Name": [
+        "Bright Pages Press"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
+    }
+  },
+  {
+    "id": "recORfJH4m2DLXP9H",
+    "createdTime": "2026-01-29T19:13:22.000Z",
+    "fields": {
+      "Title": "A caccia dell'orso",
+      "ISBN": "9788804668338",
+      "Author": [
+        "recNS66Sms1piXQ3V"
+      ],
+      "Illustrator": [
+        "recHw7FXt8b92Ba8c"
+      ],
+      "Translator": "Giulia Orecchia",
+      "Publication Year": 1989,
+      "Publisher": [
+        "recgokvR4Y8QT4qeV"
+      ],
+      "Synopsis": "Una famiglia coraggiosa decide di andare a caccia dell'orso. Attraversano erba alta, un fiume freddo, fango appiccicoso, una foresta buia e una tempesta di neve. Ma quando finalmente trovano l'orso... scappano tutti a casa! Un'avventura ritmica e divertente da leggere ad alta voce.",
+      "Image Link": "https://example111.com/cacciaorso.jpg",
+      "Amazon Link": "https://amazon.it/caccia-orso",
+      "Feltrinelli Link": "https://feltrinelli.it/caccia-orso",
+      "Mondadori Link": "https://mondadori.it/caccia-orso",
+      "Book Age (Years)": 37,
+      "Author Name": [
+        "Luca Bianchi"
+      ],
+      "Illustrator Name": [
+        "Simona Mulazzani"
+      ],
+      "Publisher Name": [
+        "Sunrise Books"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
+    }
+  },
+  {
+    "id": "recbUaBCdIMchWgyc",
+    "createdTime": "2026-01-29T19:13:22.000Z",
+    "fields": {
+      "Title": "La volpe e l'uva",
+      "ISBN": "9788804668390",
+      "Author": [
+        "recafQSRrzE7YxwvK"
+      ],
+      "Illustrator": [
+        "recylE35VzTr4E0Q7"
+      ],
+      "Publication Year": 2001,
+      "Publisher": [
+        "rec7h2GfxHoXb19j7"
+      ],
+      "Synopsis": "Una volpe affamata vede un grappolo d'uva maturo appeso in alto. Prova in tutti i modi a raggiungerlo, saltando e arrampicandosi, ma non ci riesce. Alla fine se ne va dicendo che l'uva era sicuramente acerba. Una favola classica sul saper accettare le sconfitte con dignità.",
+      "Image Link": "https://example777.com/volpeuva.jpg",
+      "Amazon Link": "https://amazon.it/volpe-uva",
+      "Feltrinelli Link": "https://feltrinelli.it/volpe-uva",
+      "Mondadori Link": "https://mondadori.it/volpe-uva",
+      "Book Age (Years)": 25,
+      "Author Name": [
+        "Matteo Neri"
+      ],
+      "Illustrator Name": [
+        "Emilia Dziubak"
+      ],
+      "Publisher Name": [
+        "Piccola Luna Edizioni"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
+    }
+  },
+  {
+    "id": "recj9W1MWpnwXzjUI",
+    "createdTime": "2026-01-29T19:13:22.000Z",
+    "fields": {
+      "Title": "Il brutto anatroccolo",
+      "ISBN": "9788804668420",
+      "Author": [
+        "recGFPszBLmUZRKGg"
+      ],
+      "Illustrator": [
+        "rectpyHgra60uqEem"
+      ],
+      "Translator": "Chiara Carminati",
+      "Publication Year": 1999,
+      "Publisher": [
+        "reckrLXEQDeLh3qpy"
+      ],
+      "Synopsis": "Un anatroccolo diverso dagli altri viene preso in giro e allontanato dalla sua famiglia. Trascorre un inverno difficile, sentendosi solo e diverso. Con l'arrivo della primavera scopre di essere diventato un bellissimo cigno. Una storia sulla crescita, l'identità e l'accettazione di sé.",
+      "Image Link": "https://example000.com/anatroccolo.jpg",
+      "Amazon Link": "https://amazon.it/brutto-anatroccolo",
+      "Feltrinelli Link": "https://feltrinelli.it/brutto-anatroccolo",
+      "Mondadori Link": "https://mondadori.it/brutto-anatroccolo",
+      "Book Age (Years)": 27,
+      "Author Name": [
+        "Elena Verdi"
+      ],
+      "Illustrator Name": [
+        "Oliver Jeffers"
+      ],
+      "Publisher Name": [
+        "Éditions Petit Chêne"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
+    }
+  },
+  {
+    "id": "recrgd5qPlffFlTgG",
+    "createdTime": "2026-01-29T19:13:22.000Z",
+    "fields": {
+      "Title": "Orso buco",
+      "ISBN": "9788804668376",
+      "Author": [
+        "recNS66Sms1piXQ3V"
+      ],
+      "Illustrator": [
+        "recHw7FXt8b92Ba8c"
+      ],
+      "Publication Year": 2014,
+      "Publisher": [
+        "recgokvR4Y8QT4qeV"
+      ],
+      "Synopsis": "Orso ha un buco proprio nel mezzo del corpo. Gli altri animali cercano di aiutarlo a riempirlo con oggetti di ogni tipo, ma niente sembra funzionare. Alla fine Orso scopre che il suo buco si riempie da solo quando abbraccia qualcuno che ama. Una storia tenera sull'amore e l'accettazione.",
+      "Image Link": "https://example555.com/orsobuco.jpg",
+      "Amazon Link": "https://amazon.it/orso-buco",
+      "Feltrinelli Link": "https://feltrinelli.it/orso-buco",
+      "Mondadori Link": "https://mondadori.it/orso-buco",
+      "Book Age (Years)": 12,
+      "Author Name": [
+        "Luca Bianchi"
+      ],
+      "Illustrator Name": [
+        "Simona Mulazzani"
+      ],
+      "Publisher Name": [
+        "Sunrise Books"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
+    }
+  },
+  {
+    "id": "recvRU2wCWylwHOyT",
+    "createdTime": "2026-01-29T19:13:22.000Z",
+    "fields": {
+      "Title": "Il topo di campagna e il topo di città",
+      "ISBN": "9788804668406",
+      "Author": [
+        "recYiWBJmNvzvbTXZ"
+      ],
+      "Illustrator": [
+        "receNn4gC7tHoi3VF"
+      ],
+      "Translator": "Anna Sarfatti",
+      "Publication Year": 1998,
+      "Publisher": [
+        "recTK9xARGBIJCJ3b"
+      ],
+      "Synopsis": "Un topo di campagna invita il suo cugino di città a cena. Il topo di città trova il cibo semplice e invita il cugino in città, dove c'è cibo raffinato ma anche molti pericoli. Alla fine il topo di campagna preferisce la sua vita semplice ma sicura.",
+      "Image Link": "https://example888.com/topocampagna.jpg",
+      "Amazon Link": "https://amazon.it/topo-campagna-citta",
+      "Feltrinelli Link": "https://feltrinelli.it/topo-campagna-citta",
+      "Mondadori Link": "https://mondadori.it/topo-campagna-citta",
+      "Book Age (Years)": 28,
+      "Author Name": [
+        "Giulia Rossi"
+      ],
+      "Illustrator Name": [
+        "Christian Robinson"
+      ],
+      "Publisher Name": [
+        "Bright Pages Press"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
+    }
+  },
+  {
+    "id": "recwR5IZ876MtjOVo",
+    "createdTime": "2026-01-29T19:13:22.000Z",
+    "fields": {
+      "Title": "Il mostro peloso",
+      "ISBN": "9788804668345",
+      "Author": [
+        "recGFPszBLmUZRKGg"
+      ],
+      "Illustrator": [
+        "rectpyHgra60uqEem"
+      ],
+      "Translator": "Anna Sarfatti",
+      "Publication Year": 1982,
+      "Publisher": [
+        "reckrLXEQDeLh3qpy"
+      ],
+      "Synopsis": "Il re vuole sposare sua figlia al mostro peloso, ma la principessa è furba e coraggiosa. Sfida il mostro a una gara di bruttezza e cattiveria, riuscendo a sconfiggerlo con l'intelligenza. Una storia che ribalta le fiabe tradizionali e celebra l'astuzia femminile.",
+      "Image Link": "https://example222.com/mostropeloso.jpg",
+      "Amazon Link": "https://amazon.it/mostro-peloso",
+      "Feltrinelli Link": "https://feltrinelli.it/mostro-peloso",
+      "Mondadori Link": "https://mondadori.it/mostro-peloso",
+      "Book Age (Years)": 44,
+      "Author Name": [
+        "Elena Verdi"
+      ],
+      "Illustrator Name": [
+        "Oliver Jeffers"
+      ],
+      "Publisher Name": [
+        "Éditions Petit Chêne"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
     }
   }
 ]
