@@ -69,14 +69,18 @@ function transformAirtableData(airtableRecords) {
             publisher = fields['Publisher Name'].trim();
         }
         
-        // Extract year - use Publication Year (note: not "Years" as spec says, but actual field is "Year")
+        // Extract year - use Publication Year field
         const year = fields['Publication Year'] || fields['Publication Years'] || null;
         
         // Extract ISBN
         const isbn = fields.ISBN || '';
         
-        // Extract Book Age
-        const bookAge = fields['Book Age (Years)'] || fields['Book Age'] || null;
+        // Extract Book Age - validate it's numeric
+        let bookAge = null;
+        const rawBookAge = fields['Book Age (Years)'] || fields['Book Age'];
+        if (rawBookAge && typeof rawBookAge === 'number') {
+            bookAge = rawBookAge;
+        }
         
         // Extract rating
         const rating = fields.Rating || fields.Voto || 0;
@@ -139,8 +143,8 @@ async function loadDataFromJSON() {
         
         // Verify that data is an array and not empty
         if (!data || !Array.isArray(data) || data.length === 0) {
-            console.error('❌ ERRORE: Il file data.json è vuoto o non contiene record validi.');
-            console.error('⚠️ Verifica che il file data.json contenga un array di record da Airtable.');
+            console.warn('⚠️ Il file data.json è vuoto o non contiene record validi.');
+            console.warn('⚠️ Verifica che il file data.json contenga un array di record da Airtable.');
             return getAlbi();
         }
 
@@ -318,83 +322,193 @@ function openModal(albo) {
     
     if (!modal || !modalBody) return;
     
-    // Build modal content
-    let content = `
-        <div class="modal-album-details">
-            <div class="modal-album-cover">
-                <img src="${albo.coverImage || PLACEHOLDER_IMAGE}" 
-                     alt="Copertina di ${albo.title}"
-                     onerror="this.src='${PLACEHOLDER_IMAGE}'">
-            </div>
-            <div class="modal-album-info">
-                <h2>${albo.title}</h2>
-                <p><strong>Autore:</strong> ${albo.author}</p>
-    `;
+    // Helper function to safely create text elements
+    const createTextElement = (tag, text) => {
+        const el = document.createElement(tag);
+        el.textContent = text;
+        return el;
+    };
     
+    // Helper function to sanitize and validate URL
+    const sanitizeUrl = (url) => {
+        if (!url || typeof url !== 'string') return '';
+        const trimmed = url.trim();
+        // Only allow http and https protocols
+        if (trimmed.match(/^https?:\/\//i)) {
+            return trimmed;
+        }
+        return '';
+    };
+    
+    // Create modal structure safely
+    const modalDetails = document.createElement('div');
+    modalDetails.className = 'modal-album-details';
+    
+    // Cover image
+    const coverDiv = document.createElement('div');
+    coverDiv.className = 'modal-album-cover';
+    const img = document.createElement('img');
+    img.src = albo.coverImage || PLACEHOLDER_IMAGE;
+    img.alt = `Copertina di ${albo.title}`;
+    img.onerror = function() { this.src = PLACEHOLDER_IMAGE; };
+    coverDiv.appendChild(img);
+    
+    // Album info container
+    const infoDiv = document.createElement('div');
+    infoDiv.className = 'modal-album-info';
+    
+    // Title
+    const titleEl = createTextElement('h2', albo.title);
+    infoDiv.appendChild(titleEl);
+    
+    // Author
+    const authorP = document.createElement('p');
+    const authorStrong = createTextElement('strong', 'Autore: ');
+    authorP.appendChild(authorStrong);
+    authorP.appendChild(document.createTextNode(albo.author));
+    infoDiv.appendChild(authorP);
+    
+    // Illustrator
     if (albo.illustrator) {
-        content += `<p><strong>Illustratore:</strong> ${albo.illustrator}</p>`;
+        const illustratorP = document.createElement('p');
+        const illustratorStrong = createTextElement('strong', 'Illustratore: ');
+        illustratorP.appendChild(illustratorStrong);
+        illustratorP.appendChild(document.createTextNode(albo.illustrator));
+        infoDiv.appendChild(illustratorP);
     }
     
+    // Translator
     if (albo.translator) {
-        content += `<p><strong>Traduttore:</strong> ${albo.translator}</p>`;
+        const translatorP = document.createElement('p');
+        const translatorStrong = createTextElement('strong', 'Traduttore: ');
+        translatorP.appendChild(translatorStrong);
+        translatorP.appendChild(document.createTextNode(albo.translator));
+        infoDiv.appendChild(translatorP);
     }
     
-    content += `<p><strong>Editore:</strong> ${albo.publisher}</p>`;
+    // Publisher
+    const publisherP = document.createElement('p');
+    const publisherStrong = createTextElement('strong', 'Editore: ');
+    publisherP.appendChild(publisherStrong);
+    publisherP.appendChild(document.createTextNode(albo.publisher));
+    infoDiv.appendChild(publisherP);
     
+    // Year
     if (albo.year) {
-        content += `<p><strong>Anno:</strong> ${albo.year}</p>`;
+        const yearP = document.createElement('p');
+        const yearStrong = createTextElement('strong', 'Anno: ');
+        yearP.appendChild(yearStrong);
+        yearP.appendChild(document.createTextNode(String(albo.year)));
+        infoDiv.appendChild(yearP);
     }
     
+    // ISBN
     if (albo.isbn) {
-        content += `<p><strong>ISBN:</strong> ${albo.isbn}</p>`;
+        const isbnP = document.createElement('p');
+        const isbnStrong = createTextElement('strong', 'ISBN: ');
+        isbnP.appendChild(isbnStrong);
+        isbnP.appendChild(document.createTextNode(albo.isbn));
+        infoDiv.appendChild(isbnP);
     }
     
-    if (albo.bookAge) {
-        content += `<p><strong>Età libro:</strong> ${albo.bookAge} anni</p>`;
+    // Book Age
+    if (albo.bookAge && typeof albo.bookAge === 'number') {
+        const bookAgeP = document.createElement('p');
+        const bookAgeStrong = createTextElement('strong', 'Età libro: ');
+        bookAgeP.appendChild(bookAgeStrong);
+        // Handle singular/plural for Italian
+        const yearsText = albo.bookAge === 1 ? 'anno' : 'anni';
+        bookAgeP.appendChild(document.createTextNode(`${albo.bookAge} ${yearsText}`));
+        infoDiv.appendChild(bookAgeP);
     }
     
+    // Rating
     if (albo.rating && albo.rating > 0) {
-        content += `<p><strong>Valutazione:</strong> ${albo.rating}/5</p>`;
+        const ratingP = document.createElement('p');
+        const ratingStrong = createTextElement('strong', 'Valutazione: ');
+        ratingP.appendChild(ratingStrong);
+        ratingP.appendChild(document.createTextNode(`${albo.rating}/5`));
+        infoDiv.appendChild(ratingP);
     }
     
+    // Tags
     if (albo.tags && albo.tags.length > 0) {
-        content += '<div class="modal-tags">';
+        const tagsDiv = document.createElement('div');
+        tagsDiv.className = 'modal-tags';
         albo.tags.forEach(tag => {
-            content += `<span class="tag">${tag}</span>`;
+            const tagSpan = createTextElement('span', tag);
+            tagSpan.className = 'tag';
+            tagsDiv.appendChild(tagSpan);
         });
-        content += '</div>';
+        infoDiv.appendChild(tagsDiv);
     }
     
+    // Description
     if (albo.fullDescription || albo.description) {
-        content += `<div class="modal-description">
-            <h3>Descrizione</h3>
-            <p>${albo.fullDescription || albo.description}</p>
-        </div>`;
+        const descDiv = document.createElement('div');
+        descDiv.className = 'modal-description';
+        const descTitle = createTextElement('h3', 'Descrizione');
+        const descText = createTextElement('p', albo.fullDescription || albo.description);
+        descDiv.appendChild(descTitle);
+        descDiv.appendChild(descText);
+        infoDiv.appendChild(descDiv);
     }
     
     // Purchase links
-    const hasLinks = albo.purchaseLinks && 
-        (albo.purchaseLinks.amazon || albo.purchaseLinks.feltrinelli || albo.purchaseLinks.mondadori);
+    const amazonUrl = sanitizeUrl(albo.purchaseLinks?.amazon);
+    const feltrinelliUrl = sanitizeUrl(albo.purchaseLinks?.feltrinelli);
+    const mondadoriUrl = sanitizeUrl(albo.purchaseLinks?.mondadori);
+    const hasLinks = amazonUrl || feltrinelliUrl || mondadoriUrl;
     
     if (hasLinks) {
-        content += '<div class="modal-purchase-links"><h3>Dove acquistare</h3><div class="purchase-buttons">';
+        const linksDiv = document.createElement('div');
+        linksDiv.className = 'modal-purchase-links';
+        const linksTitle = createTextElement('h3', 'Dove acquistare');
+        linksDiv.appendChild(linksTitle);
         
-        if (albo.purchaseLinks.amazon) {
-            content += `<a href="${albo.purchaseLinks.amazon}" target="_blank" rel="noopener noreferrer" class="purchase-link amazon">Amazon</a>`;
-        }
-        if (albo.purchaseLinks.feltrinelli) {
-            content += `<a href="${albo.purchaseLinks.feltrinelli}" target="_blank" rel="noopener noreferrer" class="purchase-link feltrinelli">Feltrinelli</a>`;
-        }
-        if (albo.purchaseLinks.mondadori) {
-            content += `<a href="${albo.purchaseLinks.mondadori}" target="_blank" rel="noopener noreferrer" class="purchase-link mondadori">Mondadori</a>`;
+        const buttonsDiv = document.createElement('div');
+        buttonsDiv.className = 'purchase-buttons';
+        
+        if (amazonUrl) {
+            const amazonLink = document.createElement('a');
+            amazonLink.href = amazonUrl;
+            amazonLink.target = '_blank';
+            amazonLink.rel = 'noopener noreferrer';
+            amazonLink.className = 'purchase-link amazon';
+            amazonLink.textContent = 'Amazon';
+            buttonsDiv.appendChild(amazonLink);
         }
         
-        content += '</div></div>';
+        if (feltrinelliUrl) {
+            const feltrinelliLink = document.createElement('a');
+            feltrinelliLink.href = feltrinelliUrl;
+            feltrinelliLink.target = '_blank';
+            feltrinelliLink.rel = 'noopener noreferrer';
+            feltrinelliLink.className = 'purchase-link feltrinelli';
+            feltrinelliLink.textContent = 'Feltrinelli';
+            buttonsDiv.appendChild(feltrinelliLink);
+        }
+        
+        if (mondadoriUrl) {
+            const mondadoriLink = document.createElement('a');
+            mondadoriLink.href = mondadoriUrl;
+            mondadoriLink.target = '_blank';
+            mondadoriLink.rel = 'noopener noreferrer';
+            mondadoriLink.className = 'purchase-link mondadori';
+            mondadoriLink.textContent = 'Mondadori';
+            buttonsDiv.appendChild(mondadoriLink);
+        }
+        
+        linksDiv.appendChild(buttonsDiv);
+        infoDiv.appendChild(linksDiv);
     }
     
-    content += '</div></div>';
+    modalDetails.appendChild(coverDiv);
+    modalDetails.appendChild(infoDiv);
     
-    modalBody.innerHTML = content;
+    // Clear and append to modal body
+    modalBody.innerHTML = '';
+    modalBody.appendChild(modalDetails);
     modal.style.display = 'block';
     
     // Show referral disclaimer if there are purchase links
