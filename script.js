@@ -1,5 +1,5 @@
-// Dati degli albi illustrati
-const albums = [
+// Dati degli albi illustrati di default
+const defaultAlbums = [
     {
         id: 1,
         title: "Il Piccolo Principe",
@@ -103,6 +103,20 @@ const albums = [
         }
     }
 ];
+
+// Funzione per ottenere gli albi da localStorage o usare quelli di default
+function getAlbums() {
+    const stored = localStorage.getItem('albums');
+    if (stored) {
+        return JSON.parse(stored);
+    }
+    // Se non ci sono dati salvati, usa gli albi di default
+    localStorage.setItem('albums', JSON.stringify(defaultAlbums));
+    return defaultAlbums;
+}
+
+// Variabile globale per gli albi correnti
+let albums = getAlbums();
 
 // Funzione per mescolare (randomizzare) un array
 function shuffleArray(array) {
@@ -324,8 +338,17 @@ document.addEventListener('DOMContentLoaded', () => {
     showReferralDisclaimer();
     
     // Carica gli albi in ordine casuale
+    albums = getAlbums(); // Ricarica gli albi da localStorage
     const randomizedAlbums = shuffleArray(albums);
     createAlbumCards(randomizedAlbums);
+    
+    // Ascolta gli aggiornamenti dagli admin
+    window.addEventListener('albumsUpdated', () => {
+        albums = getAlbums();
+        const sortSelect = document.getElementById('sort-select');
+        const sortBy = sortSelect ? sortSelect.value : 'random';
+        sortAlbums(sortBy);
+    });
     
     // Gestione ordinamento
     const sortSelect = document.getElementById('sort-select');

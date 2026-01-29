@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - MondialBi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div id="login-section" class="login-container">
+        <div class="login-box">
+            <h1>🔐 Admin Login</h1>
+            <p>Inserisci la password per accedere all'area amministrativa</p>
+            <input type="password" id="admin-password" placeholder="Password" aria-label="Password amministratore">
+            <button id="login-button">Accedi</button>
+            <p id="login-error" class="error-message"></p>
+            <a href="index.html" class="back-link">← Torna alla home</a>
+        </div>
+    </div>
+
+    <div id="admin-section" style="display: none;">
+        <header>
+            <div class="container">
+                <h1>MondialBi - Admin</h1>
+                <p class="subtitle">Gestisci la tua collezione di albi illustrati</p>
+                <div class="admin-actions">
+                    <a href="index.html" class="btn-secondary">← Torna alla Home</a>
+                    <button id="logout-button" class="btn-secondary">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="admin-controls">
+                <button id="add-album-button" class="btn-primary">➕ Aggiungi Nuovo Albo</button>
+            </section>
+
+            <section class="albums-list" id="admin-albums-list">
+                <!-- Gli albi verranno caricati dinamicamente -->
+            </section>
+        </main>
+
+        <!-- Modal per aggiungere/modificare albo -->
+        <div id="album-modal" class="modal" role="dialog" aria-labelledby="album-modal-title">
+            <div class="modal-content">
+                <span class="close" aria-label="Chiudi finestra">&times;</span>
+                <h2 id="album-modal-title">Aggiungi Nuovo Albo</h2>
+                <form id="album-form">
+                    <div class="form-group">
+                        <label for="album-title">Titolo *</label>
+                        <input type="text" id="album-title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="album-author">Autore *</label>
+                        <input type="text" id="album-author" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="album-publisher">Casa Editrice *</label>
+                        <input type="text" id="album-publisher" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="album-year">Anno di Pubblicazione *</label>
+                        <input type="number" id="album-year" min="1000" max="2100" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="album-rating">Valutazione (0-5)</label>
+                        <input type="number" id="album-rating" min="0" max="5" step="0.1" value="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="album-cover">URL Copertina *</label>
+                        <input type="url" id="album-cover" required>
+                        <small>Inserisci l'URL dell'immagine della copertina</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="album-tags">Tags (separati da virgola)</label>
+                        <input type="text" id="album-tags" placeholder="es: classico, avventura, fantasy">
+                        <small>Inserisci i tag separati da virgola</small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="album-description">Descrizione Breve *</label>
+                        <textarea id="album-description" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="album-full-description">Descrizione Completa *</label>
+                        <textarea id="album-full-description" rows="5" required></textarea>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Link di Acquisto</h3>
+                        
+                        <div class="form-group">
+                            <label for="album-amazon">Link Amazon</label>
+                            <input type="url" id="album-amazon" placeholder="https://amazon.it/...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="album-feltrinelli">Link Feltrinelli</label>
+                            <input type="url" id="album-feltrinelli" placeholder="https://feltrinelli.it/...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="album-mondadori">Link Mondadori</label>
+                            <input type="url" id="album-mondadori" placeholder="https://mondadori.it/...">
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="album-id">
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary">Salva</button>
+                        <button type="button" id="cancel-button" class="btn-secondary">Annulla</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal di conferma eliminazione -->
+        <div id="confirm-modal" class="modal" role="dialog">
+            <div class="modal-content confirm-modal">
+                <h3>⚠️ Conferma Eliminazione</h3>
+                <p>Sei sicuro di voler eliminare questo albo?</p>
+                <p class="confirm-album-title"></p>
+                <div class="form-actions">
+                    <button id="confirm-delete-button" class="btn-danger">Elimina</button>
+                    <button id="cancel-delete-button" class="btn-secondary">Annulla</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 MondialBi - Admin Panel</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

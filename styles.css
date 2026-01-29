@@ -40,6 +40,10 @@ header h1 {
     color: #666;
 }
 
+.admin-link:hover {
+    background: rgba(255,255,255,0.3) !important;
+}
+
 /* Sezione introduttiva */
 .search-section {
     margin-bottom: 2rem;
