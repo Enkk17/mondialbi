@@ -25,11 +25,11 @@ function transformAirtableData(airtableRecords) {
         
         // Extract author - try "Autore" first, then "Author Name"
         // Handle both string and array formats
-        let author = fields.Autore;
+        let author = fields.Autore && fields.Autore.trim() !== '' ? fields.Autore : null;
         if (!author) {
             if (Array.isArray(fields['Author Name']) && fields['Author Name'].length > 0) {
                 author = fields['Author Name'][0];
-            } else if (fields['Author Name']) {
+            } else if (fields['Author Name'] && typeof fields['Author Name'] === 'string' && fields['Author Name'].trim() !== '') {
                 author = fields['Author Name'];
             } else {
                 author = 'Autore Sconosciuto';
@@ -41,9 +41,9 @@ function transformAirtableData(airtableRecords) {
         let coverImage = PLACEHOLDER_IMAGE;
         
         // Check for attachment arrays first
-        if (fields.Copertina && Array.isArray(fields.Copertina) && fields.Copertina.length > 0) {
+        if (fields.Copertina && Array.isArray(fields.Copertina) && fields.Copertina.length > 0 && fields.Copertina[0]) {
             coverImage = fields.Copertina[0].url || PLACEHOLDER_IMAGE;
-        } else if (fields.CoverImage && Array.isArray(fields.CoverImage) && fields.CoverImage.length > 0) {
+        } else if (fields.CoverImage && Array.isArray(fields.CoverImage) && fields.CoverImage.length > 0 && fields.CoverImage[0]) {
             coverImage = fields.CoverImage[0].url || PLACEHOLDER_IMAGE;
         } else if (fields['Image Link']) {
             // Use direct URL if available
@@ -61,15 +61,20 @@ function transformAirtableData(airtableRecords) {
         let illustrator = '';
         if (Array.isArray(fields['Illustrator Name']) && fields['Illustrator Name'].length > 0) {
             illustrator = fields['Illustrator Name'][0];
-        } else if (fields.Illustrator || fields.Illustratore) {
-            illustrator = fields.Illustrator || fields.Illustratore;
+        } else {
+            const illus = fields.Illustrator || fields.Illustratore || '';
+            illustrator = illus.trim ? illus.trim() : illus;
         }
         
-        let publisher = 'Editore Sconosciuto';
+        let publisher = '';
         if (Array.isArray(fields['Publisher Name']) && fields['Publisher Name'].length > 0) {
             publisher = fields['Publisher Name'][0];
-        } else if (fields.Publisher || fields.Editore) {
-            publisher = fields.Publisher || fields.Editore;
+        } else {
+            publisher = fields.Publisher || fields.Editore || '';
+        }
+        publisher = publisher && publisher.trim ? publisher.trim() : publisher;
+        if (!publisher) {
+            publisher = 'Editore Sconosciuto';
         }
         
         const year = fields['Publication Year'] || fields.Year || fields.Anno || null;
