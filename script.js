@@ -1,5 +1,5 @@
-// Dati degli albi illustrati
-const albums = [
+// Dati degli albi illustrati di default
+const defaultAlbums = [
     {
         id: 1,
         title: "Il Piccolo Principe",
@@ -104,6 +104,20 @@ const albums = [
     }
 ];
 
+// Funzione per ottenere gli albi da localStorage o usare quelli di default
+function getAlbums() {
+    const stored = localStorage.getItem('albums');
+    if (stored) {
+        return JSON.parse(stored);
+    }
+    // Se non ci sono dati salvati, usa gli albi di default
+    localStorage.setItem('albums', JSON.stringify(defaultAlbums));
+    return defaultAlbums;
+}
+
+// Variabile globale per gli albi correnti
+let albums = getAlbums();
+
 // Funzione per mescolare (randomizzare) un array
 function shuffleArray(array) {
     const shuffled = [...array];
@@ -117,6 +131,8 @@ function shuffleArray(array) {
 // Funzione per creare le card degli albi
 function createAlbumCards(albumsToDisplay = albums) {
     const container = document.getElementById('albums-container');
+    if (!container) return; // Se non siamo sulla pagina principale, esci
+    
     container.innerHTML = ''; // Pulisci il contenitore
     
     if (albumsToDisplay.length === 0) {
@@ -324,8 +340,19 @@ document.addEventListener('DOMContentLoaded', () => {
     showReferralDisclaimer();
     
     // Carica gli albi in ordine casuale
+    albums = getAlbums(); // Ricarica gli albi da localStorage
     const randomizedAlbums = shuffleArray(albums);
     createAlbumCards(randomizedAlbums);
+    
+    // Listen for localStorage changes from other tabs/windows (e.g., admin panel)
+    window.addEventListener('storage', (e) => {
+        if (e.key === 'albums') {
+            albums = getAlbums();
+            const sortSelect = document.getElementById('sort-select');
+            const sortBy = sortSelect ? sortSelect.value : 'random';
+            sortAlbums(sortBy);
+        }
+    });
     
     // Gestione ordinamento
     const sortSelect = document.getElementById('sort-select');
@@ -339,30 +366,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
     
-    // Ricerca quando si clicca il bottone
-    searchButton.addEventListener('click', () => {
-        searchAlbums(searchInput.value);
-    });
-    
-    // Ricerca quando si preme Invio
-    searchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
+    if (searchInput && searchButton) {
+        // Ricerca quando si clicca il bottone
+        searchButton.addEventListener('click', () => {
             searchAlbums(searchInput.value);
-        }
-    });
-    
-    // Ricerca in tempo reale mentre si digita (con debounce)
-    let searchTimeout;
-    searchInput.addEventListener('input', () => {
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-            searchAlbums(searchInput.value);
-        }, 300);
-    });
+        });
+        
+        // Ricerca quando si preme Invio
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchAlbums(searchInput.value);
+            }
+        });
+        
+        // Ricerca in tempo reale mentre si digita (con debounce)
+        let searchTimeout;
+        searchInput.addEventListener('input', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                searchAlbums(searchInput.value);
+            }, 300);
+        });
+    }
     
     // Gestione chiusura modal
     const closeBtn = document.querySelector('.close');
-    closeBtn.onclick = closeModal;
+    if (closeBtn) {
+        closeBtn.onclick = closeModal;
+    }
     
     // Gestione chiusura disclaimer
     const disclaimerClose = document.querySelector('.disclaimer-close');
