@@ -130,7 +130,7 @@ function getAlbums() {
 // Funzione per trasformare i dati Airtable nel formato utilizzato dall'app
 function transformAirtableData(records) {
     return records.map(record => {
-        const fields = record.fields;
+        const fields = record.fields || {}; // Provide default empty object if fields is missing
         return {
             id: record.id,
             title: fields.Title || fields.Titolo || '',
@@ -156,7 +156,9 @@ function transformAirtableData(records) {
 // Funzione asincrona per caricare i dati dal file data.json
 async function loadDataFromJSON() {
     try {
-        const response = await fetch('data.json');
+        // Add cache-busting parameter to ensure fresh data
+        const cacheBuster = new Date().getTime();
+        const response = await fetch(`data.json?v=${cacheBuster}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -170,7 +172,7 @@ async function loadDataFromJSON() {
         
         return transformedAlbums;
     } catch (error) {
-        console.log('Could not load data.json, using default/cached data:', error.message);
+        console.error('Could not load data.json, using default/cached data:', error.message);
         // Se non riesce a caricare data.json, usa i dati in localStorage o default
         return getAlbums();
     }
@@ -408,6 +410,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     createAlbumCards(randomizedAlbums);
     
     // Listen for localStorage changes from other tabs/windows (e.g., admin panel)
+    // Note: Changes from data.json won't be reflected until page refresh
+    // Users should refresh the page after the GitHub Actions sync completes
     window.addEventListener('storage', (e) => {
         if (e.key === 'albums') {
             albums = getAlbums();
