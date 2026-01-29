@@ -127,8 +127,57 @@ function getAlbums() {
     return defaultAlbums;
 }
 
+// Funzione per trasformare i dati Airtable nel formato utilizzato dall'app
+function transformAirtableData(records) {
+    return records.map(record => {
+        const fields = record.fields;
+        return {
+            id: record.id,
+            title: fields.Title || fields.Titolo || '',
+            author: fields.Author || fields.Autore || '',
+            translator: fields.Translator || fields.Traduttore || '',
+            illustrator: fields.Illustrator || fields.Illustratore || '',
+            publisher: fields.Publisher || fields.Editore || fields['Casa Editrice'] || '',
+            year: fields.Year || fields.Anno || 0,
+            rating: fields.Rating || fields.Valutazione || 0,
+            coverImage: fields.CoverImage || fields['Cover Image'] || fields.Copertina || '',
+            tags: fields.Tags || fields.Tag || [],
+            description: fields.Description || fields.Descrizione || '',
+            fullDescription: fields['Full Description'] || fields['Descrizione Completa'] || fields.Description || fields.Descrizione || '',
+            purchaseLinks: {
+                amazon: fields.AmazonLink || fields['Amazon Link'] || fields['Link Amazon'] || '',
+                feltrinelli: fields.FeltrinelliLink || fields['Feltrinelli Link'] || fields['Link Feltrinelli'] || '',
+                mondadori: fields.MondadoriLink || fields['Mondadori Link'] || fields['Link Mondadori'] || ''
+            }
+        };
+    });
+}
+
+// Funzione asincrona per caricare i dati dal file data.json
+async function loadDataFromJSON() {
+    try {
+        const response = await fetch('data.json');
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        
+        // Trasforma i dati Airtable nel formato dell'app
+        const transformedAlbums = transformAirtableData(data);
+        
+        // Salva i dati in localStorage per uso offline
+        localStorage.setItem('albums', JSON.stringify(transformedAlbums));
+        
+        return transformedAlbums;
+    } catch (error) {
+        console.log('Could not load data.json, using default/cached data:', error.message);
+        // Se non riesce a caricare data.json, usa i dati in localStorage o default
+        return getAlbums();
+    }
+}
+
 // Variabile globale per gli albi correnti
-let albums = getAlbums();
+let albums = [];
 
 // Funzione per mescolare (randomizzare) un array
 function shuffleArray(array) {
@@ -349,12 +398,12 @@ function closeDisclaimer() {
 }
 
 // Event listeners
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
     // Mostra il disclaimer sui referral link
     showReferralDisclaimer();
     
-    // Carica gli albi in ordine casuale
-    albums = getAlbums(); // Ricarica gli albi da localStorage
+    // Carica gli albi dal file data.json (o da localStorage/default se non disponibile)
+    albums = await loadDataFromJSON();
     const randomizedAlbums = shuffleArray(albums);
     createAlbumCards(randomizedAlbums);
     

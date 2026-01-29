@@ -17,9 +17,11 @@ def fetch_airtable_data():
         sys.exit(1)
     
     # Get additional configuration from environment variables with defaults
+    # Base ID format: INSERISCI_IL_TUO_BASE_ID_QUI (replace with your actual Airtable base ID)
     base_id = os.environ.get('AIRTABLE_BASE_ID')
     if not base_id:
         print("Error: AIRTABLE_BASE_ID environment variable is not set", file=sys.stderr)
+        print("Set it to your Airtable base ID (e.g., appXXXXXXXXXXXXXX)", file=sys.stderr)
         sys.exit(1)
     
     table_name = os.environ.get('AIRTABLE_TABLE_NAME', 'Collection')
