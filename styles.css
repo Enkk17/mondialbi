@@ -41,6 +41,57 @@ header h1 {
 }
 
 /* Sezione introduttiva */
+.search-section {
+    margin-bottom: 2rem;
+}
+
+.search-bar {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 0.5rem;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+    flex: 1;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+    color: #333;
+}
+
+#search-input::placeholder {
+    color: #999;
+}
+
+#search-button {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    color: white;
+}
+
+#search-button:hover {
+    transform: scale(1.05);
+}
+
+#search-button:active {
+    transform: scale(0.95);
+}
+
 .intro {
     background: white;
     padding: 2rem;
@@ -106,6 +157,13 @@ header h1 {
 .album-info .author {
     color: #667eea;
     font-style: italic;
+    margin-bottom: 0.3rem;
+    font-size: 0.95rem;
+}
+
+.album-info .publisher {
+    color: #999;
+    font-size: 0.85rem;
     margin-bottom: 0.5rem;
 }
 
@@ -113,6 +171,14 @@ header h1 {
     color: #666;
     font-size: 0.9rem;
     line-height: 1.5;
+}
+
+.no-results {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    padding: 3rem;
+    grid-column: 1 / -1;
 }
 
 /* Modal */
@@ -210,6 +276,15 @@ footer {
 @media (max-width: 768px) {
     header h1 {
         font-size: 2rem;
+    }
+
+    .search-bar {
+        max-width: 100%;
+    }
+
+    #search-input {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
     }
 
     .albums-grid {
