@@ -4,6 +4,8 @@ const defaultAlbums = [
         id: 1,
         title: "Il Piccolo Principe",
         author: "Antoine de Saint-Exupéry",
+        translator: "Nini Bompiani Bregoli",
+        illustrator: "Antoine de Saint-Exupéry",
         publisher: "Bompiani",
         year: 1943,
         rating: 4.8,
@@ -21,6 +23,8 @@ const defaultAlbums = [
         id: 2,
         title: "Nel Paese dei Mostri Selvaggi",
         author: "Maurice Sendak",
+        translator: "Antonio Porta",
+        illustrator: "Maurice Sendak",
         publisher: "Babalibri",
         year: 1963,
         rating: 4.7,
@@ -38,6 +42,8 @@ const defaultAlbums = [
         id: 3,
         title: "Il Piccolo Bruco Maisazio",
         author: "Eric Carle",
+        translator: "Laura Bongiovanni",
+        illustrator: "Eric Carle",
         publisher: "Mondadori",
         year: 1969,
         rating: 4.9,
@@ -55,6 +61,8 @@ const defaultAlbums = [
         id: 4,
         title: "Gatto con gli Stivali",
         author: "Charles Perrault",
+        translator: "",
+        illustrator: "",
         publisher: "EL",
         year: 1697,
         rating: 4.5,
@@ -72,6 +80,8 @@ const defaultAlbums = [
         id: 5,
         title: "Alice nel Paese delle Meraviglie",
         author: "Lewis Carroll",
+        translator: "Masolino D'Amico",
+        illustrator: "John Tenniel",
         publisher: "Rizzoli",
         year: 1865,
         rating: 4.6,
@@ -89,6 +99,8 @@ const defaultAlbums = [
         id: 6,
         title: "Il Gruffalo",
         author: "Julia Donaldson",
+        translator: "Delia Bencini",
+        illustrator: "Axel Scheffler",
         publisher: "Emme Edizioni",
         year: 1999,
         rating: 4.8,
@@ -272,6 +284,8 @@ function openModal(album) {
         <h2 id="modal-title">${album.title}</h2>
         <p class="author">di ${album.author}</p>
         <div class="album-meta">
+            ${album.translator ? `<p><strong>Traduttore:</strong> ${album.translator}</p>` : ''}
+            ${album.illustrator ? `<p><strong>Illustratore:</strong> ${album.illustrator}</p>` : ''}
             <p><strong>Casa Editrice:</strong> ${album.publisher}</p>
             <p><strong>Anno di Pubblicazione:</strong> ${album.year}</p>
             <div class="rating">
