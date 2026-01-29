@@ -142,12 +142,12 @@ function loadAdminAlbums() {
 function getAlbums() {
     const stored = localStorage.getItem('albums');
     if (stored) {
-        return JSON.parse(stored);
-    }
-    // If no stored data, use the default albums from script.js
-    if (typeof albums !== 'undefined') {
-        localStorage.setItem('albums', JSON.stringify(albums));
-        return albums;
+        try {
+            return JSON.parse(stored);
+        } catch (e) {
+            console.error('❌ Errore parsing localStorage:', e);
+            return [];
+        }
     }
     return [];
 }
