@@ -140,7 +140,7 @@ function createAlbumCards(albumsToDisplay = albums) {
         
         card.innerHTML = `
             <div class="album-cover">
-                <img src="${album.coverImage}" alt="Copertina di ${album.title}" onerror="this.style.display='none'">
+                <img src="${album.coverImage}" alt="Copertina di ${album.title}" onerror="this.parentElement.innerHTML='<div class=\\'cover-placeholder\\'><p>${album.title}</p></div>'">
             </div>
             <div class="album-info">
                 <h3>${album.title}</h3>
@@ -226,7 +226,7 @@ function generateStars(rating) {
         starsHTML += '⭐';
     }
     if (hasHalfStar) {
-        starsHTML += '½⭐';
+        starsHTML += '½';
     }
     
     return starsHTML;
@@ -251,7 +251,7 @@ function openModal(album) {
     
     modalBody.innerHTML = `
         <div class="modal-album-cover">
-            <img src="${album.coverImage}" alt="Copertina di ${album.title}" onerror="this.style.display='none'">
+            <img src="${album.coverImage}" alt="Copertina di ${album.title}" onerror="this.parentElement.innerHTML='<div class=\\'cover-placeholder\\'><p>${album.title}</p></div>'">
         </div>
         <h2 id="modal-title">${album.title}</h2>
         <p class="author">di ${album.author}</p>
@@ -282,15 +282,30 @@ function closeModal() {
 
 // Funzione per mostrare il disclaimer sui referral link
 function showReferralDisclaimer() {
-    const disclaimerShown = localStorage.getItem('referralDisclaimerShown');
-    
-    if (!disclaimerShown) {
+    try {
+        const disclaimerShown = localStorage.getItem('referralDisclaimerShown');
+        
+        if (!disclaimerShown) {
+            const disclaimer = document.getElementById('referral-disclaimer');
+            if (disclaimer) {
+                setTimeout(() => {
+                    disclaimer.style.display = 'block';
+                    try {
+                        localStorage.setItem('referralDisclaimerShown', 'true');
+                    } catch (e) {
+                        // Silently fail if localStorage is not available
+                        console.log('localStorage not available');
+                    }
+                }, 2000); // Mostra dopo 2 secondi
+            }
+        }
+    } catch (e) {
+        // If localStorage is not available, just show the disclaimer
         const disclaimer = document.getElementById('referral-disclaimer');
         if (disclaimer) {
             setTimeout(() => {
                 disclaimer.style.display = 'block';
-                localStorage.setItem('referralDisclaimerShown', 'true');
-            }, 2000); // Mostra dopo 2 secondi
+            }, 2000);
         }
     }
 }
@@ -348,6 +363,16 @@ document.addEventListener('DOMContentLoaded', () => {
     // Gestione chiusura modal
     const closeBtn = document.querySelector('.close');
     closeBtn.onclick = closeModal;
+    
+    // Gestione chiusura disclaimer
+    const disclaimerClose = document.querySelector('.disclaimer-close');
+    const disclaimerButton = document.querySelector('.disclaimer-button');
+    if (disclaimerClose) {
+        disclaimerClose.onclick = closeDisclaimer;
+    }
+    if (disclaimerButton) {
+        disclaimerButton.onclick = closeDisclaimer;
+    }
     
     // Chiudi modal cliccando fuori dal contenuto
     window.onclick = (event) => {

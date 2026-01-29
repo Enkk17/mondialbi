@@ -105,7 +105,7 @@ const albums = [
         publisher: "Casa Editrice",
         year: 2023,
         rating: 4.5,
-        coverImage: "URL_dell_immagine_copertina",
+        coverImage: "URL_della_immagine_copertina",
         tags: ["tag1", "tag2", "tag3"],
         description: "Breve descrizione",
         fullDescription: "Descrizione completa",
