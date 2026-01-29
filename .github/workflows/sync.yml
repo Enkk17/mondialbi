@@ -48,4 +48,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data.json
           git diff --staged --quiet || git commit -m "Update data.json from Airtable [skip ci]"
+          git pull --rebase origin main
           git push
