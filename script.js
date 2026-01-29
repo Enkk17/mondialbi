@@ -123,22 +123,22 @@ function searchAlbums(query) {
     
     const filtered = albums.filter(album => {
         // Cerca nel titolo
-        if (album.title.toLowerCase().includes(searchTerm)) {
+        if (album.title && album.title.toLowerCase().includes(searchTerm)) {
             return true;
         }
         
         // Cerca nell'autore
-        if (album.author.toLowerCase().includes(searchTerm)) {
+        if (album.author && album.author.toLowerCase().includes(searchTerm)) {
             return true;
         }
         
         // Cerca nella casa editrice
-        if (album.publisher.toLowerCase().includes(searchTerm)) {
+        if (album.publisher && album.publisher.toLowerCase().includes(searchTerm)) {
             return true;
         }
         
         // Cerca nei tag
-        if (album.tags.some(tag => tag.toLowerCase().includes(searchTerm))) {
+        if (album.tags && Array.isArray(album.tags) && album.tags.some(tag => tag.toLowerCase().includes(searchTerm))) {
             return true;
         }
         
