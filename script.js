@@ -1,9 +1,9 @@
 // Placeholder image for missing covers
 const PLACEHOLDER_IMAGE = 'https://via.placeholder.com/300x400?text=Copertina+Non+Disponibile';
 
-// Get albums from localStorage or return empty array
-function getAlbums() {
-    const stored = localStorage.getItem('albums');
+// Get albi from localStorage or return empty array
+function getAlbi() {
+    const stored = localStorage.getItem('albi');
     if (stored) {
         try {
             return JSON.parse(stored);
@@ -20,33 +20,24 @@ function transformAirtableData(airtableRecords) {
     const transformed = airtableRecords.map((record, index) => {
         const fields = record.fields || {};
         
-        // Extract title - try "Titolo" first, then "Title"
-        const title = fields.Titolo || fields.Title || 'Titolo Sconosciuto';
+        // Extract title - use "Title" field from Airtable
+        const title = fields.Title || 'Titolo Sconosciuto';
         
-        // Extract author - try "Autore" first, then "Author Name"
-        // Handle both string and array formats
-        let author = fields.Autore && fields.Autore.trim() !== '' ? fields.Autore : null;
-        if (!author) {
-            if (Array.isArray(fields['Author Name']) && fields['Author Name'].length > 0) {
-                author = fields['Author Name'][0];
-            } else if (fields['Author Name'] && typeof fields['Author Name'] === 'string' && fields['Author Name'].trim() !== '') {
-                author = fields['Author Name'];
-            } else {
-                author = 'Autore Sconosciuto';
-            }
+        // Extract author - prioritize Author, then Author Name
+        let author = 'Autore Sconosciuto';
+        if (fields.Author && typeof fields.Author === 'string' && fields.Author.trim() !== '') {
+            author = fields.Author.trim();
+        } else if (Array.isArray(fields['Author Name']) && fields['Author Name'].length > 0) {
+            author = fields['Author Name'][0];
+        } else if (fields['Author Name'] && typeof fields['Author Name'] === 'string' && fields['Author Name'].trim() !== '') {
+            author = fields['Author Name'].trim();
         }
         
-        // Extract cover image
-        // Try different field names: Copertina (attachment), CoverImage (attachment), Image Link (URL)
+        // Extract cover image - prioritize Cover Image attachment, fallback to Image Link
         let coverImage = PLACEHOLDER_IMAGE;
-        
-        // Check for attachment arrays first
-        if (fields.Copertina && Array.isArray(fields.Copertina) && fields.Copertina.length > 0 && fields.Copertina[0]) {
-            coverImage = fields.Copertina[0].url || PLACEHOLDER_IMAGE;
-        } else if (fields.CoverImage && Array.isArray(fields.CoverImage) && fields.CoverImage.length > 0 && fields.CoverImage[0]) {
-            coverImage = fields.CoverImage[0].url || PLACEHOLDER_IMAGE;
+        if (fields['Cover Image'] && Array.isArray(fields['Cover Image']) && fields['Cover Image'].length > 0 && fields['Cover Image'][0]) {
+            coverImage = fields['Cover Image'][0].url || PLACEHOLDER_IMAGE;
         } else if (fields['Image Link']) {
-            // Use direct URL if available
             coverImage = fields['Image Link'];
         }
         
@@ -55,38 +46,50 @@ function transformAirtableData(airtableRecords) {
             coverImage = PLACEHOLDER_IMAGE;
         }
         
-        // Extract other fields
-        const translator = fields.Translator || fields.Traduttore || '';
+        // Extract translator - use Translator field
+        const translator = fields.Translator || '';
         
+        // Extract illustrator - prioritize Illustrator field
         let illustrator = '';
-        if (Array.isArray(fields['Illustrator Name']) && fields['Illustrator Name'].length > 0) {
+        if (fields.Illustrator && typeof fields.Illustrator === 'string' && fields.Illustrator.trim() !== '') {
+            illustrator = fields.Illustrator.trim();
+        } else if (Array.isArray(fields['Illustrator Name']) && fields['Illustrator Name'].length > 0) {
             illustrator = fields['Illustrator Name'][0];
-        } else {
-            const illus = fields.Illustrator || fields.Illustratore || '';
-            illustrator = illus.trim ? illus.trim() : illus;
+        } else if (fields['Illustrator Name'] && typeof fields['Illustrator Name'] === 'string') {
+            illustrator = fields['Illustrator Name'].trim();
         }
         
-        let publisher = '';
-        if (Array.isArray(fields['Publisher Name']) && fields['Publisher Name'].length > 0) {
+        // Extract publisher - prioritize Publisher field
+        let publisher = 'Editore Sconosciuto';
+        if (fields.Publisher && typeof fields.Publisher === 'string' && fields.Publisher.trim() !== '') {
+            publisher = fields.Publisher.trim();
+        } else if (Array.isArray(fields['Publisher Name']) && fields['Publisher Name'].length > 0) {
             publisher = fields['Publisher Name'][0];
-        } else {
-            publisher = fields.Publisher || fields.Editore || '';
-        }
-        publisher = publisher && publisher.trim ? publisher.trim() : publisher;
-        if (!publisher) {
-            publisher = 'Editore Sconosciuto';
+        } else if (fields['Publisher Name'] && typeof fields['Publisher Name'] === 'string') {
+            publisher = fields['Publisher Name'].trim();
         }
         
-        const year = fields['Publication Year'] || fields.Year || fields.Anno || null;
+        // Extract year - use Publication Year (note: not "Years" as spec says, but actual field is "Year")
+        const year = fields['Publication Year'] || fields['Publication Years'] || null;
+        
+        // Extract ISBN
+        const isbn = fields.ISBN || '';
+        
+        // Extract Book Age
+        const bookAge = fields['Book Age (Years)'] || fields['Book Age'] || null;
+        
+        // Extract rating
         const rating = fields.Rating || fields.Voto || 0;
-        const description = fields.Synopsis || fields.Description || fields.Descrizione || '';
-        const fullDescription = fields['Full Description'] || fields.Synopsis || fields.Description || '';
+        
+        // Extract synopsis/description
+        const description = fields.Synopsis || '';
+        const fullDescription = fields['Full Description'] || fields.Synopsis || '';
         
         // Extract purchase links
         const purchaseLinks = {
-            amazon: fields['Amazon Link'] || fields.AmazonLink || '',
-            feltrinelli: fields['Feltrinelli Link'] || fields.FeltrinelliLink || '',
-            mondadori: fields['Mondadori Link'] || fields.MondadoriLink || ''
+            amazon: fields['Amazon Link'] || '',
+            feltrinelli: fields['Feltrinelli Link'] || '',
+            mondadori: fields['Mondadori Link'] || ''
         };
         
         // Extract tags - handle both array and string formats
@@ -95,19 +98,20 @@ function transformAirtableData(airtableRecords) {
             if (Array.isArray(fields.Tags)) {
                 tags.push(...fields.Tags);
             } else if (typeof fields.Tags === 'string') {
-                // Handle comma-separated string
                 tags.push(...fields.Tags.split(',').map(tag => tag.trim()).filter(tag => tag.length > 0));
             }
         }
         
         return {
-            id: record.id || `album-${index + 1}`,
+            id: record.id || `albo-${index + 1}`,
             title,
             author,
             translator,
             illustrator,
             publisher,
             year,
+            isbn,
+            bookAge,
             rating,
             coverImage,
             tags,
@@ -117,65 +121,74 @@ function transformAirtableData(airtableRecords) {
         };
     });
     
-    console.log(`✅ Caricati con successo ${transformed.length} record dal file data.json`);
+    console.log(`✅ Caricati con successo ${transformed.length} albi dal file data.json`);
     return transformed;
 }
 
 async function loadDataFromJSON() {
     try {
+        // Add anti-cache parameter with timestamp
         const cacheBuster = new Date().getTime();
         const response = await fetch(`data.json?v=${cacheBuster}`);
+        
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
+        
         const data = await response.json();
         
-        // Se data è vuoto, usa i default
-        if (!data || data.length === 0) {
-            console.warn("⚠️ Il file data.json è vuoto o non contiene record.");
-            return getAlbums();
+        // Verify that data is an array and not empty
+        if (!data || !Array.isArray(data) || data.length === 0) {
+            console.error('❌ ERRORE: Il file data.json è vuoto o non contiene record validi.');
+            console.error('⚠️ Verifica che il file data.json contenga un array di record da Airtable.');
+            return getAlbi();
         }
 
-        const transformedAlbums = transformAirtableData(data);
+        // Transform Airtable data to app format
+        const albiTrasformati = transformAirtableData(data);
         
-        // Sovrascrivi SEMPRE il localStorage con i nuovi dati da Airtable
-        localStorage.setItem('albums', JSON.stringify(transformedAlbums));
+        // IMPORTANTE: Sovrascrivi SEMPRE il localStorage con i nuovi dati da Airtable
+        // Questo previene che vecchi dati di test blocchino la visualizzazione
+        localStorage.setItem('albi', JSON.stringify(albiTrasformati));
+        console.log(`✅ localStorage aggiornato con ${albiTrasformati.length} albi da data.json`);
         
-        return transformedAlbums;
+        return albiTrasformati;
     } catch (error) {
-        console.error('❌ Errore caricamento data.json:', error.message);
-        console.warn('⚠️ Il file data.json non è stato trovato o non può essere letto. Usando dati dal localStorage.');
-        return getAlbums();
+        console.error('❌ ERRORE nel caricamento di data.json:', error.message);
+        console.error('⚠️ Il file data.json non è stato trovato o non può essere letto.');
+        console.error('⚠️ Dettagli errore:', error);
+        console.warn('⚠️ Tentativo di recupero dati dal localStorage...');
+        return getAlbi();
     }
 }
 
 // Global state
-let allAlbums = [];
+let tuttiGliAlbi = [];
 let currentSort = 'random';
 
-// Display albums in the grid
-function displayAlbums(albums) {
+// Display albi in the grid
+function displayAlbi(albi) {
     const container = document.getElementById('albums-container');
     if (!container) return;
     
     container.innerHTML = '';
     
-    if (!albums || albums.length === 0) {
+    if (!albi || albi.length === 0) {
         container.innerHTML = '<p class="no-results">Nessun albo trovato. Prova una ricerca diversa.</p>';
         return;
     }
     
-    albums.forEach(album => {
+    albi.forEach(albo => {
         const card = document.createElement('article');
         card.className = 'album-card';
-        card.setAttribute('data-album-id', album.id);
+        card.setAttribute('data-album-id', albo.id);
         
         // Cover image
         const coverDiv = document.createElement('div');
         coverDiv.className = 'album-cover';
         const img = document.createElement('img');
-        img.src = album.coverImage || PLACEHOLDER_IMAGE;
-        img.alt = `Copertina di ${album.title}`;
+        img.src = albo.coverImage || PLACEHOLDER_IMAGE;
+        img.alt = `Copertina di ${albo.title}`;
         img.loading = 'lazy';
         img.onerror = () => img.src = PLACEHOLDER_IMAGE;
         coverDiv.appendChild(img);
@@ -186,32 +199,32 @@ function displayAlbums(albums) {
         
         const title = document.createElement('h3');
         title.className = 'album-title';
-        title.textContent = album.title;
+        title.textContent = albo.title;
         
         const author = document.createElement('p');
         author.className = 'album-author';
-        author.textContent = album.author;
+        author.textContent = albo.author;
         
         const publisher = document.createElement('p');
         publisher.className = 'album-publisher';
-        publisher.textContent = album.publisher;
+        publisher.textContent = albo.publisher;
         
         infoDiv.appendChild(title);
         infoDiv.appendChild(author);
         infoDiv.appendChild(publisher);
         
-        if (album.year) {
+        if (albo.year) {
             const year = document.createElement('p');
             year.className = 'album-year';
-            year.textContent = album.year;
+            year.textContent = albo.year;
             infoDiv.appendChild(year);
         }
         
         // Tags
-        if (album.tags && album.tags.length > 0) {
+        if (albo.tags && albo.tags.length > 0) {
             const tagsDiv = document.createElement('div');
             tagsDiv.className = 'album-tags';
-            album.tags.forEach(tag => {
+            albo.tags.forEach(tag => {
                 const tagSpan = document.createElement('span');
                 tagSpan.className = 'tag';
                 tagSpan.textContent = tag;
@@ -224,41 +237,41 @@ function displayAlbums(albums) {
         card.appendChild(infoDiv);
         
         // Click handler to open modal
-        card.addEventListener('click', () => openModal(album));
+        card.addEventListener('click', () => openModal(albo));
         card.style.cursor = 'pointer';
         
         container.appendChild(card);
     });
 }
 
-// Filter albums based on search query
-function filterAlbums(searchQuery) {
+// Filter albi based on search query
+function filterAlbi(searchQuery) {
     if (!searchQuery || searchQuery.trim() === '') {
-        return allAlbums;
+        return tuttiGliAlbi;
     }
     
     const query = searchQuery.toLowerCase().trim();
     
-    return allAlbums.filter(album => {
-        const titleMatch = album.title.toLowerCase().includes(query);
-        const authorMatch = album.author.toLowerCase().includes(query);
-        const publisherMatch = album.publisher.toLowerCase().includes(query);
-        const tagsMatch = album.tags && album.tags.some(tag => 
+    return tuttiGliAlbi.filter(albo => {
+        const titleMatch = albo.title.toLowerCase().includes(query);
+        const authorMatch = albo.author.toLowerCase().includes(query);
+        const publisherMatch = albo.publisher.toLowerCase().includes(query);
+        const tagsMatch = albo.tags && albo.tags.some(tag => 
             tag.toLowerCase().includes(query)
         );
-        const illustratorMatch = album.illustrator && 
-            album.illustrator.toLowerCase().includes(query);
-        const translatorMatch = album.translator && 
-            album.translator.toLowerCase().includes(query);
+        const illustratorMatch = albo.illustrator && 
+            albo.illustrator.toLowerCase().includes(query);
+        const translatorMatch = albo.translator && 
+            albo.translator.toLowerCase().includes(query);
         
         return titleMatch || authorMatch || publisherMatch || tagsMatch || 
                illustratorMatch || translatorMatch;
     });
 }
 
-// Sort albums
-function sortAlbums(albums, sortBy) {
-    const sorted = [...albums];
+// Sort albi
+function sortAlbi(albi, sortBy) {
+    const sorted = [...albi];
     
     switch (sortBy) {
         case 'title':
@@ -287,9 +300,9 @@ function handleSearch() {
     const searchInput = document.getElementById('search-input');
     const query = searchInput ? searchInput.value : '';
     
-    const filtered = filterAlbums(query);
-    const sorted = sortAlbums(filtered, currentSort);
-    displayAlbums(sorted);
+    const filtered = filterAlbi(query);
+    const sorted = sortAlbi(filtered, currentSort);
+    displayAlbi(sorted);
 }
 
 // Handle sort change
@@ -298,8 +311,8 @@ function handleSortChange(event) {
     handleSearch(); // Re-apply search with new sort
 }
 
-// Open modal with album details
-function openModal(album) {
+// Open modal with albo details
+function openModal(albo) {
     const modal = document.getElementById('modal');
     const modalBody = document.getElementById('modal-body');
     
@@ -309,63 +322,71 @@ function openModal(album) {
     let content = `
         <div class="modal-album-details">
             <div class="modal-album-cover">
-                <img src="${album.coverImage || PLACEHOLDER_IMAGE}" 
-                     alt="Copertina di ${album.title}"
+                <img src="${albo.coverImage || PLACEHOLDER_IMAGE}" 
+                     alt="Copertina di ${albo.title}"
                      onerror="this.src='${PLACEHOLDER_IMAGE}'">
             </div>
             <div class="modal-album-info">
-                <h2>${album.title}</h2>
-                <p><strong>Autore:</strong> ${album.author}</p>
+                <h2>${albo.title}</h2>
+                <p><strong>Autore:</strong> ${albo.author}</p>
     `;
     
-    if (album.illustrator) {
-        content += `<p><strong>Illustratore:</strong> ${album.illustrator}</p>`;
+    if (albo.illustrator) {
+        content += `<p><strong>Illustratore:</strong> ${albo.illustrator}</p>`;
     }
     
-    if (album.translator) {
-        content += `<p><strong>Traduttore:</strong> ${album.translator}</p>`;
+    if (albo.translator) {
+        content += `<p><strong>Traduttore:</strong> ${albo.translator}</p>`;
     }
     
-    content += `<p><strong>Editore:</strong> ${album.publisher}</p>`;
+    content += `<p><strong>Editore:</strong> ${albo.publisher}</p>`;
     
-    if (album.year) {
-        content += `<p><strong>Anno:</strong> ${album.year}</p>`;
+    if (albo.year) {
+        content += `<p><strong>Anno:</strong> ${albo.year}</p>`;
     }
     
-    if (album.rating && album.rating > 0) {
-        content += `<p><strong>Valutazione:</strong> ${album.rating}/5</p>`;
+    if (albo.isbn) {
+        content += `<p><strong>ISBN:</strong> ${albo.isbn}</p>`;
     }
     
-    if (album.tags && album.tags.length > 0) {
+    if (albo.bookAge) {
+        content += `<p><strong>Età libro:</strong> ${albo.bookAge} anni</p>`;
+    }
+    
+    if (albo.rating && albo.rating > 0) {
+        content += `<p><strong>Valutazione:</strong> ${albo.rating}/5</p>`;
+    }
+    
+    if (albo.tags && albo.tags.length > 0) {
         content += '<div class="modal-tags">';
-        album.tags.forEach(tag => {
+        albo.tags.forEach(tag => {
             content += `<span class="tag">${tag}</span>`;
         });
         content += '</div>';
     }
     
-    if (album.fullDescription || album.description) {
+    if (albo.fullDescription || albo.description) {
         content += `<div class="modal-description">
             <h3>Descrizione</h3>
-            <p>${album.fullDescription || album.description}</p>
+            <p>${albo.fullDescription || albo.description}</p>
         </div>`;
     }
     
     // Purchase links
-    const hasLinks = album.purchaseLinks && 
-        (album.purchaseLinks.amazon || album.purchaseLinks.feltrinelli || album.purchaseLinks.mondadori);
+    const hasLinks = albo.purchaseLinks && 
+        (albo.purchaseLinks.amazon || albo.purchaseLinks.feltrinelli || albo.purchaseLinks.mondadori);
     
     if (hasLinks) {
         content += '<div class="modal-purchase-links"><h3>Dove acquistare</h3><div class="purchase-buttons">';
         
-        if (album.purchaseLinks.amazon) {
-            content += `<a href="${album.purchaseLinks.amazon}" target="_blank" rel="noopener noreferrer" class="purchase-link amazon">Amazon</a>`;
+        if (albo.purchaseLinks.amazon) {
+            content += `<a href="${albo.purchaseLinks.amazon}" target="_blank" rel="noopener noreferrer" class="purchase-link amazon">Amazon</a>`;
         }
-        if (album.purchaseLinks.feltrinelli) {
-            content += `<a href="${album.purchaseLinks.feltrinelli}" target="_blank" rel="noopener noreferrer" class="purchase-link feltrinelli">Feltrinelli</a>`;
+        if (albo.purchaseLinks.feltrinelli) {
+            content += `<a href="${albo.purchaseLinks.feltrinelli}" target="_blank" rel="noopener noreferrer" class="purchase-link feltrinelli">Feltrinelli</a>`;
         }
-        if (album.purchaseLinks.mondadori) {
-            content += `<a href="${album.purchaseLinks.mondadori}" target="_blank" rel="noopener noreferrer" class="purchase-link mondadori">Mondadori</a>`;
+        if (albo.purchaseLinks.mondadori) {
+            content += `<a href="${albo.purchaseLinks.mondadori}" target="_blank" rel="noopener noreferrer" class="purchase-link mondadori">Mondadori</a>`;
         }
         
         content += '</div></div>';
@@ -410,17 +431,17 @@ function closeReferralDisclaimer() {
 // Initialize the page
 async function initializePage() {
     try {
-        // Load albums from JSON
-        allAlbums = await loadDataFromJSON();
+        // Load albi from JSON
+        tuttiGliAlbi = await loadDataFromJSON();
         
-        // Display albums with initial random sort
-        const sorted = sortAlbums(allAlbums, currentSort);
-        displayAlbums(sorted);
+        // Display albi with initial random sort
+        const sorted = sortAlbi(tuttiGliAlbi, currentSort);
+        displayAlbi(sorted);
         
-        console.log(`✅ Pagina inizializzata con ${allAlbums.length} albi`);
+        console.log(`✅ Pagina inizializzata con ${tuttiGliAlbi.length} albi`);
     } catch (error) {
         console.error('❌ Errore inizializzazione pagina:', error);
-        displayAlbums([]);
+        displayAlbi([]);
     }
 }
 
@@ -490,8 +511,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Listen for localStorage changes (from admin panel)
     window.addEventListener('storage', (event) => {
-        if (event.key === 'albums') {
-            console.log('🔄 Albums aggiornati, ricarico...');
+        if (event.key === 'albi') {
+            console.log('🔄 Albi aggiornati, ricarico...');
             initializePage();
         }
     });
