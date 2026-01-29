@@ -59,22 +59,62 @@ function loadAdminAlbums() {
         const card = document.createElement('div');
         card.className = 'admin-album-card';
         
-        card.innerHTML = `
-            <div class="admin-album-cover">
-                <img src="${album.coverImage}" alt="Copertina di ${album.title}" onerror="this.src='https://via.placeholder.com/300x400?text=Copertina+Non+Disponibile'">
-            </div>
-            <div class="admin-album-info">
-                <h3>${album.title}</h3>
-                <p><strong>Autore:</strong> ${album.author}</p>
-                <p><strong>Editore:</strong> ${album.publisher}</p>
-                <p><strong>Anno:</strong> ${album.year}</p>
-                <p><strong>Rating:</strong> ${album.rating}/5</p>
-                <div class="admin-album-actions">
-                    <button class="btn-edit" onclick="editAlbum(${album.id})">✏️ Modifica</button>
-                    <button class="btn-delete" onclick="confirmDeleteAlbum(${album.id})">🗑️ Elimina</button>
-                </div>
-            </div>
-        `;
+        // Create elements safely to prevent XSS
+        const cover = document.createElement('div');
+        cover.className = 'admin-album-cover';
+        const img = document.createElement('img');
+        img.src = album.coverImage;
+        img.alt = `Copertina di ${album.title}`;
+        img.onerror = () => img.src = 'https://via.placeholder.com/300x400?text=Copertina+Non+Disponibile';
+        cover.appendChild(img);
+        
+        const info = document.createElement('div');
+        info.className = 'admin-album-info';
+        
+        const title = document.createElement('h3');
+        title.textContent = album.title;
+        
+        const author = document.createElement('p');
+        author.innerHTML = '<strong>Autore:</strong> ';
+        author.appendChild(document.createTextNode(album.author));
+        
+        const publisher = document.createElement('p');
+        publisher.innerHTML = '<strong>Editore:</strong> ';
+        publisher.appendChild(document.createTextNode(album.publisher));
+        
+        const year = document.createElement('p');
+        year.innerHTML = '<strong>Anno:</strong> ';
+        year.appendChild(document.createTextNode(album.year));
+        
+        const rating = document.createElement('p');
+        rating.innerHTML = '<strong>Rating:</strong> ';
+        rating.appendChild(document.createTextNode(`${album.rating}/5`));
+        
+        const actions = document.createElement('div');
+        actions.className = 'admin-album-actions';
+        
+        const editBtn = document.createElement('button');
+        editBtn.className = 'btn-edit';
+        editBtn.textContent = '✏️ Modifica';
+        editBtn.onclick = () => editAlbum(album.id);
+        
+        const deleteBtn = document.createElement('button');
+        deleteBtn.className = 'btn-delete';
+        deleteBtn.textContent = '🗑️ Elimina';
+        deleteBtn.onclick = () => confirmDeleteAlbum(album.id);
+        
+        actions.appendChild(editBtn);
+        actions.appendChild(deleteBtn);
+        
+        info.appendChild(title);
+        info.appendChild(author);
+        info.appendChild(publisher);
+        info.appendChild(year);
+        info.appendChild(rating);
+        info.appendChild(actions);
+        
+        card.appendChild(cover);
+        card.appendChild(info);
         
         container.appendChild(card);
     });
@@ -97,8 +137,7 @@ function getAlbums() {
 // Save albums to localStorage
 function saveAlbums(albumsData) {
     localStorage.setItem('albums', JSON.stringify(albumsData));
-    // Trigger a custom event to notify the main page
-    window.dispatchEvent(new Event('albumsUpdated'));
+    // Note: storage event will automatically notify other tabs/windows
 }
 
 // Open modal to add new album
@@ -147,6 +186,13 @@ function editAlbum(albumId) {
     modal.style.display = 'block';
 }
 
+// Helper function to sanitize text input
+function sanitizeText(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
 // Save album (add or update)
 function saveAlbum(event) {
     event.preventDefault();
@@ -156,18 +202,18 @@ function saveAlbum(event) {
     
     const albumData = {
         id: albumId ? parseInt(albumId) : getNextAlbumId(currentAlbums),
-        title: document.getElementById('album-title').value.trim(),
-        author: document.getElementById('album-author').value.trim(),
-        publisher: document.getElementById('album-publisher').value.trim(),
+        title: sanitizeText(document.getElementById('album-title').value.trim()),
+        author: sanitizeText(document.getElementById('album-author').value.trim()),
+        publisher: sanitizeText(document.getElementById('album-publisher').value.trim()),
         year: parseInt(document.getElementById('album-year').value),
         rating: parseFloat(document.getElementById('album-rating').value),
         coverImage: document.getElementById('album-cover').value.trim(),
         tags: document.getElementById('album-tags').value
             .split(',')
-            .map(tag => tag.trim())
+            .map(tag => sanitizeText(tag.trim()))
             .filter(tag => tag.length > 0),
-        description: document.getElementById('album-description').value.trim(),
-        fullDescription: document.getElementById('album-full-description').value.trim(),
+        description: sanitizeText(document.getElementById('album-description').value.trim()),
+        fullDescription: sanitizeText(document.getElementById('album-full-description').value.trim()),
         purchaseLinks: {
             amazon: document.getElementById('album-amazon').value.trim(),
             feltrinelli: document.getElementById('album-feltrinelli').value.trim(),

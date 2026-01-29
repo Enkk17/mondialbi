@@ -344,12 +344,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const randomizedAlbums = shuffleArray(albums);
     createAlbumCards(randomizedAlbums);
     
-    // Ascolta gli aggiornamenti dagli admin
-    window.addEventListener('albumsUpdated', () => {
-        albums = getAlbums();
-        const sortSelect = document.getElementById('sort-select');
-        const sortBy = sortSelect ? sortSelect.value : 'random';
-        sortAlbums(sortBy);
+    // Listen for localStorage changes from other tabs/windows (e.g., admin panel)
+    window.addEventListener('storage', (e) => {
+        if (e.key === 'albums') {
+            albums = getAlbums();
+            const sortSelect = document.getElementById('sort-select');
+            const sortBy = sortSelect ? sortSelect.value : 'random';
+            sortAlbums(sortBy);
+        }
     });
     
     // Gestione ordinamento
