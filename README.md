@@ -29,6 +29,7 @@ MondialBi è una galleria online che presenta una collezione curata di albi illu
 - ⚡ Interfaccia veloce e leggera
 - 🖱️ Interazioni intuitive
 - ♿ Accessibile con supporto keyboard e screen reader
+- 🔐 **NUOVO**: Pannello di amministrazione per gestire la collezione
 
 ## Come Utilizzare
 
@@ -70,9 +71,63 @@ Ogni albo include:
 ```
 mondialbi/
 ├── index.html      # Pagina principale HTML
-├── styles.css      # Stili CSS
-├── script.js       # Logica JavaScript
+├── admin.html      # Pagina di amministrazione
+├── styles.css      # Stili CSS principali
+├── admin.css       # Stili CSS per l'area admin
+├── script.js       # Logica JavaScript principale
+├── admin.js        # Logica JavaScript per l'area admin
 └── README.md       # Documentazione
+```
+
+## Area di Amministrazione
+
+### Accesso all'Admin
+
+1. Clicca sul link "🔐 Area Admin" nella homepage
+2. Inserisci la password (default: `admin123`)
+3. Accedi al pannello di amministrazione
+
+### Funzionalità Admin
+
+Il pannello di amministrazione permette di:
+
+#### ➕ Aggiungere Nuovi Albi
+- Clicca su "➕ Aggiungi Nuovo Albo"
+- Compila tutti i campi richiesti:
+  - **Titolo**: Nome dell'albo
+  - **Autore**: Nome dell'autore
+  - **Casa Editrice**: Publisher del libro
+  - **Anno di Pubblicazione**: Anno di prima pubblicazione
+  - **Valutazione**: Rating da 0 a 5 (con decimali)
+  - **URL Copertina**: Link all'immagine della copertina
+  - **Tags**: Categorie tematiche (separate da virgola)
+  - **Descrizione Breve**: Anteprima breve
+  - **Descrizione Completa**: Sinossi dettagliata
+  - **Link di Acquisto**: URLs per Amazon, Feltrinelli, Mondadori
+- Clicca su "Salva" per aggiungere l'albo
+
+#### ✏️ Modificare Albi Esistenti
+- Clicca sul pulsante "✏️ Modifica" su qualsiasi albo
+- Modifica i campi desiderati (tutti i campi sono modificabili)
+- Clicca su "Salva" per salvare le modifiche
+
+#### 🗑️ Eliminare Albi
+- Clicca sul pulsante "🗑️ Elimina" su qualsiasi albo
+- Conferma l'eliminazione nel modal di conferma
+- L'albo verrà rimosso dalla collezione
+
+### Persistenza Dati
+
+Tutti i dati degli albi sono salvati in **localStorage** del browser, quindi le modifiche vengono mantenute anche dopo aver chiuso e riaperto il browser. I dati sono specifici per dominio e browser.
+
+### Sicurezza
+
+⚠️ **Nota**: La password di accesso è memorizzata lato client nel codice JavaScript. In un ambiente di produzione, è fortemente consigliato implementare un sistema di autenticazione lato server.
+
+Per cambiare la password di accesso, modifica la costante `ADMIN_PASSWORD` nel file `admin.js`:
+
+```javascript
+const ADMIN_PASSWORD = 'la_tua_password_sicura';
 ```
 
 ## Tecnologie Utilizzate
