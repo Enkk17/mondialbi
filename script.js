@@ -18,10 +18,10 @@ const albums = [
     },
     {
         id: 3,
-        title: "La Piccola Brucola Mangiona",
+        title: "Il Piccolo Bruco Maisazio",
         author: "Eric Carle",
-        description: "Una brucola molto affamata mangia tutto ciò che trova prima di trasformarsi in una bellissima farfalla.",
-        fullDescription: "Questo albo illustrato iconico segue il viaggio di una piccola brucola che nasce affamata e mangia attraverso una varietà di cibi durante la settimana. Le illustrazioni vivaci e colorate di Eric Carle, create con la sua tecnica del collage, rendono questo libro un capolavoro visivo che insegna ai bambini i giorni della settimana, i numeri e il ciclo di vita delle farfalle.",
+        description: "Un bruco molto affamato mangia tutto ciò che trova prima di trasformarsi in una bellissima farfalla.",
+        fullDescription: "Questo albo illustrato iconico segue il viaggio di un piccolo bruco che nasce affamato e mangia attraverso una varietà di cibi durante la settimana. Le illustrazioni vivaci e colorate di Eric Carle, create con la sua tecnica del collage, rendono questo libro un capolavoro visivo che insegna ai bambini i giorni della settimana, i numeri e il ciclo di vita delle farfalle.",
         icon: "🐛"
     },
     {
@@ -57,7 +57,16 @@ function createAlbumCards() {
     albums.forEach(album => {
         const card = document.createElement('div');
         card.className = 'album-card';
+        card.setAttribute('tabindex', '0');
+        card.setAttribute('role', 'button');
+        card.setAttribute('aria-label', `Visualizza dettagli di ${album.title}`);
         card.onclick = () => openModal(album);
+        card.onkeydown = (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openModal(album);
+            }
+        };
         
         card.innerHTML = `
             <div class="album-cover">${album.icon}</div>
@@ -79,12 +88,17 @@ function openModal(album) {
     
     modalBody.innerHTML = `
         <div class="modal-album-cover">${album.icon}</div>
-        <h2>${album.title}</h2>
+        <h2 id="modal-title">${album.title}</h2>
         <p class="author">di ${album.author}</p>
-        <p>${album.fullDescription}</p>
+        <p id="modal-description">${album.fullDescription}</p>
     `;
     
     modal.style.display = 'block';
+    
+    // Focus on close button for accessibility
+    setTimeout(() => {
+        document.querySelector('.close').focus();
+    }, 100);
 }
 
 // Funzione per chiudere il modal

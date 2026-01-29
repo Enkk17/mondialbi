@@ -76,6 +76,11 @@ header h1 {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+.album-card:focus {
+    outline: 3px solid #667eea;
+    outline-offset: 2px;
+}
+
 .album-cover {
     width: 100%;
     height: 350px;

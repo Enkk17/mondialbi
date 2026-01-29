@@ -46,7 +46,7 @@ mondialbi/
 
 1. Il Piccolo Principe
 2. Nel Paese dei Mostri Selvaggi
-3. La Piccola Brucola Mangiona
+3. Il Piccolo Bruco Maisazio
 4. Gatto con gli Stivali
 5. Alice nel Paese delle Meraviglie
 6. Il Gruffalo
