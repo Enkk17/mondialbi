@@ -1,5 +1,60 @@
 [
   {
+    "id": "rec2ri5lnJtjN7uT6",
+    "createdTime": "2026-01-29T22:23:50.000Z",
+    "fields": {
+      "Book Age (Years)": 2026,
+      "Short Synopsis (AI)": {
+        "state": "error",
+        "errorType": "emptyDependency",
+        "value": null,
+        "isStale": false
+      },
+      "Book Themes (AI)": {
+        "state": "error",
+        "errorType": "emptyDependency",
+        "value": null,
+        "isStale": false
+      }
+    }
+  },
+  {
+    "id": "rec8TaBkj6dCjc3NP",
+    "createdTime": "2026-01-29T22:24:28.000Z",
+    "fields": {
+      "Title": "La piccola fiammiferaia",
+      "ISBN": "9788817198066",
+      "Author": [
+        "recNNOMLqFOp9lPsT"
+      ],
+      "Translator": "Francesca Mazzurana",
+      "Publication Year": 2026,
+      "Publisher": [
+        "rec3dMGyzkcvXBiWn"
+      ],
+      "Synopsis": "È Capodanno, e nel freddo e nel buio cammina una bambina senza scarpe, stringendo tra le mani un mazzetto di fiammiferi. Per riscaldarsi li accende uno a uno e, ogni volta che quelli si infiammano, ecco che davanti a lei prendono forma immagini di felicità: una stufa, una tavola apparecchiata a festa, un albero di Natale illuminato... fino a che, con l'ultimo zolfanello, non appare la nonna scomparsa che, prendendola per mano, la porta insieme a lei su nel cielo",
+      "Image Link": "https://www.lafeltrinelli.it/images/9788817198066_0_0_424_0_75.jpg",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/piccola-fiammiferaia-libro-benjamin-lacombe/e/9788817198066",
+      "Book Age (Years)": 0,
+      "Author Name": [
+        "Benjamin Lacombe"
+      ],
+      "Publisher Name": [
+        "Rizzoli"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
+    }
+  },
+  {
     "id": "recCsJsJ8aaNSwwBo",
     "createdTime": "2026-01-29T19:13:22.000Z",
     "fields": {
