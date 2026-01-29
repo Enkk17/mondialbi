@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MondialBi - Albi Illustrati</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>MondialBi</h1>
+            <p class="subtitle">La tua collezione di albi illustrati</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-bar">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Cerca per titolo, autore, casa editrice o tag..." 
+                    aria-label="Cerca albi illustrati"
+                >
+                <button id="search-button" aria-label="Cerca">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="sort-section">
+                <label for="sort-select">Ordina per:</label>
+                <select id="sort-select" aria-label="Ordina albi">
+                    <option value="random">Casuale</option>
+                    <option value="title">Titolo (A-Z)</option>
+                    <option value="author">Autore (A-Z)</option>
+                    <option value="year">Anno di Pubblicazione</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="intro">
+            <h2>Benvenuto nella nostra galleria</h2>
+            <p>Esplora la nostra collezione di bellissimi albi illustrati per bambini e adulti.</p>
+        </section>
+
+        <section class="albums-grid" id="albums-container">
+            <!-- Gli albi verranno caricati dinamicamente tramite JavaScript -->
+        </section>
+
+        <div id="modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+            <div class="modal-content">
+                <span class="close" aria-label="Chiudi finestra">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+
+        <div id="referral-disclaimer" class="referral-disclaimer">
+            <div class="disclaimer-content">
+                <span class="disclaimer-close" aria-label="Chiudi avviso">&times;</span>
+                <h3>ℹ️ Informativa</h3>
+                <p>Questo sito contiene link affiliati. Acquistando tramite questi link, potremmo ricevere una piccola commissione senza costi aggiuntivi per te.</p>
+                <button class="disclaimer-button">Ho capito</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MondialBi - Tutti i diritti riservati</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
