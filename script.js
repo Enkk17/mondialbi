@@ -131,6 +131,8 @@ function shuffleArray(array) {
 // Funzione per creare le card degli albi
 function createAlbumCards(albumsToDisplay = albums) {
     const container = document.getElementById('albums-container');
+    if (!container) return; // Se non siamo sulla pagina principale, esci
+    
     container.innerHTML = ''; // Pulisci il contenitore
     
     if (albumsToDisplay.length === 0) {
@@ -362,30 +364,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search-input');
     const searchButton = document.getElementById('search-button');
     
-    // Ricerca quando si clicca il bottone
-    searchButton.addEventListener('click', () => {
-        searchAlbums(searchInput.value);
-    });
-    
-    // Ricerca quando si preme Invio
-    searchInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
+    if (searchInput && searchButton) {
+        // Ricerca quando si clicca il bottone
+        searchButton.addEventListener('click', () => {
             searchAlbums(searchInput.value);
-        }
-    });
-    
-    // Ricerca in tempo reale mentre si digita (con debounce)
-    let searchTimeout;
-    searchInput.addEventListener('input', () => {
-        clearTimeout(searchTimeout);
-        searchTimeout = setTimeout(() => {
-            searchAlbums(searchInput.value);
-        }, 300);
-    });
+        });
+        
+        // Ricerca quando si preme Invio
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                searchAlbums(searchInput.value);
+            }
+        });
+        
+        // Ricerca in tempo reale mentre si digita (con debounce)
+        let searchTimeout;
+        searchInput.addEventListener('input', () => {
+            clearTimeout(searchTimeout);
+            searchTimeout = setTimeout(() => {
+                searchAlbums(searchInput.value);
+            }, 300);
+        });
+    }
     
     // Gestione chiusura modal
     const closeBtn = document.querySelector('.close');
-    closeBtn.onclick = closeModal;
+    if (closeBtn) {
+        closeBtn.onclick = closeModal;
+    }
     
     // Gestione chiusura disclaimer
     const disclaimerClose = document.querySelector('.disclaimer-close');
