@@ -33,16 +33,16 @@ function transformAirtableData(airtableRecords) {
             author = fields['Author Name'].trim();
         }
         
-        // Extract cover image - prioritize Cover Image attachment, fallback to Image Link
+        // Extract cover image - prioritize Cover Image attachment, fallback to Image link
         let coverImage = PLACEHOLDER_IMAGE;
         if (fields['Cover Image'] && Array.isArray(fields['Cover Image']) && fields['Cover Image'].length > 0 && fields['Cover Image'][0]) {
             coverImage = fields['Cover Image'][0].url || PLACEHOLDER_IMAGE;
-        } else if (fields['Image Link']) {
-            coverImage = fields['Image Link'];
+        } else if (fields['Image link']) {
+            coverImage = fields['Image link'];
         }
         
         // Validate image URL
-        if (!coverImage || typeof coverImage !== 'string' || coverImage.trim() === '') {
+        if (!coverImage || typeof coverImage !== 'string' || coverImage.trim() === '' || coverImage.trim() === 'Image link') {
             coverImage = PLACEHOLDER_IMAGE;
         }
         
