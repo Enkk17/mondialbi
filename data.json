@@ -1,746 +1,7 @@
 [
   {
-    "id": "rec02O9eNnIjYIRy3",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Otta",
-      "ISBN": 9788883626289,
-      "Author": "Juliette Lagrange",
-      "Illustrator": "Juliette Lagrange",
-      "Publication Year": 2024,
-      "Publisher": "Babalibri",
-      "Synopsis": "Una lontra alla scoperta del mondo.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883626289",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883626289",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883626289"
-    }
-  },
-  {
-    "id": "rec0HRqzHMPkDxLID",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Gita sulla Luna",
-      "ISBN": 9788883624834,
-      "Author": "John Hare",
-      "Illustrator": "John Hare",
-      "Publication Year": 2020,
-      "Publisher": "Babalibri",
-      "Synopsis": "Un bambino si perde durante una gita scolastica sulla luna.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883624834",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883624834",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883624834"
-    }
-  },
-  {
-    "id": "rec1F9JjnLp1xf32X",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Forme in gioco",
-      "ISBN": 9788898523030,
-      "Author": "Silvia Borando",
-      "Illustrator": "Silvia Borando",
-      "Publication Year": 2014,
-      "Publisher": "Minibombo",
-      "Synopsis": "Triangoli, quadrati e cerchi giocano insieme.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788898523030",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788898523030",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788898523030"
-    }
-  },
-  {
-    "id": "rec1TMjJPTibMToVM",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il Gruffalò",
-      "ISBN": 9788847704251,
-      "Author": "Julia Donaldson",
-      "Illustrator": "Axel Scheffler",
-      "Translator": "Laura Pelaschiar",
-      "Publication Year": 1999,
-      "Publisher": "Emme Edizioni",
-      "Synopsis": "Un topolino furbo inventa un mostro terribile.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788847704251",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788847704251",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788847704251"
-    }
-  },
-  {
-    "id": "rec29tJSvZunnq6dJ",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Guizzino",
-      "ISBN": 9788883620430,
-      "Author": "Leo Lionni",
-      "Illustrator": "Leo Lionni",
-      "Publication Year": 1999,
-      "Publisher": "Babalibri",
-      "Synopsis": "Un pesciolino insegna agli altri a unirsi per difendersi.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883620430",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620430",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620430"
-    }
-  },
-  {
-    "id": "rec2Vhxt5iPb4phjG",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Un libro",
-      "ISBN": 9788857002590,
-      "Author": "Hervé Tullet",
-      "Illustrator": "Hervé Tullet",
-      "Publication Year": 2010,
-      "Publisher": "Franco Cosimo Panini",
-      "Synopsis": "Un libro interattivo dove i colori si muovono e si moltiplicano.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788857002590",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788857002590",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788857002590"
-    }
-  },
-  {
-    "id": "rec4CfyJQbJT9kVjU",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Olivia",
-      "ISBN": 9788833481234,
-      "Author": "Ian Falconer",
-      "Illustrator": "Ian Falconer",
-      "Publication Year": 2001,
-      "Publisher": "Gianni Tutto",
-      "Synopsis": "Le avventure di una maialina molto determinata.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788833481234",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788833481234",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788833481234"
-    }
-  },
-  {
-    "id": "rec4FvUNIFI0DTmKj",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Pezzettino",
-      "ISBN": 9788883620478,
-      "Author": "Leo Lionni",
-      "Illustrator": "Leo Lionni",
-      "Publication Year": 2006,
-      "Publisher": "Babalibri",
-      "Synopsis": "Pezzettino è così piccolo che è convinto di essere un pezzetto di qualcun altro.",
-      "Image link": "https://www.babalibri.it/wp-content/uploads/2021/01/pezzettino.jpg",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883620478",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620478",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620478"
-    }
-  },
-  {
-    "id": "rec4Ti8env912M4r5",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Un leone a Parigi",
-      "ISBN": 9788874526369,
-      "Author": "Beatrice Alemagna",
-      "Illustrator": "Beatrice Alemagna",
-      "Publication Year": 2016,
-      "Publisher": "Donzelli",
-      "Synopsis": "Un leone annoiato della savana visita Parigi.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788874526369",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788874526369",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788874526369"
-    }
-  },
-  {
-    "id": "rec4vvrTv3CmNcnWr",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "La passeggiata di un distratto",
-      "ISBN": 9788821601361,
-      "Author": "Gianni Rodari",
-      "Illustrator": "Beatrice Alemagna",
-      "Publication Year": 2005,
-      "Publisher": "Einaudi Ragazzi",
-      "Synopsis": "Un bambino perde i pezzi per strada mentre cammina.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788821601361",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788821601361",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788821601361"
-    }
-  },
-  {
-    "id": "rec5UVCTE5VnKbB7E",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "A sbagliare le storie",
-      "ISBN": 9788867142439,
-      "Author": "Gianni Rodari",
-      "Illustrator": "Alessandro Sanna",
-      "Publication Year": 2014,
-      "Publisher": "Emme Edizioni",
-      "Synopsis": "Un nonno racconta Cappuccetto Rosso ma sbaglia tutto.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788867142439",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867142439",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867142439"
-    }
-  },
-  {
-    "id": "rec6HNwnHCPDX44ey",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Sono io il più bello",
-      "ISBN": 9788883622083,
-      "Author": "Mario Ramos",
-      "Illustrator": "Mario Ramos",
-      "Publication Year": 2010,
-      "Publisher": "Babalibri",
-      "Synopsis": "Il lupo chiede a tutti chi è il più bello della foresta.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883622083",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883622083",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883622083"
-    }
-  },
-  {
-    "id": "recC6oX1JvqBttuTr",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Buon viaggio, piccolino!",
-      "ISBN": 9788898523047,
-      "Author": "Beatrice Alemagna",
-      "Illustrator": "Beatrice Alemagna",
-      "Publication Year": 2013,
-      "Publisher": "Topipittori",
-      "Synopsis": "I preparativi di un bambino prima di dormire.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788898523047",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788898523047",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788898523047"
-    }
-  },
-  {
-    "id": "recCM5XVR6KLMerhC",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "L'omino e Dio",
-      "ISBN": 9788889210710,
-      "Author": "Kitty Crowther",
-      "Illustrator": "Kitty Crowther",
-      "Publication Year": 2011,
-      "Publisher": "Topipittori",
-      "Synopsis": "Un incontro filosofico tra un uomo e Dio.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788889210710",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210710",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210710"
-    }
-  },
-  {
-    "id": "recCNyRcyn2FiV9Gq",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Tararì tararera",
-      "ISBN": 9788879267922,
-      "Author": "Emanuela Bussolati",
-      "Illustrator": "Emanuela Bussolati",
-      "Publication Year": 2009,
-      "Publisher": "Lapis",
-      "Synopsis": "Una storia scritta in lingua Piripù.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788879267922",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788879267922",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788879267922"
-    }
-  },
-  {
-    "id": "recCcqu01vBSD4OoZ",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il maglione di Natale",
-      "ISBN": 9788861895607,
-      "Author": "Beatrice Alemagna",
-      "Illustrator": "Beatrice Alemagna",
-      "Publication Year": 2020,
-      "Publisher": "Topipittori",
-      "Synopsis": "Un maglione brutto diventa un tesoro.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861895607",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861895607",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861895607"
-    }
-  },
-  {
-    "id": "recCl2fx3iDbwEFje",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il lupo che cercava l'amore",
-      "ISBN": 9788865320891,
-      "Author": "Orianne Lallemand",
-      "Illustrator": "Éléonore Thuillier",
-      "Publication Year": 2014,
-      "Publisher": "Gribaudo",
-      "Synopsis": "Lupo cerca la sua lupa speciale.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788865320891",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788865320891",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788865320891"
-    }
-  },
-  {
-    "id": "recD0OhVXNOtAiRud",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Che cos'è un bambino?",
-      "ISBN": 9788889210253,
-      "Author": "Beatrice Alemagna",
-      "Illustrator": "Beatrice Alemagna",
-      "Publication Year": 2008,
-      "Publisher": "Topipittori",
-      "Synopsis": "Una riflessione poetica sulla natura dell'infanzia.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788889210253",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210253",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210253"
-    }
-  },
-  {
-    "id": "recDFwl8PLE8mWnQk",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Zoo",
-      "ISBN": 9788887942620,
-      "Author": "Bruno Munari",
-      "Illustrator": "Bruno Munari",
-      "Publication Year": 2002,
-      "Publisher": "Corraini",
-      "Synopsis": "Un viaggio visivo tra gli animali dello zoo.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788887942620",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942620",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942620"
-    }
-  },
-  {
-    "id": "recEMd1S6encADjlG",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Zeb e la scorta di baci",
-      "ISBN": 9788883621642,
-      "Author": "Michel Gay",
-      "Illustrator": "Michel Gay",
-      "Publication Year": 2008,
-      "Publisher": "Babalibri",
-      "Synopsis": "Una zebra va in campeggio con una scatola piena di baci cartacei.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883621642",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883621642",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883621642"
-    }
-  },
-  {
-    "id": "recEyenlExN8zXYmO",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "La grande fabbrica delle parole",
-      "ISBN": 9788861892798,
-      "Author": "Agnès de Lestrade",
-      "Illustrator": "Valeria Docampo",
-      "Publication Year": 2011,
-      "Publisher": "Terre di Mezzo",
-      "Synopsis": "In un paese dove le parole si comprano, un bambino ne ha poche.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861892798",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861892798",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861892798"
-    }
-  },
-  {
-    "id": "recFoWg7pJ9PlyZYW",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Facce",
-      "ISBN": 9788889210987,
-      "Author": "Antonella Abbatiello",
-      "Illustrator": "Antonella Abbatiello",
-      "Publication Year": 2013,
-      "Publisher": "Topipittori",
-      "Synopsis": "Un libro sulle mille espressioni del volto umano.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788889210987",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210987",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210987"
-    }
-  },
-  {
-    "id": "recI8Q3hX4hLsIm61",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Non è una scatola",
-      "ISBN": 9788862330107,
-      "Author": "Antoinette Portis",
-      "Illustrator": "Antoinette Portis",
-      "Publication Year": 2008,
-      "Publisher": "Kalandraka",
-      "Synopsis": "Un coniglietto usa l'immaginazione con una scatola.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788862330107",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788862330107",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788862330107"
-    }
-  },
-  {
-    "id": "recIPZP4UlVmkKE2O",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Grande!",
-      "ISBN": 9788833701721,
-      "Author": "Aurore Petit",
-      "Illustrator": "Aurore Petit",
-      "Publication Year": 2025,
-      "Publisher": "Topipittori",
-      "Synopsis": "Cosa vuol dire diventare grandi?",
-      "Amazon Link": "https://www.amazon.it/s?k=9788833701721",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788833701721",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788833701721"
-    }
-  },
-  {
-    "id": "recIyvQRQO4Dk4hIh",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "La valle dei mulini",
-      "ISBN": 9788861892804,
-      "Author": "Noelia Blanco",
-      "Illustrator": "Valeria Docampo",
-      "Publication Year": 2011,
-      "Publisher": "Terre di Mezzo",
-      "Synopsis": "Un inno alla libertà e alle possibilità della vita.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861891111",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861891111",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861891111"
-    }
-  },
-  {
-    "id": "recJU2eLDIDBlE2Rc",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Cappuccetto Bianco",
-      "ISBN": 9788875700195,
-      "Author": "Bruno Munari",
-      "Illustrator": "Bruno Munari",
-      "Publication Year": 2004,
-      "Publisher": "Corraini",
-      "Synopsis": "Una fiaba nella neve dove tutto è bianco.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788875700195",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875700195",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875700195"
-    }
-  },
-  {
-    "id": "recLZ1Gpg8Hvci694",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il venditore di animali",
-      "ISBN": 9788887942644,
-      "Author": "Bruno Munari",
-      "Illustrator": "Bruno Munari",
-      "Publication Year": 2004,
-      "Publisher": "Corraini",
-      "Synopsis": "Un catalogo surreale di animali fantastici.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788887942644",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942644",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942644"
-    }
-  },
-  {
-    "id": "recLfQ2SShgE5mmPj",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Mappa delle nuvole",
-      "ISBN": 9788861895102,
-      "Author": "Alex Nogués",
-      "Illustrator": "Mónica Bedmar",
-      "Publication Year": 2019,
-      "Publisher": "Terre di Mezzo",
-      "Synopsis": "Un libro poetico per imparare a osservare le nuvole.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861895102",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861895102",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861895102"
-    }
-  },
-  {
-    "id": "recM8HhEDooOEyWH7",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "La casa di Topo Pitù",
-      "ISBN": 9788889210994,
-      "Author": "Roberto Piumini",
-      "Illustrator": "Carll Cneut",
-      "Publication Year": 2013,
-      "Publisher": "Topipittori",
-      "Synopsis": "Le avventure di un topo in cerca di casa.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788889210994",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210994",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210994"
-    }
-  },
-  {
-    "id": "recNdzabXriOHTbBr",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Dov'è la mia mamma?",
-      "ISBN": 9788847705548,
-      "Author": "Julia Donaldson",
-      "Illustrator": "Axel Scheffler",
-      "Publication Year": 2000,
-      "Publisher": "Emme Edizioni",
-      "Synopsis": "Una scimmietta ha perso la mamma e una farfalla la aiuta.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788847705548",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788847705548",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788847705548"
-    }
-  },
-  {
-    "id": "recPekZz3MbWRp5Wm",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il castello di carte",
-      "ISBN": 9788875703431,
-      "Author": "Gianni Rodari",
-      "Illustrator": "Emanuele Luzzati",
-      "Publication Year": 2012,
-      "Publisher": "Corraini",
-      "Synopsis": "Le rime di Rodari accompagnate dai disegni di Luzzati.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788875703431",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875703431",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875703431"
-    }
-  },
-  {
-    "id": "recQN0jqyL90Bgi0I",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Pezzettino",
-      "ISBN": 9788883620478,
-      "Author": "Leo Lionni",
-      "Illustrator": "Leo Lionni",
-      "Publication Year": 2006,
-      "Publisher": "Babalibri",
-      "Synopsis": "Pezzettino è così piccolo che è convinto di essere un pezzetto di qualcun altro.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883620478",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620478",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620478"
-    }
-  },
-  {
-    "id": "recQwuBmANTgiTbvy",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Storie della buonanotte per bambine ribelli",
-      "ISBN": 9788804673309,
-      "Author": "Elena Favilli",
-      "Illustrator": "Francesca Cavallo",
-      "Publication Year": 2017,
-      "Publisher": "Mondadori",
-      "Synopsis": "Ritratti di donne straordinarie che hanno cambiato il mondo.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788804673309",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788804673309",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788804673309"
-    }
-  },
-  {
-    "id": "recRMt1BKjUmPlsnt",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Aiuto, arriva il lupo!",
-      "ISBN": 9788883623196,
-      "Author": "Cédric Ramadier",
-      "Illustrator": "Vincent Bourgeau",
-      "Publication Year": 2014,
-      "Publisher": "Babalibri",
-      "Synopsis": "Un libro interattivo per scacciare il lupo.",
-      "Image link": "https://www.babalibri.it/wp-content/uploads/2021/01/aiuto-arriva-il-lupo.jpg",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883623196",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883623196",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883623196"
-    }
-  },
-  {
-    "id": "recSM6RxAx57WMrbg",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Sulla luna",
-      "ISBN": 9788832070422,
-      "Author": "Fabian Negrin",
-      "Illustrator": "Fabian Negrin",
-      "Publication Year": 2020,
-      "Publisher": "Orecchio Acerbo",
-      "Synopsis": "Un viaggio onirico verso la luna.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788832070422",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788832070422",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788832070422"
-    }
-  },
-  {
-    "id": "recSWBrnujUBQOwV4",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Un colore tutto mio",
-      "ISBN": 9788883621529,
-      "Author": "Leo Lionni",
-      "Illustrator": "Leo Lionni",
-      "Publication Year": 2007,
-      "Publisher": "Babalibri",
-      "Synopsis": "Un camaleonte cerca un colore fisso per non cambiare sempre.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883621529",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883621529",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883621529"
-    }
-  },
-  {
-    "id": "recUWacVyLyIFo1yE",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Piccolo blu e piccolo giallo",
-      "ISBN": 9788883620461,
-      "Author": "Leo Lionni",
-      "Illustrator": "Leo Lionni",
-      "Publication Year": 1999,
-      "Publisher": "Babalibri",
-      "Synopsis": "Due colori amici si abbracciano e diventano verdi.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883620461",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620461",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620461"
-    }
-  },
-  {
-    "id": "recV7MNbmnM7x5Bi8",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il filo di Alexander Calder",
-      "ISBN": 9788854410503,
-      "Author": "Sieb Posthuma",
-      "Illustrator": "Sieb Posthuma",
-      "Publication Year": 2016,
-      "Publisher": "White Star",
-      "Synopsis": "La vita dell'artista Alexander Calder spiegata ai bambini.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788854410503",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788854410503",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788854410503"
-    }
-  },
-  {
-    "id": "recVZ1dalTeuAVCwm",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il compleanno di Baldo",
-      "ISBN": 9788883627491,
-      "Author": "Anne Brouillard",
-      "Illustrator": "Anne Brouillard",
-      "Publication Year": 2025,
-      "Publisher": "Babalibri",
-      "Synopsis": "Baldo festeggia il suo compleanno.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883627491",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883627491",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883627491"
-    }
-  },
-  {
-    "id": "recWRAd26eZuMu1gy",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Bastoncino",
-      "ISBN": 9788847734180,
-      "Author": "Julia Donaldson",
-      "Illustrator": "Axel Scheffler",
-      "Publication Year": 2016,
-      "Publisher": "Emme Edizioni",
-      "Synopsis": "La peripezia di un bastoncino che vuole tornare a casa.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788847734180",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788847734180",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788847734180"
-    }
-  },
-  {
-    "id": "recWm4SRAeDMdfEx6",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il piccolo principe (illustrato)",
-      "ISBN": 9788845271168,
-      "Author": "Antoine de Saint-Exupéry",
-      "Illustrator": "Antoine de Saint-Exupéry",
-      "Publication Year": 2014,
-      "Publisher": "Bompiani",
-      "Synopsis": "Il classico senza tempo in edizione illustrata.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788845271168",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788845271168",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788845271168"
-    }
-  },
-  {
-    "id": "recWsxDHuSdF8uEq1",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "La chiocciolina e la balena",
-      "ISBN": 9788847710382,
-      "Author": "Julia Donaldson",
-      "Illustrator": "Axel Scheffler",
-      "Publication Year": 2003,
-      "Publisher": "Emme Edizioni",
-      "Synopsis": "Un viaggio intorno al mondo di un'insolita coppia.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788847710382",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788847710382",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788847710382"
-    }
-  },
-  {
-    "id": "recX2kD6IPTAQkH0n",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Pezzo di scemo",
-      "ISBN": 9788883621451,
-      "Author": "Mario Ramos",
-      "Illustrator": "Mario Ramos",
-      "Publication Year": 2007,
-      "Publisher": "Babalibri",
-      "Synopsis": "Un lupo scopre che la gentilezza premia.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883621451",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883621451",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883621451"
-    }
-  },
-  {
-    "id": "recXzhwDdbx7cLAmn",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Federico",
-      "ISBN": 9788883620454,
-      "Author": "Leo Lionni",
-      "Illustrator": "Leo Lionni",
-      "Publication Year": 1999,
-      "Publisher": "Babalibri",
-      "Synopsis": "Mentre le altre talpe raccolgono cibo, Federico raccoglie colori e parole.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883620454",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620454",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620454"
-    }
-  },
-  {
-    "id": "recYiByG7E3homPUW",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "La nuvola Olga",
-      "ISBN": 9788893930437,
-      "Author": "Nicoletta Costa",
-      "Illustrator": "Nicoletta Costa",
-      "Publication Year": 2019,
-      "Publisher": "Emme Edizioni",
-      "Synopsis": "Le avventure di Olga, la nuvola che fa la pioggia.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788893930437",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788893930437",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788893930437"
-    }
-  },
-  {
-    "id": "recYmC3fLfOuHX22O",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Cappuccetto Giallo",
-      "ISBN": 9788875700218,
-      "Author": "Bruno Munari",
-      "Illustrator": "Bruno Munari",
-      "Publication Year": 2004,
-      "Publisher": "Corraini",
-      "Synopsis": "Una fiaba in città tra il traffico e il giallo.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788875700218",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875700218",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875700218"
-    }
-  },
-  {
-    "id": "recZycFsHUwu4SL6N",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "rec0GSP4g86JosfTo",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "L'uccellino fa",
       "ISBN": 9788883621338,
@@ -755,105 +16,186 @@
     }
   },
   {
-    "id": "recb7VbERNTAM5MkG",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "rec0YuTz4jvodYiTD",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Io vado!",
-      "ISBN": 9788883623349,
-      "Author": "Matthieu Maudet",
-      "Illustrator": "Matthieu Maudet",
-      "Publication Year": 2015,
-      "Publisher": "Babalibri",
-      "Synopsis": "Un piccolo uccellino decide che è ora di andare.",
-      "Image link": "https://www.babalibri.it/wp-content/uploads/2021/01/io-vado.jpg",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883623349",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883623349",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883623349"
+      "Title": "Un leone a Parigi",
+      "ISBN": 9788874526369,
+      "Author": "Beatrice Alemagna",
+      "Illustrator": "Beatrice Alemagna",
+      "Publication Year": 2016,
+      "Publisher": "Donzelli",
+      "Synopsis": "Un leone annoiato della savana visita Parigi.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788874526369",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788874526369",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788874526369"
     }
   },
   {
-    "id": "recbHMiPWqp15l2oT",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "rec0h0fNm9EmdeGRi",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Zog",
-      "ISBN": 9788893931083,
-      "Author": "Julia Donaldson",
-      "Illustrator": "Axel Scheffler",
-      "Publication Year": 2010,
-      "Publisher": "Emme Edizioni",
-      "Synopsis": "Zog è il drago più volenteroso della scuola.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788893931083",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788893931083",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788893931083"
-    }
-  },
-  {
-    "id": "recd8lf6gHJnu0SMF",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il lupo che voleva fare il giro del mondo",
-      "ISBN": 9788865320747,
-      "Author": "Orianne Lallemand",
-      "Illustrator": "Éléonore Thuillier",
+      "Title": "Facce",
+      "ISBN": 9788889210987,
+      "Author": "Antonella Abbatiello",
+      "Illustrator": "Antonella Abbatiello",
       "Publication Year": 2013,
-      "Publisher": "Gribaudo",
-      "Synopsis": "Lupo viaggia per il mondo alla scoperta di nuovi paesi.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788865320747",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788865320747",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788865320747"
+      "Publisher": "Topipittori",
+      "Synopsis": "Un libro sulle mille espressioni del volto umano.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788889210987",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210987",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210987"
     }
   },
   {
-    "id": "recdWZs6jnD6xR4MW",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "rec0r3KjqxCkIbcSX",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il gioco delle favole",
-      "ISBN": 9788875704155,
-      "Author": "Enzo Mari",
-      "Illustrator": "Enzo Mari",
-      "Publication Year": 1961,
+      "Title": "Spandau",
+      "ISBN": 9788883624520,
+      "Author": "Mario Ramos",
+      "Illustrator": "Mario Ramos",
+      "Publication Year": 2019,
+      "Publisher": "Babalibri",
+      "Synopsis": "Un lupo che si sente il più forte di tutti.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883624520",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883624520",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883624520"
+    }
+  },
+  {
+    "id": "rec1CFJBtgtuMWCDN",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Chi c'è tra i ritagli?",
+      "ISBN": 9788898177141,
+      "Author": "Silvia Borando",
+      "Illustrator": "Silvia Borando",
+      "Publication Year": 2014,
+      "Publisher": "Minibombo",
+      "Synopsis": "Un gioco di forme e colori tra i ritagli di carta.",
+      "Image link": "https://m.media-amazon.com/images/I/51-uiLvQvJL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/Chi-tra-ritagli-Ediz-illustrata/dp/8898177143",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788898177141",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788898177141"
+    }
+  },
+  {
+    "id": "rec1CV0NCQYSLR3yR",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Forme in gioco",
+      "ISBN": 9788898523030,
+      "Author": "Silvia Borando",
+      "Illustrator": "Silvia Borando",
+      "Publication Year": 2014,
+      "Publisher": "Minibombo",
+      "Synopsis": "Triangoli, quadrati e cerchi giocano insieme.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788898523030",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788898523030",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788898523030"
+    }
+  },
+  {
+    "id": "rec5D0r9pM57xztq1",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Toc Toc",
+      "ISBN": 9788887942637,
+      "Author": "Bruno Munari",
+      "Illustrator": "Bruno Munari",
+      "Publication Year": 2004,
       "Publisher": "Corraini",
-      "Synopsis": "Un libro-gioco composto da tavole che si incastrano.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788875704155",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875704155",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875704155"
+      "Synopsis": "Chi bussa alla porta? Un libro a finestrelle.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788887942637",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942637",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942637"
     }
   },
   {
-    "id": "recdkJ9Bi1vej643R",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "rec5FQfzOrofj4JWr",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Elmer l'elefante variopinto",
-      "ISBN": 9788847728790,
-      "Author": "David McKee",
-      "Illustrator": "David McKee",
-      "Publication Year": 2012,
-      "Publisher": "Mondadori",
-      "Synopsis": "Un elefante a scacchi colorati scopre il valore della diversità.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788847728790",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788847728790",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788847728790"
+      "Title": "Il meraviglioso Cicciapelliccia",
+      "ISBN": 9788833700014,
+      "Author": "Beatrice Alemagna",
+      "Illustrator": "Beatrice Alemagna",
+      "Publication Year": 2015,
+      "Publisher": "Topipittori",
+      "Synopsis": "Edith cerca un regalo speciale per la sua mamma.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788833700014",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788833700014",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788833700014"
     }
   },
   {
-    "id": "rechRiR61NGg98MPE",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "rec6i79lVD7aQEbSL",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il lupo che voleva cambiare colore",
-      "ISBN": 9788865320501,
-      "Author": "Orianne Lallemand",
-      "Illustrator": "Éléonore Thuillier",
-      "Publication Year": 2012,
+      "Title": "Il mostro dei colori",
+      "ISBN": 9788858017395,
+      "Author": "Anna Llenas",
+      "Illustrator": "Anna Llenas",
+      "Publication Year": 2017,
       "Publisher": "Gribaudo",
-      "Synopsis": "Un lupo prova a colorarsi per non essere più nero.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788865320501",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788865320501",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788865320501"
+      "Synopsis": "Un mostro che ha confuso tutte le sue emozioni.",
+      "Image link": "https://m.media-amazon.com/images/I/51KvPUIpY9L._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/colori-delle-emozioni-Ediz/dp/8858017390",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788858017395",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788858017395"
     }
   },
   {
-    "id": "recigTiv0VqFZNKDd",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "rec8F0kKzfvMs6h5T",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il venditore di animali",
+      "ISBN": 9788887942644,
+      "Author": "Bruno Munari",
+      "Illustrator": "Bruno Munari",
+      "Publication Year": 2004,
+      "Publisher": "Corraini",
+      "Synopsis": "Un catalogo surreale di animali fantastici.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788887942644",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942644",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942644"
+    }
+  },
+  {
+    "id": "rec8NZVwgbu8rCyhw",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il favoloso club del libro del bus 65",
+      "ISBN": 9788883626708,
+      "Author": "Céline Person",
+      "Illustrator": "Sanoe",
+      "Publication Year": 2025,
+      "Publisher": "Babalibri",
+      "Synopsis": "La magia della lettura su un autobus.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883626708",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883626708",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883626708"
+    }
+  },
+  {
+    "id": "rec8YXh0GLIUMPoNm",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "A sbagliare le storie",
+      "ISBN": 9788867142439,
+      "Author": "Gianni Rodari",
+      "Illustrator": "Alessandro Sanna",
+      "Publication Year": 2014,
+      "Publisher": "Emme Edizioni",
+      "Synopsis": "Un nonno racconta Cappuccetto Rosso ma sbaglia tutto.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788867142439",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867142439",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867142439"
+    }
+  },
+  {
+    "id": "rec9l9nb7dOBswvF5",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Il giardino di nonno",
       "ISBN": 9788861894457,
@@ -868,24 +210,8 @@
     }
   },
   {
-    "id": "recjSnsj4Nda2zDdv",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Insieme",
-      "ISBN": 9788861892222,
-      "Author": "Luke Adam Hawker",
-      "Illustrator": "Luke Adam Hawker",
-      "Publication Year": 2021,
-      "Publisher": "Terre di Mezzo",
-      "Synopsis": "Una metafora sulla tempesta che abbiamo vissuto.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861892222",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861892222",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861892222"
-    }
-  },
-  {
-    "id": "reckaQxdU746EGRU9",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recAaTFZQHuwLCdAD",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "I cinque malfatti",
       "ISBN": 9788898523214,
@@ -900,8 +226,153 @@
     }
   },
   {
-    "id": "reckw6tOt1unhydei",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recBHiMSKIlY23ksE",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "L'omino e Dio",
+      "ISBN": 9788889210710,
+      "Author": "Kitty Crowther",
+      "Illustrator": "Kitty Crowther",
+      "Publication Year": 2011,
+      "Publisher": "Topipittori",
+      "Synopsis": "Un incontro filosofico tra un uomo e Dio.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788889210710",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210710",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210710"
+    }
+  },
+  {
+    "id": "recBITrXzCH48S0Ld",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "La grande fabbrica delle parole",
+      "ISBN": 9788861892798,
+      "Author": "Agnès de Lestrade",
+      "Illustrator": "Valeria Docampo",
+      "Publication Year": 2011,
+      "Publisher": "Terre di Mezzo",
+      "Synopsis": "In un paese dove le parole si comprano, un bambino ne ha poche.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788861892798",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861892798",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861892798"
+    }
+  },
+  {
+    "id": "recBLA58OXtUX68Fi",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il maglione di Natale",
+      "ISBN": 9788861895607,
+      "Author": "Beatrice Alemagna",
+      "Illustrator": "Beatrice Alemagna",
+      "Publication Year": 2020,
+      "Publisher": "Topipittori",
+      "Synopsis": "Un maglione brutto diventa un tesoro.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788861895607",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861895607",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861895607"
+    }
+  },
+  {
+    "id": "recCmdYkayefWepBJ",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "La nuvola Olga",
+      "ISBN": 9788893930437,
+      "Author": "Nicoletta Costa",
+      "Illustrator": "Nicoletta Costa",
+      "Publication Year": 2019,
+      "Publisher": "Emme Edizioni",
+      "Synopsis": "Le avventure di Olga, la nuvola che fa la pioggia.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788893930437",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788893930437",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788893930437"
+    }
+  },
+  {
+    "id": "recCq8pUiL2SOoloU",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Insieme",
+      "ISBN": 9788861892222,
+      "Author": "Luke Adam Hawker",
+      "Illustrator": "Luke Adam Hawker",
+      "Publication Year": 2021,
+      "Publisher": "Terre di Mezzo",
+      "Synopsis": "Una metafora sulla tempesta che abbiamo vissuto.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788861892222",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861892222",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861892222"
+    }
+  },
+  {
+    "id": "recD2Io2J1wM2FFUD",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il punto",
+      "ISBN": 9788861886476,
+      "Author": "Peter H. Reynolds",
+      "Illustrator": "Peter H. Reynolds",
+      "Publication Year": 2007,
+      "Publisher": "Ape Junior",
+      "Synopsis": "La storia di una bambina che scopre il suo talento artistico partendo da un punto.",
+      "Image link": "https://m.media-amazon.com/images/I/61mjcHgSTsL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/punto-Ediz-illustrata-Peter-Reynolds/dp/8861886477",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861886476",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861886476"
+    }
+  },
+  {
+    "id": "recD5V7tdG4MAMSK3",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Cappuccetto Giallo",
+      "ISBN": 9788875700218,
+      "Author": "Bruno Munari",
+      "Illustrator": "Bruno Munari",
+      "Publication Year": 2004,
+      "Publisher": "Corraini",
+      "Synopsis": "Una fiaba in città tra il traffico e il giallo.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788875700218",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875700218",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875700218"
+    }
+  },
+  {
+    "id": "recEm8ZLqMoLCRmV7",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il compleanno di Baldo",
+      "ISBN": 9788883627491,
+      "Author": "Anne Brouillard",
+      "Illustrator": "Anne Brouillard",
+      "Publication Year": 2025,
+      "Publisher": "Babalibri",
+      "Synopsis": "Baldo festeggia il suo compleanno.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883627491",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883627491",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883627491"
+    }
+  },
+  {
+    "id": "recFsgpM70fIS09op",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Rina pupù",
+      "ISBN": 9788879268394,
+      "Author": "Emanuela Bussolati",
+      "Illustrator": "Emanuela Bussolati",
+      "Publication Year": 2010,
+      "Publisher": "Lapis",
+      "Synopsis": "Un'altra avventura nella giungla Piripù.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788879268394",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788879268394",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788879268394"
+    }
+  },
+  {
+    "id": "recFwfaHHW1Svy0hF",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Vedo non vedo",
       "ISBN": 9788875702564,
@@ -916,8 +387,40 @@
     }
   },
   {
-    "id": "recmUgChxWyl9W4ZS",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recGzHm9cmqrGV771",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "La casa di Topo Pitù",
+      "ISBN": 9788889210994,
+      "Author": "Roberto Piumini",
+      "Illustrator": "Carll Cneut",
+      "Publication Year": 2013,
+      "Publisher": "Topipittori",
+      "Synopsis": "Le avventure di un topo in cerca di casa.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788889210994",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210994",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210994"
+    }
+  },
+  {
+    "id": "recHSZGOtcFJxNaAL",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il venditore di felicità",
+      "ISBN": 9788869186400,
+      "Author": "Davide Calì",
+      "Illustrator": "Marco Somà",
+      "Publication Year": 2018,
+      "Publisher": "Kite Edizioni",
+      "Synopsis": "Un signore vende barattoli pieni di felicità.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788869186400",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788869186400",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788869186400"
+    }
+  },
+  {
+    "id": "recHne2SutDyEnEEY",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Rex",
       "ISBN": 9788899064525,
@@ -933,122 +436,105 @@
     }
   },
   {
-    "id": "recnD0DakwW3q59cH",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recINvenrADhOA9Sw",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il venditore di felicità",
-      "ISBN": 9788869186400,
-      "Author": "Davide Calì",
-      "Illustrator": "Marco Somà",
-      "Publication Year": 2018,
-      "Publisher": "Kite Edizioni",
-      "Synopsis": "Un signore vende barattoli pieni di felicità.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788869186400",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788869186400",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788869186400"
+      "Title": "Il lupo che voleva cambiare colore",
+      "ISBN": 9788865320501,
+      "Author": "Orianne Lallemand",
+      "Illustrator": "Éléonore Thuillier",
+      "Publication Year": 2012,
+      "Publisher": "Gribaudo",
+      "Synopsis": "Un lupo prova a colorarsi per non essere più nero.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788865320501",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788865320501",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788865320501"
     }
   },
   {
-    "id": "reco5UZSTdaoE98sI",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recIsNmEDTTLtPRtk",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Forte come un orso",
-      "ISBN": 9788889210932,
-      "Author": "Katrin Stangl",
-      "Illustrator": "Katrin Stangl",
-      "Publication Year": 2013,
-      "Publisher": "Topipittori",
-      "Synopsis": "Un libro di similitudini tra bambini e animali.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788889210932",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210932",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210932"
+      "Title": "Mappa delle nuvole",
+      "ISBN": 9788861895102,
+      "Author": "Alex Nogués",
+      "Illustrator": "Mónica Bedmar",
+      "Publication Year": 2019,
+      "Publisher": "Terre di Mezzo",
+      "Synopsis": "Un libro poetico per imparare a osservare le nuvole.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788861895102",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861895102",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861895102"
     }
   },
   {
-    "id": "recp2McoO0iMMxtmc",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recJ5YCFnUx9hh9OW",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Nel paese delle creature selvagge",
-      "ISBN": 9788845932335,
-      "Author": "Maurice Sendak",
-      "Illustrator": "Maurice Sendak",
-      "Translator": "Lisa Topi",
-      "Publication Year": 2018,
-      "Publisher": "Adelphi",
-      "Synopsis": "Max viene mandato a letto senza cena e viaggia verso il paese dei mostri.",
-      "Image link": "https://www.adelphi.it/img/copertine/9788845932335.jpg",
-      "Amazon Link": "https://www.amazon.it/s?k=9788845932335",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788845932335",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788845932335"
+      "Title": "Il lupo che cercava l'amore",
+      "ISBN": 9788865320891,
+      "Author": "Orianne Lallemand",
+      "Illustrator": "Éléonore Thuillier",
+      "Publication Year": 2014,
+      "Publisher": "Gribaudo",
+      "Synopsis": "Lupo cerca la sua lupa speciale.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788865320891",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788865320891",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788865320891"
     }
   },
   {
-    "id": "recrcjppoyjxmhUng",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recKANG93d2ypPhed",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il favoloso club del libro del bus 65",
-      "ISBN": 9788883626708,
-      "Author": "Céline Person",
-      "Illustrator": "Sanoe",
-      "Publication Year": 2025,
-      "Publisher": "Babalibri",
-      "Synopsis": "La magia della lettura su un autobus.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883626708",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883626708",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883626708"
-    }
-  },
-  {
-    "id": "recrglcFe8kDrej2Y",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il meraviglioso Cicciapelliccia",
-      "ISBN": 9788833700014,
-      "Author": "Beatrice Alemagna",
-      "Illustrator": "Beatrice Alemagna",
-      "Publication Year": 2015,
-      "Publisher": "Topipittori",
-      "Synopsis": "Edith cerca un regalo speciale per la sua mamma.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788833700014",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788833700014",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788833700014"
-    }
-  },
-  {
-    "id": "recs4dug86f9bC0o0",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Insieme tutto l'anno",
-      "ISBN": 9788883626500,
-      "Author": "Claire Lebourg",
-      "Illustrator": "Claire Lebourg",
-      "Publication Year": 2024,
-      "Publisher": "Babalibri",
-      "Synopsis": "Una storia di amicizia tra un cane e un tasso.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883626500",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883626500",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883626500"
-    }
-  },
-  {
-    "id": "recs65TSDGP4TGa7C",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il fatto è",
-      "ISBN": 9788879268301,
-      "Author": "Gek Tessaro",
-      "Illustrator": "Gek Tessaro",
+      "Title": "Zog",
+      "ISBN": 9788867149384,
+      "Author": "Julia Donaldson",
+      "Illustrator": "Axel Scheffler",
       "Publication Year": 2010,
-      "Publisher": "Lapis",
-      "Synopsis": "Un'anatra non vuole saperne di buttarsi in acqua.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788879268301",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788879268301",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788879268301"
+      "Publisher": "Emme Edizioni",
+      "Synopsis": "Zog è il drago più volenteroso della scuola.",
+      "Image link": "https://m.media-amazon.com/images/I/51V6dTQMq7L._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/Zog-Julia-Donaldson/dp/8867144375",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867149384",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867149384"
     }
   },
   {
-    "id": "recsVyXSG4CWHERsH",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recKDdEoRLcYiF7oS",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Olivia",
+      "ISBN": 9788833481234,
+      "Author": "Ian Falconer",
+      "Illustrator": "Ian Falconer",
+      "Publication Year": 2001,
+      "Publisher": "Gianni Tutto",
+      "Synopsis": "Le avventure di una maialina molto determinata.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788833481234",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788833481234",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788833481234"
+    }
+  },
+  {
+    "id": "recLrtGU7sKcEIy2X",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Sulla luna",
+      "ISBN": 9788832070422,
+      "Author": "Fabian Negrin",
+      "Illustrator": "Fabian Negrin",
+      "Publication Year": 2020,
+      "Publisher": "Orecchio Acerbo",
+      "Synopsis": "Un viaggio onirico verso la luna.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788832070422",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788832070422",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788832070422"
+    }
+  },
+  {
+    "id": "recMxKQPkjXf2jtWO",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Nella foresta silenziosa e misteriosa",
       "ISBN": 9788883626371,
@@ -1064,57 +550,226 @@
     }
   },
   {
-    "id": "recshmMZqDDEEL6eh",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recNVoNAngjeOq1ss",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il pinguino che voleva diventare grande",
-      "ISBN": 9788896869505,
-      "Author": "Jill Tomlinson",
-      "Illustrator": "Paul Howard",
+      "Title": "```"
+    }
+  },
+  {
+    "id": "recOmifw0KRccEzCt",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "I prelibri",
+      "ISBN": 9788887942675,
+      "Author": "Bruno Munari",
+      "Illustrator": "Bruno Munari",
+      "Publication Year": 2002,
+      "Publisher": "Corraini",
+      "Synopsis": "Dodici piccoli libri di materiali diversi per i più piccoli.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788887942675",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942675",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942675"
+    }
+  },
+  {
+    "id": "recP8nYMAugzdITLT",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il bambino di vetro",
+      "ISBN": 9788867143436,
+      "Author": "Gian Rodari",
+      "Illustrator": "Javier Zabala",
       "Publication Year": 2015,
-      "Publisher": "Camelozampa",
-      "Synopsis": "La storia di un piccolo pinguino che cresce.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788896869505",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788896869505",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788896869505"
+      "Publisher": "Emme Edizioni",
+      "Synopsis": "La storia di Giacomo di cristallo.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788867143436",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867143436",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867143436"
     }
   },
   {
-    "id": "rectj4B5df4B1A60v",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recQ420T25b9EEHfU",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Tutti in coda!",
-      "ISBN": 9788883622380,
-      "Author": "Tomoko Ohmura",
-      "Illustrator": "Tomoko Ohmura",
-      "Publication Year": 2011,
+      "Title": "Pezzettino",
+      "ISBN": 9788883620478,
+      "Author": "Leo Lionni",
+      "Illustrator": "Leo Lionni",
+      "Publication Year": 2006,
       "Publisher": "Babalibri",
-      "Synopsis": "Cinquanta animali in fila aspettano qualcosa di speciale.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883622380",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883622380",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883622380"
+      "Synopsis": "Pezzettino è così piccolo che è convinto di essere un pezzetto di qualcun altro.",
+      "Image link": "https://m.media-amazon.com/images/I/51wrP5gTHxL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883620478",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620478",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620478"
     }
   },
   {
-    "id": "recuEcDNmWiUGT5OD",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recQm8zgapdx9OWsi",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il piccolo bruco Maisazio",
-      "ISBN": 9788867222346,
-      "Author": "Eric Carle",
-      "Illustrator": "Eric Carle",
-      "Publication Year": 2016,
-      "Publisher": "Mondadori",
-      "Synopsis": "Un piccolo bruco mangia tantissimo finché non diventa una farfalla.",
-      "Image link": "https://editore.mondadori.it/content/uploads/2016/01/9788867222346.jpg",
-      "Amazon Link": "https://www.amazon.it/s?k=9788867222346",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867222346",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867222346"
+      "Title": "Buon viaggio, piccolino!",
+      "ISBN": 9788898523047,
+      "Author": "Beatrice Alemagna",
+      "Illustrator": "Beatrice Alemagna",
+      "Publication Year": 2013,
+      "Publisher": "Topipittori",
+      "Synopsis": "I preparativi di un bambino prima di dormire.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788898523047",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788898523047",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788898523047"
     }
   },
   {
-    "id": "recv1XusW9UHODnOe",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recS4AfvNPDGUynlB",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Insieme tutto l'anno",
+      "ISBN": 9788883626500,
+      "Author": "Claire Lebourg",
+      "Illustrator": "Claire Lebourg",
+      "Publication Year": 2024,
+      "Publisher": "Babalibri",
+      "Synopsis": "Una storia di amicizia tra un cane e un tasso.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883626500",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883626500",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883626500"
+    }
+  },
+  {
+    "id": "recSmGkAtnKy5ODL3",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il castello di carte",
+      "ISBN": 9788875703431,
+      "Author": "Gianni Rodari",
+      "Illustrator": "Emanuele Luzzati",
+      "Publication Year": 2012,
+      "Publisher": "Corraini",
+      "Synopsis": "Le rime di Rodari accompagnate dai disegni di Luzzati.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788875703431",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875703431",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875703431"
+    }
+  },
+  {
+    "id": "recVMiTcPMeckuLSM",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Guizzino",
+      "ISBN": 9788883620430,
+      "Author": "Leo Lionni",
+      "Illustrator": "Leo Lionni",
+      "Publication Year": 1999,
+      "Publisher": "Babalibri",
+      "Synopsis": "Un pesciolino insegna agli altri a unirsi per difendersi.",
+      "Image link": "https://m.media-amazon.com/images/I/51B3iF9pqSL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883620430",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620430",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620430"
+    }
+  },
+  {
+    "id": "recWiWyqK1ZCC8X4m",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il gioco delle favole",
+      "ISBN": 9788875704155,
+      "Author": "Enzo Mari",
+      "Illustrator": "Enzo Mari",
+      "Publication Year": 1961,
+      "Publisher": "Corraini",
+      "Synopsis": "Un libro-gioco composto da tavole che si incastrano.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788875704155",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875704155",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875704155"
+    }
+  },
+  {
+    "id": "recWtNJj3JGyulJ3U",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "La valle dei mulini",
+      "ISBN": 9788861892804,
+      "Author": "Noelia Blanco",
+      "Illustrator": "Valeria Docampo",
+      "Publication Year": 2011,
+      "Publisher": "Terre di Mezzo",
+      "Synopsis": "Un inno alla libertà e alle possibilità della vita.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788861891111",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861892804",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861892804"
+    }
+  },
+  {
+    "id": "recWtz2gLUGDIpFoI",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Cappuccetto Bianco",
+      "ISBN": 9788875700195,
+      "Author": "Bruno Munari",
+      "Illustrator": "Bruno Munari",
+      "Publication Year": 2004,
+      "Publisher": "Corraini",
+      "Synopsis": "Una fiaba nella neve dove tutto è bianco.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788875700195",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875700195",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875700195"
+    }
+  },
+  {
+    "id": "recYGVZiHoxZlQbZI",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il lupo che voleva fare il giro del mondo",
+      "ISBN": 9788865320747,
+      "Author": "Orianne Lallemand",
+      "Illustrator": "Éléonore Thuillier",
+      "Publication Year": 2013,
+      "Publisher": "Gribaudo",
+      "Synopsis": "Lupo viaggia per il mondo alla scoperta di nuovi paesi.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788865320747",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788865320747",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788865320747"
+    }
+  },
+  {
+    "id": "recYPYicEiL8qzqoB",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Piccolo blu e piccolo giallo",
+      "ISBN": 9788883620461,
+      "Author": "Leo Lionni",
+      "Illustrator": "Leo Lionni",
+      "Publication Year": 1999,
+      "Publisher": "Babalibri",
+      "Synopsis": "Due colori amici si abbracciano e diventano verdi.",
+      "Image link": "https://m.media-amazon.com/images/I/51aZjM5yJgL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883620461",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620461",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620461"
+    }
+  },
+  {
+    "id": "recYdd35J1T1hd8Aj",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Cappuccetto Verde",
+      "ISBN": 9788875700201,
+      "Author": "Bruno Munari",
+      "Illustrator": "Bruno Munari",
+      "Publication Year": 2004,
+      "Publisher": "Corraini",
+      "Synopsis": "Una versione della fiaba ambientata nel bosco verde.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788875700201",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875700201",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875700201"
+    }
+  },
+  {
+    "id": "recYh2a58AifqKVos",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "A caccia dell'orso",
       "ISBN": 9788832770933,
@@ -1130,79 +785,487 @@
     }
   },
   {
-    "id": "recvNnp8NDc1JQynO",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recZwlJBrUnR1HIad",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il mostro dei colori",
-      "ISBN": 9788833700052,
-      "Author": "Anna Llenas",
-      "Illustrator": "Anna Llenas",
-      "Publication Year": 2017,
-      "Publisher": "Gribaudo",
-      "Synopsis": "Un mostro che ha confuso tutte le sue emozioni.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788833700052",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788833700052",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788833700052"
+      "Title": "Aiuto, arriva il lupo!",
+      "ISBN": 9788883623196,
+      "Author": "Cédric Ramadier",
+      "Illustrator": "Vincent Bourgeau",
+      "Publication Year": 2014,
+      "Publisher": "Babalibri",
+      "Synopsis": "Un libro interattivo per scacciare il lupo.",
+      "Image link": "https://www.babalibri.it/wp-content/uploads/2021/01/aiuto-arriva-il-lupo.jpg",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883623196",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883623196",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883623196"
     }
   },
   {
-    "id": "recy6p0KOPruALBzb",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recaV67YcKghTG27U",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il piccolo bruco Maisazio",
+      "ISBN": 9788804323327,
+      "Author": "Eric Carle",
+      "Illustrator": "Eric Carle",
+      "Publication Year": 2016,
+      "Publisher": "Mondadori",
+      "Synopsis": "Un piccolo bruco mangia tantissimo finché non diventa una farfalla.",
+      "Image link": "https://m.media-amazon.com/images/I/51oyrz4UY6L._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/piccolo-bruco-Maisazio-Ediz-illustrata/dp/8804323329",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788804323327",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788804323327"
+    }
+  },
+  {
+    "id": "recax56WTsubKxgFR",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Che cos'è un bambino?",
+      "ISBN": 9788889210253,
+      "Author": "Beatrice Alemagna",
+      "Illustrator": "Beatrice Alemagna",
+      "Publication Year": 2008,
+      "Publisher": "Topipittori",
+      "Synopsis": "Una riflessione poetica sulla natura dell'infanzia.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788889210253",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210253",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210253"
+    }
+  },
+  {
+    "id": "recbh8hm03TomyFTv",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Sono io il più bello",
+      "ISBN": 9788883622083,
+      "Author": "Mario Ramos",
+      "Illustrator": "Mario Ramos",
+      "Publication Year": 2010,
+      "Publisher": "Babalibri",
+      "Synopsis": "Il lupo chiede a tutti chi è il più bello della foresta.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883622083",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883622083",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883622083"
+    }
+  },
+  {
+    "id": "recctA2D0hsUaNWL4",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Otta",
+      "ISBN": 9788883626289,
+      "Author": "Juliette Lagrange",
+      "Illustrator": "Juliette Lagrange",
+      "Publication Year": 2024,
+      "Publisher": "Babalibri",
+      "Synopsis": "Una lontra alla scoperta del mondo.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883626289",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883626289",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883626289"
+    }
+  },
+  {
+    "id": "recfq4vxJWL3Ald5j",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Non è una scatola",
+      "ISBN": 9788862330107,
+      "Author": "Antoinette Portis",
+      "Illustrator": "Antoinette Portis",
+      "Publication Year": 2008,
+      "Publisher": "Kalandraka",
+      "Synopsis": "Un coniglietto usa l'immaginazione con una scatola.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788862330107",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788862330107",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788862330107"
+    }
+  },
+  {
+    "id": "recgg74X2vHWUXRk3",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "La chiocciolina e la balena",
+      "ISBN": 9788867147935,
+      "Author": "Julia Donaldson",
+      "Illustrator": "Axel Scheffler",
+      "Publication Year": 2003,
+      "Publisher": "Emme Edizioni",
+      "Synopsis": "Un viaggio intorno al mondo di un'insolita coppia.",
+      "Image link": "https://m.media-amazon.com/images/I/51Bi5mQF9BL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/chiocciolina-balena-Ediz-colori/dp/8867147935",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867147935",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867147935"
+    }
+  },
+  {
+    "id": "recgoAS9D6IZ5jB1f",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Zeb e la scorta di baci",
+      "ISBN": 9788883621642,
+      "Author": "Michel Gay",
+      "Illustrator": "Michel Gay",
+      "Publication Year": 2008,
+      "Publisher": "Babalibri",
+      "Synopsis": "Una zebra va in campeggio con una scatola piena di baci cartacei.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883621642",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883621642",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883621642"
+    }
+  },
+  {
+    "id": "rech4NxF7SLp6e7oB",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Zoo",
+      "ISBN": 9788887942620,
+      "Author": "Bruno Munari",
+      "Illustrator": "Bruno Munari",
+      "Publication Year": 2002,
+      "Publisher": "Corraini",
+      "Synopsis": "Un viaggio visivo tra gli animali dello zoo.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788887942620",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942620",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942620"
+    }
+  },
+  {
+    "id": "rechYtqXuUB4byMWY",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Sulla collina",
-      "ISBN": 9788861893450,
+      "ISBN": 9788859207344,
       "Author": "Linda Sarah",
       "Illustrator": "Benji Davies",
       "Publication Year": 2015,
       "Publisher": "Giralangolo",
       "Synopsis": "Due amici giocano sulla collina finché non arriva un terzo.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861893450",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861893450",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861893450"
+      "Image link": "https://m.media-amazon.com/images/I/51mhqvC7wlL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/Sulla-collina-Ediz-illustrata-Linda/dp/8859207347",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788859207344",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788859207344"
     }
   },
   {
-    "id": "recyBK8q9Par6wsEO",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "reci4aU3DS7iIuQ0v",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Cappuccetto Verde",
-      "ISBN": 9788875700201,
-      "Author": "Bruno Munari",
-      "Illustrator": "Bruno Munari",
-      "Publication Year": 2004,
-      "Publisher": "Corraini",
-      "Synopsis": "Una versione della fiaba ambientata nel bosco verde.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788875700201",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875700201",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875700201"
+      "Title": "Tararì tararera",
+      "ISBN": 9788879267922,
+      "Author": "Emanuela Bussolati",
+      "Illustrator": "Emanuela Bussolati",
+      "Publication Year": 2009,
+      "Publisher": "Lapis",
+      "Synopsis": "Una storia scritta in lingua Piripù.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788879267922",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788879267922",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788879267922"
     }
   },
   {
-    "id": "recyBojaBWZm8kIBc",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "reck1ZoYSYpYDzAzd",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Spandau",
-      "ISBN": 9788883624520,
-      "Author": "Mario Ramos",
-      "Illustrator": "Mario Ramos",
-      "Publication Year": 2019,
+      "Title": "Storie della buonanotte per bambine ribelli",
+      "ISBN": 9788804673309,
+      "Author": "Elena Favilli",
+      "Illustrator": "Francesca Cavallo",
+      "Publication Year": 2017,
+      "Publisher": "Mondadori",
+      "Synopsis": "Ritratti di donne straordinarie che hanno cambiato il mondo.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788804673309",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788804673309",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788804673309"
+    }
+  },
+  {
+    "id": "reckSmRcFN40MTLUl",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Nel paese delle creature selvagge",
+      "ISBN": 9788845932335,
+      "Author": "Maurice Sendak",
+      "Illustrator": "Maurice Sendak",
+      "Translator": "Lisa Topi",
+      "Publication Year": 2018,
+      "Publisher": "Adelphi",
+      "Synopsis": "Max viene mandato a letto senza cena e viaggia verso il paese dei mostri.",
+      "Image link": "https://www.adelphi.it/img/copertine/9788845932335.jpg",
+      "Amazon Link": "https://www.amazon.it/paese-mostri-selvaggi-Maurice-Sendak/dp/8845932036",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788845932335",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788845932335"
+    }
+  },
+  {
+    "id": "recn0LLzfyKnhjZJs",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Tutti in coda!",
+      "ISBN": 9788883622380,
+      "Author": "Tomoko Ohmura",
+      "Illustrator": "Tomoko Ohmura",
+      "Publication Year": 2011,
       "Publisher": "Babalibri",
-      "Synopsis": "Un lupo che si sente il più forte di tutti.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883624520",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883624520",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883624520"
+      "Synopsis": "Cinquanta animali in fila aspettano qualcosa di speciale.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883622380",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883622380",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883622380"
     }
   },
   {
-    "id": "recycqWu85TOhrpTh",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recnK54Z9TUoZQOBd",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "```"
+      "Title": "Elmer l'elefante variopinto",
+      "ISBN": 9788847728790,
+      "Author": "David McKee",
+      "Illustrator": "David McKee",
+      "Publication Year": 2012,
+      "Publisher": "Mondadori",
+      "Synopsis": "Un elefante a scacchi colorati scopre il valore della diversità.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788847728790",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788847728790",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788847728790"
     }
   },
   {
-    "id": "recyyilCAp6fi1hQX",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recoExg1HOiOqNZzh",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Forte come un orso",
+      "ISBN": 9788889210932,
+      "Author": "Katrin Stangl",
+      "Illustrator": "Katrin Stangl",
+      "Publication Year": 2013,
+      "Publisher": "Topipittori",
+      "Synopsis": "Un libro di similitudini tra bambini e animali.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788889210932",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210932",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210932"
+    }
+  },
+  {
+    "id": "recolmGYDubPjjkQk",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Bastoncino",
+      "ISBN": 9788829601387,
+      "Author": "Julia Donaldson",
+      "Illustrator": "Axel Scheffler",
+      "Publication Year": 2016,
+      "Publisher": "Emme Edizioni",
+      "Synopsis": "La peripezia di un bastoncino che vuole tornare a casa.",
+      "Image link": "https://m.media-amazon.com/images/I/51UH3XrPgxL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/Bastoncino-Ediz-illustrata-Julia-Donaldson/dp/8829601381",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788829601387",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788829601387"
+    }
+  },
+  {
+    "id": "recpq8Udklj9ayiaY",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Dov'è la mia mamma?",
+      "ISBN": 9788867148844,
+      "Author": "Julia Donaldson",
+      "Illustrator": "Axel Scheffler",
+      "Publication Year": 2000,
+      "Publisher": "Emme Edizioni",
+      "Synopsis": "Una scimmietta ha perso la mamma e una farfalla la aiuta.",
+      "Image link": "https://m.media-amazon.com/images/I/51c0MhiY7JL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/Dove-mia-mamma-Italian-Julia-Donaldson/dp/8867148842",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867148844",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867148844"
+    }
+  },
+  {
+    "id": "recqandD1eDgCiV0A",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il pinguino che voleva diventare grande",
+      "ISBN": 9788896869505,
+      "Author": "Jill Tomlinson",
+      "Illustrator": "Paul Howard",
+      "Publication Year": 2015,
+      "Publisher": "Camelozampa",
+      "Synopsis": "La storia di un piccolo pinguino che cresce.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788896869505",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788896869505",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788896869505"
+    }
+  },
+  {
+    "id": "recrESGByeUsTnbdW",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Pezzettino",
+      "ISBN": 9788883620478,
+      "Author": "Leo Lionni",
+      "Illustrator": "Leo Lionni",
+      "Publication Year": 2006,
+      "Publisher": "Babalibri",
+      "Synopsis": "Pezzettino è così piccolo che è convinto di essere un pezzetto di qualcun altro.",
+      "Image link": "https://m.media-amazon.com/images/I/51wrP5gTHxL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883620478",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620478",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620478"
+    }
+  },
+  {
+    "id": "recsnbjWUhaQeFlv6",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il Gruffalò",
+      "ISBN": 9788867143337,
+      "Author": "Julia Donaldson",
+      "Illustrator": "Axel Scheffler",
+      "Translator": "Laura Pelaschiar",
+      "Publication Year": 1999,
+      "Publisher": "Emme Edizioni",
+      "Synopsis": "Un topolino furbo inventa un mostro terribile.",
+      "Image link": "https://m.media-amazon.com/images/I/51zKBJ8MFSL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/Gruffal%C3%B2-Ediz-illustrata-Julia-Donaldson/dp/8867143336",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867143337",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867143337"
+    }
+  },
+  {
+    "id": "recsulVxXSdLyiPnI",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Federico",
+      "ISBN": 9788883620454,
+      "Author": "Leo Lionni",
+      "Illustrator": "Leo Lionni",
+      "Publication Year": 1999,
+      "Publisher": "Babalibri",
+      "Synopsis": "Mentre le altre talpe raccolgono cibo, Federico raccoglie colori e parole.",
+      "Image link": "https://m.media-amazon.com/images/I/51nXXNuqp3L._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883620454",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620454",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620454"
+    }
+  },
+  {
+    "id": "rectbOebmubADNx2I",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Title",
+      "Author": "Author",
+      "Illustrator": "Illustrator",
+      "Translator": "Translator",
+      "Publisher": "Publisher",
+      "Synopsis": "Synopsis",
+      "Image link": "Image link",
+      "Amazon Link": "Amazon Link",
+      "Feltrinelli Link": "Feltrinelli Link",
+      "Mondadori Link": "Mondadori Link"
+    }
+  },
+  {
+    "id": "recuhg4mzg1KJhFdg",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Un colore tutto mio",
+      "ISBN": 9788883621529,
+      "Author": "Leo Lionni",
+      "Illustrator": "Leo Lionni",
+      "Publication Year": 2007,
+      "Publisher": "Babalibri",
+      "Synopsis": "Un camaleonte cerca un colore fisso per non cambiare sempre.",
+      "Image link": "https://m.media-amazon.com/images/I/51QJhPo59oL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883621529",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883621529",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883621529"
+    }
+  },
+  {
+    "id": "recvReckS5qY79HPB",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il fatto è",
+      "ISBN": 9788878743236,
+      "Author": "Gek Tessaro",
+      "Illustrator": "Gek Tessaro",
+      "Publication Year": 2010,
+      "Publisher": "Lapis",
+      "Synopsis": "Un'anatra non vuole saperne di buttarsi in acqua.",
+      "Image link": "https://m.media-amazon.com/images/I/51F7jGb8hVL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/fatto-Ediz-illustrata-Gek-Tessaro/dp/8878743232",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788878743236",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788878743236"
+    }
+  },
+  {
+    "id": "recwWXmyUvwVvpDHL",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Grande!",
+      "ISBN": 9788833701721,
+      "Author": "Aurore Petit",
+      "Illustrator": "Aurore Petit",
+      "Publication Year": 2025,
+      "Publisher": "Topipittori",
+      "Synopsis": "Cosa vuol dire diventare grandi?",
+      "Amazon Link": "https://www.amazon.it/s?k=9788833701721",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788833701721",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788833701721"
+    }
+  },
+  {
+    "id": "recxJlGRnSMePLwuW",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "La passeggiata di un distratto",
+      "ISBN": 9788821601361,
+      "Author": "Gianni Rodari",
+      "Illustrator": "Beatrice Alemagna",
+      "Publication Year": 2005,
+      "Publisher": "Einaudi Ragazzi",
+      "Synopsis": "Un bambino perde i pezzi per strada mentre cammina.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788821601361",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788821601361",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788821601361"
+    }
+  },
+  {
+    "id": "recxMCb1eFcZf6WlC",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Il piccolo principe (illustrato)",
+      "ISBN": 9788845271168,
+      "Author": "Antoine de Saint-Exupéry",
+      "Illustrator": "Antoine de Saint-Exupéry",
+      "Publication Year": 2014,
+      "Publisher": "Bompiani",
+      "Synopsis": "Il classico senza tempo in edizione illustrata.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788845271168",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788845271168",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788845271168"
+    }
+  },
+  {
+    "id": "recxTwhLKikouK1se",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Un libro",
+      "ISBN": 9788857002521,
+      "Author": "Hervé Tullet",
+      "Illustrator": "Hervé Tullet",
+      "Publication Year": 2010,
+      "Publisher": "Franco Cosimo Panini",
+      "Synopsis": "Un libro interattivo dove i colori si muovono e si moltiplicano.",
+      "Image link": "https://m.media-amazon.com/images/I/51XvSSHU0aL._SY445_SX342_.jpg",
+      "Amazon Link": "https://www.amazon.it/libro-Ediz-illustrata-Herv%C3%A9-Tullet/dp/8857002527",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788857002521",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788857002521"
+    }
+  },
+  {
+    "id": "recxp0ECO5966tZ3y",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Un giorno splendido",
       "ISBN": 9788883622397,
@@ -1217,99 +1280,68 @@
     }
   },
   {
-    "id": "recz2WfQEtZtmh8TO",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recxymhZ4RopfnW2S",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "I prelibri",
-      "ISBN": 9788887942675,
-      "Author": "Bruno Munari",
-      "Illustrator": "Bruno Munari",
-      "Publication Year": 2002,
-      "Publisher": "Corraini",
-      "Synopsis": "Dodici piccoli libri di materiali diversi per i più piccoli.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788887942675",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942675",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942675"
+      "Title": "Il filo di Alexander Calder",
+      "ISBN": 9788854410503,
+      "Author": "Sieb Posthuma",
+      "Illustrator": "Sieb Posthuma",
+      "Publication Year": 2016,
+      "Publisher": "White Star",
+      "Synopsis": "La vita dell'artista Alexander Calder spiegata ai bambini.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788854410503",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788854410503",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788854410503"
     }
   },
   {
-    "id": "recz7UtZHKAvSIQZc",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recy9bNTGyixNX7Dx",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Chi c'è tra i ritagli?",
-      "ISBN": 9788898523085,
-      "Author": "Silvia Borando",
-      "Illustrator": "Silvia Borando",
-      "Publication Year": 2014,
-      "Publisher": "Minibombo",
-      "Synopsis": "Un gioco di forme e colori tra i ritagli di carta.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788898523085",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788898523085",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788898523085"
-    }
-  },
-  {
-    "id": "reczG1v3nclNH9OuZ",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Rina pupù",
-      "ISBN": 9788879268394,
-      "Author": "Emanuela Bussolati",
-      "Illustrator": "Emanuela Bussolati",
-      "Publication Year": 2010,
-      "Publisher": "Lapis",
-      "Synopsis": "Un'altra avventura nella giungla Piripù.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788879268394",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788879268394",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788879268394"
-    }
-  },
-  {
-    "id": "reczeUCghvno6rvyx",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il punto",
-      "ISBN": 9788875482343,
-      "Author": "Peter H. Reynolds",
-      "Illustrator": "Peter H. Reynolds",
-      "Publication Year": 2007,
-      "Publisher": "Ape Junior",
-      "Synopsis": "La storia di una bambina che scopre il suo talento artistico partendo da un punto.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788875482343",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875482343",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875482343"
-    }
-  },
-  {
-    "id": "reczg9vQTE6G1mMGx",
-    "createdTime": "2026-01-30T16:16:13.000Z",
-    "fields": {
-      "Title": "Il bambino di vetro",
-      "ISBN": 9788867143436,
-      "Author": "Gian Rodari",
-      "Illustrator": "Javier Zabala",
+      "Title": "Io vado!",
+      "ISBN": 9788883623349,
+      "Author": "Matthieu Maudet",
+      "Illustrator": "Matthieu Maudet",
       "Publication Year": 2015,
-      "Publisher": "Emme Edizioni",
-      "Synopsis": "La storia di Giacomo di cristallo.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788867143436",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867143436",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867143436"
+      "Publisher": "Babalibri",
+      "Synopsis": "Un piccolo uccellino decide che è ora di andare.",
+      "Image link": "https://www.babalibri.it/wp-content/uploads/2021/01/io-vado.jpg",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883623349",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883623349",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883623349"
     }
   },
   {
-    "id": "reczmc7bPelRlJNwc",
-    "createdTime": "2026-01-30T16:16:13.000Z",
+    "id": "recz7RJqoSz0t2TQE",
+    "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Toc Toc",
-      "ISBN": 9788887942637,
-      "Author": "Bruno Munari",
-      "Illustrator": "Bruno Munari",
-      "Publication Year": 2004,
-      "Publisher": "Corraini",
-      "Synopsis": "Chi bussa alla porta? Un libro a finestrelle.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788887942637",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942637",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942637"
+      "Title": "Gita sulla Luna",
+      "ISBN": 9788883624834,
+      "Author": "John Hare",
+      "Illustrator": "John Hare",
+      "Publication Year": 2020,
+      "Publisher": "Babalibri",
+      "Synopsis": "Un bambino si perde durante una gita scolastica sulla luna.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883624834",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883624834",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883624834"
+    }
+  },
+  {
+    "id": "reczsKjmXyM0A8esD",
+    "createdTime": "2026-01-30T16:57:58.000Z",
+    "fields": {
+      "Title": "Pezzo di scemo",
+      "ISBN": 9788883621451,
+      "Author": "Mario Ramos",
+      "Illustrator": "Mario Ramos",
+      "Publication Year": 2007,
+      "Publisher": "Babalibri",
+      "Synopsis": "Un lupo scopre che la gentilezza premia.",
+      "Amazon Link": "https://www.amazon.it/s?k=9788883621451",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883621451",
+      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883621451"
     }
   }
 ]
