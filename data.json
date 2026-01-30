@@ -34,6 +34,7 @@
       ],
       "Synopsis": "È Capodanno, e nel freddo e nel buio cammina una bambina senza scarpe, stringendo tra le mani un mazzetto di fiammiferi. Per riscaldarsi li accende uno a uno e, ogni volta che quelli si infiammano, ecco che davanti a lei prendono forma immagini di felicità: una stufa, una tavola apparecchiata a festa, un albero di Natale illuminato... fino a che, con l'ultimo zolfanello, non appare la nonna scomparsa che, prendendola per mano, la porta insieme a lei su nel cielo",
       "Image Link": "https://www.lafeltrinelli.it/images/9788817198066_0_0_424_0_75.jpg",
+      "Amazon Link": "https://amzn.eu/d/0oXGd21",
       "Feltrinelli Link": "https://www.lafeltrinelli.it/piccola-fiammiferaia-libro-benjamin-lacombe/e/9788817198066",
       "Book Age (Years)": 0,
       "Author Name": [
@@ -171,6 +172,48 @@
       ],
       "Publisher Name": [
         "Éditions Petit Chêne"
+      ],
+      "Short Synopsis (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      },
+      "Book Themes (AI)": {
+        "state": "empty",
+        "value": null,
+        "isStale": true
+      }
+    }
+  },
+  {
+    "id": "recINxoU6nOeyCF9m",
+    "createdTime": "2026-01-29T22:44:01.000Z",
+    "fields": {
+      "Title": "Tu sei una meraviglia. Ediz. a colori",
+      "ISBN": "9791259962669",
+      "Author": [
+        "recZ2fh2kF44IOOfH"
+      ],
+      "Illustrator": [
+        "rectWpE3nZk8ZoSt5"
+      ],
+      "Publication Year": 2024,
+      "Publisher": [
+        "recHoJMMWxXNPzJVk"
+      ],
+      "Synopsis": "La bellezza è ovunque, devi solo imparare a riconoscerla. Sperimenta qualcosa che non hai mai fatto prima. Dai spazio a ciò che ami. Vai alla scoperta delle meraviglie del mondo, e ricorda che anche tu ne sei parte! Dagli autori del best seller \"Il mondo ti aspetta\", un nuovo indimenticabile albo illustrato che invita a esplorare il futuro con curiosità, a coltivare i sogni, a mettersi in gioco senza paura.",
+      "Image Link": "https://www.lafeltrinelli.it/images/9791259962669_0_0_464_0_75.jpg",
+      "Amazon Link": "https://amzn.eu/d/0lNiIoK",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/tu-sei-meraviglia-ediz-a-libro-kobi-yamada/e/9791259962669?utm_source=google&utm_medium=cpc&utm_campaign=pmax_carta-cultura&gad_source=1&gad_campaignid=21001066291&gbraid=0AAAAAD-Pe5yXUCKBhQFXcyFd87hJm1Hnd&gclid=Cj0KCQiAp-zLBhDkARIsABcYc6uMImJriFPRTW1szlDUnUOpdxIWPRRzK7mT4itiyh1qYMi77LMC3acaAtomEALw_wcB",
+      "Book Age (Years)": 2,
+      "Author Name": [
+        "Kodi Yamada"
+      ],
+      "Illustrator Name": [
+        "Gabriella Barouch"
+      ],
+      "Publisher Name": [
+        "Terre di Mezzo"
       ],
       "Short Synopsis (AI)": {
         "state": "empty",
