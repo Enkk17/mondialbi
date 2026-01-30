@@ -772,14 +772,15 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "A caccia dell'orso",
-      "ISBN": 9788832770933,
+      "ISBN": 9788804626381,
       "Author": "Michael Rosen",
       "Illustrator": "Helen Oxenbury",
+      "Translator": "Chiara Carminati",
       "Publication Year": 2013,
       "Publisher": "Mondadori",
       "Synopsis": "Una famiglia parte per una spedizione per scovare un orso.",
-      "Image link": "https://m.media-amazon.com/images/I/51pD2yqH2LL.SX342_SY445_QL70_ML2.jpg",
-      "Amazon Link": "https://www.amazon.it/s?k=9788832770933",
+      "Image link": "https://m.media-amazon.com/images/I/81OQsJ-gOYL._SL1500_.jpg",
+      "Amazon Link": "https://www.amazon.it/caccia-dellOrso-Ediz-illustrata/dp/8804626380",
       "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788832770933",
       "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788832770933"
     }
@@ -1101,16 +1102,17 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Pezzettino",
-      "ISBN": 9788883620478,
+      "ISBN": 9788883622908,
       "Author": "Leo Lionni",
       "Illustrator": "Leo Lionni",
+      "Translator": "Maria Marconi",
       "Publication Year": 2006,
       "Publisher": "Babalibri",
       "Synopsis": "Pezzettino è così piccolo che è convinto di essere un pezzetto di qualcun altro.",
-      "Image link": "https://m.media-amazon.com/images/I/51wrP5gTHxL._SY445_SX342_.jpg",
+      "Image link": "https://www.ibs.it/images/9788883622908_0_0_536_0_75.jpg",
       "Amazon Link": "https://www.amazon.it/s?k=9788883620478",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620478",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620478"
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/pezzettino-ediz-illustrata-libro-leo-lionni/e/9788883622908",
+      "Mondadori Link": "https://www.mondadoristore.it/pezzettino-ediz-illustrata-libro-leo-lionni/p/9788883622908"
     }
   },
   {
