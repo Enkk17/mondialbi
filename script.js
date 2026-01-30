@@ -42,7 +42,7 @@ function transformAirtableData(airtableRecords) {
         }
         
         // Validate image URL
-        if (!coverImage || typeof coverImage !== 'string' || coverImage.trim() === '') {
+        if (!coverImage || typeof coverImage !== 'string' || coverImage.trim() === '' || coverImage.trim() === 'Image link') {
             coverImage = PLACEHOLDER_IMAGE;
         }
         
