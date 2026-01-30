@@ -87,6 +87,50 @@ header h1 {
     outline-offset: 2px;
 }
 
+.project-link {
+    color: white;
+    text-decoration: none;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    display: inline-block;
+    margin-left: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.project-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.project-link:focus {
+    outline: 3px solid #764ba2;
+    outline-offset: 2px;
+}
+
+.project-actions {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn-secondary {
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 2px solid #667eea;
+    display: inline-block;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #667eea;
+    color: white;
+}
+
 #search-input {
     flex: 1;
     border: none;
