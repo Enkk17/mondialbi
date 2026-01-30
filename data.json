@@ -313,6 +313,7 @@
       "ISBN": 9788861886476,
       "Author": "Peter H. Reynolds",
       "Illustrator": "Peter H. Reynolds",
+      "Translator": " Marinella Barigazzi",
       "Publication Year": 2007,
       "Publisher": "Ape Junior",
       "Synopsis": "La storia di una bambina che scopre il suo talento artistico partendo da un punto.",
@@ -793,13 +794,14 @@
       "ISBN": 9788883623196,
       "Author": "Cédric Ramadier",
       "Illustrator": "Vincent Bourgeau",
+      "Translator": " T. Babled",
       "Publication Year": 2014,
       "Publisher": "Babalibri",
       "Synopsis": "Un libro interattivo per scacciare il lupo.",
-      "Image link": "https://www.babalibri.it/wp-content/uploads/2021/01/aiuto-arriva-il-lupo.jpg",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883623196",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883623196",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883623196"
+      "Image link": "https://m.media-amazon.com/images/I/61IMjHifN-L._SL1500_.jpg",
+      "Amazon Link": "https://www.amazon.it/AIUTO-ARRIVA-LUPO-C%C3%A9dric-Ramadier/dp/8883623037",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/aiuto-arriva-lupo-ediz-a-libro-cedric-ramadier/e/9788883624353",
+      "Mondadori Link": "https://www.mondadoristore.it/aiuto-arriva-il-lupo-ediz-illustrata-libro-cedric-ramadier/p/9788883623035"
     }
   },
   {
@@ -810,13 +812,14 @@
       "ISBN": 9788804323327,
       "Author": "Eric Carle",
       "Illustrator": "Eric Carle",
+      "Translator": "G. Arneri",
       "Publication Year": 2016,
       "Publisher": "Mondadori",
       "Synopsis": "Un piccolo bruco mangia tantissimo finché non diventa una farfalla.",
-      "Image link": "https://m.media-amazon.com/images/I/51oyrz4UY6L._SY445_SX342_.jpg",
+      "Image link": "https://m.media-amazon.com/images/I/712PbP300SL._AC_UF1000,1000_QL80_.jpg",
       "Amazon Link": "https://www.amazon.it/piccolo-bruco-Maisazio-Ediz-illustrata/dp/8804323329",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788804323327",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788804323327"
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/piccolissimo-bruco-maisazio-ediz-illustrata-libro-eric-carle/e/9788804633006",
+      "Mondadori Link": "https://www.ragazzimondadori.it/libri/il-piccolo-bruco-maisazio-eric-carle/"
     }
   },
   {
@@ -985,18 +988,18 @@
     "id": "reckSmRcFN40MTLUl",
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Nel paese delle creature selvagge",
-      "ISBN": 9788845932335,
+      "Title": "Nel paese delle mostri selvaggi",
+      "ISBN": 9788845932038,
       "Author": "Maurice Sendak",
       "Illustrator": "Maurice Sendak",
       "Translator": "Lisa Topi",
       "Publication Year": 2018,
       "Publisher": "Adelphi",
       "Synopsis": "Max viene mandato a letto senza cena e viaggia verso il paese dei mostri.",
-      "Image link": "https://www.adelphi.it/img/copertine/9788845932335.jpg",
-      "Amazon Link": "https://www.amazon.it/paese-mostri-selvaggi-Maurice-Sendak/dp/8845932036",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788845932335",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788845932335"
+      "Image link": "https://m.media-amazon.com/images/I/81nRHp6cKgL._SL1119_.jpg",
+      "Amazon Link": "https://www.amazon.it/Nel-paese-dei-mostri-selvaggi/dp/8845932036?dib=eyJ2IjoiMSJ9.xZWX8TcYFxUQcuYcOuX62y6a3VCYdpSvcgf_6uiM89yhPh_kMfE1unnLvlOXqwjl._FgkqqV3Js8cxeJXbeuFTGC8XtaTHkUWz7eqBeA7S-c&dib_tag=se&keywords=Nel+paese+delle+creature+selvagge&qid=1769798067&s=books&sr=1-1",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/nel-paese-dei-mostri-selvaggi-libro-maurice-sendak/e/9788845932038",
+      "Mondadori Link": "https://www.mondadoristore.it/nel-paese-dei-mostri-selvaggi-libro-maurice-sendak/p/9788845932038"
     }
   },
   {
@@ -1302,16 +1305,17 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Io vado!",
-      "ISBN": 9788883623349,
+      "ISBN": 9788883623387,
       "Author": "Matthieu Maudet",
       "Illustrator": "Matthieu Maudet",
+      "Translator": "F. Rocca",
       "Publication Year": 2015,
       "Publisher": "Babalibri",
       "Synopsis": "Un piccolo uccellino decide che è ora di andare.",
-      "Image link": "https://www.babalibri.it/wp-content/uploads/2021/01/io-vado.jpg",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883623349",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883623349",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883623349"
+      "Image link": "https://m.media-amazon.com/images/I/61NvcG+oRmL._SL1500_.jpg",
+      "Amazon Link": "https://www.amazon.it/vado-Ediz-illustrata-Matthieu-Maudet/dp/888362338X?crid=16WMHQN3D6FK0&dib=eyJ2IjoiMSJ9.8QwpCb7znMvKjzJD6CYnnSk6GzFXKAsqygoCZcuFOFrGjHj071QN20LucGBJIEps.lgHXmzGFAhJnNYvdO0Gt9vdJOSQBCuic5ifDalGVM2s&dib_tag=se&keywords=io+vado+babalibri&qid=1769798466&sprefix=Io+vado%21%2Caps%2C223&sr=8-1",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/io-vado-ediz-illustrata-libro-matthieu-maudet/e/9788883623387",
+      "Mondadori Link": "https://www.mondadoristore.it/io-vado-ediz-illustrata-libro-matthieu-maudet/p/9788883623387"
     }
   },
   {
