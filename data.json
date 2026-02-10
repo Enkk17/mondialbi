@@ -213,16 +213,16 @@
     "id": "recAaTFZQHuwLCdAD",
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "I cinque malfatti",
-      "ISBN": 9788898523214,
+      "Title": "I cinque malfatti. Ediz. a colori",
+      "ISBN": 9788898523061,
       "Author": "Beatrice Alemagna",
       "Illustrator": "Beatrice Alemagna",
-      "Publication Year": 2014,
+      "Publication Year": 2016,
       "Publisher": "Topipittori",
-      "Synopsis": "Cinque personaggi pieni di difetti incontrano un tipo perfetto.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788898523214",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788898523214",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788898523214"
+      "Synopsis": "I cinque malfatti sono cinque tipi strani: uno è tutto bucato; uno è piegato in due, come una lettera da spedire; un altro è tutto molle, sempre mezzo addormentato. Un altro ancora è capovolto, tanto che per guardarlo in faccia ti devi mettere a gambe per aria. E lasciamo perdere il quinto, sbagliato dalla testa ai piedi: una catastrofe. Abitano insieme, questi begli originali, in una casa: ovviamente, sbilenca. E che fanno? Niente, ma proprio niente di niente... Finché un giorno in mezzo a loro, come una punizione di divina, piomba, lui: il Perfetto.",
+      "Image link": "https://m.media-amazon.com/images/I/91cuIW7UCtL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/3ZuHAf3",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/cinque-malfatti-ediz-a-colori-libro-beatrice-alemagna/e/9788898523061"
     }
   },
   {
@@ -572,31 +572,31 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "I prelibri",
-      "ISBN": 9788887942675,
+      "ISBN": 9788887942668,
       "Author": "Bruno Munari",
       "Illustrator": "Bruno Munari",
       "Publication Year": 2002,
       "Publisher": "Corraini",
-      "Synopsis": "Dodici piccoli libri di materiali diversi per i più piccoli.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788887942675",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942675",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942675"
+      "Synopsis": "I PRELIBRI, un volume di culto ormai, sono stati pubblicati per la prima volta da Danese nel 1980. Sono una serie di 12 piccoli libri (10 x 10 cm) dedicati ai bambini che non hanno ancora imparato a leggere e scrivere, disegnati per adattarsi alle loro mani e assemblati usando diversi tipi di materiali, colori e rilegature. Offrono una varietà di stimoli, sensazioni e emozioni, che nascono dall'accostamento di percezioni e immagini: \"dovrebbero dare la sensazione che i libri siano effettivamente fatti in questo modo, e che contengano sorprese. La cultura deriva in effetti dalle sorprese, ossia cose prima sconosciute\" (Bruno Munari). ",
+      "Image link": "https://m.media-amazon.com/images/I/51+KkO-PafL._SL1200_.jpg",
+      "Amazon Link": "https://amzn.to/4qnJOHZ",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/prelibri-libro-bruno-munari/e/9788887942668"
     }
   },
   {
     "id": "recP8nYMAugzdITLT",
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il bambino di vetro",
-      "ISBN": 9788867143436,
-      "Author": "Gian Rodari",
-      "Illustrator": "Javier Zabala",
+      "Title": "l bambino di vetro. Ediz. a colori ",
+      "ISBN": 9788866562658,
+      "Author": " Fabrizio Silei",
+      "Illustrator": " Marco Somà",
       "Publication Year": 2015,
       "Publisher": "Emme Edizioni",
-      "Synopsis": "La storia di Giacomo di cristallo.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788867143436",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867143436",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867143436"
+      "Synopsis": "Un fazzoletto blu annodato al collo, una mappa, un fucile a elastico: che altro serve per essere felici? Costretto in casa da una misteriosa malattia, Pino guarda la vita scorrere oltre la finestra. Ma oggi è successo qualcosa di straordinario. I ragazzi del quartiere, che si stanno preparando alla battaglia, l'hanno ammesso nella banda: Pino, il \"bambino di vetro\", troppo fragile per vivere, è pronto a combattere al fianco dei nuovi amici. Ma sulla felicità appena assaporata si allungano le ombre: il corpo che non tiene il passo dei desideri, l'ansia dei genitori, lo zelo di una nonna decisamente troppo apprensiva...",
+      "Image link": "https://m.media-amazon.com/images/I/815FYtqqZqL._SL1418_.jpg",
+      "Amazon Link": "https://amzn.to/4asxosA",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/bambino-di-vetro-ediz-a-libro-fabrizio-silei/e/9788866562658"
     }
   },
   {
@@ -668,17 +668,16 @@
     "id": "recVMiTcPMeckuLSM",
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Guizzino",
-      "ISBN": 9788883620430,
+      "Title": "Guizzino. Ediz. illustrata",
+      "ISBN": 9788883621284,
       "Author": "Leo Lionni",
       "Illustrator": "Leo Lionni",
       "Publication Year": 1999,
       "Publisher": "Babalibri",
-      "Synopsis": "Un pesciolino insegna agli altri a unirsi per difendersi.",
-      "Image link": "https://m.media-amazon.com/images/I/51B3iF9pqSL._SY445_SX342_.jpg",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883620430",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883620430",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883620430"
+      "Synopsis": "Guizzino era l'unico pesciolino nero in mezzo ad un branco di pesci rossi. Un giorno un grosso pesce famelico divorò il branco, solo Guizzino riuscì a scappare. E cominciò a vagare per i mari scoprendo la bellezza dei fondali marini e dei suoi abitanti. S'imbatté così in un altro branco di pesci rossi, che viveva nascosto tra gli scogli per paura dei grossi pesci. Guizzino, con un trucco, ricompattò il gruppo e tutti insieme sfidarono l'ira e il terrore dei pesci prepotenti, riconquistando la libertà.",
+      "Image link": "https://m.media-amazon.com/images/I/815-4Pa4lzL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/3ZpbP7d",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/guizzino-ediz-illustrata-libro-leo-lionni/e/9788883621284"
     }
   },
   {
@@ -1054,12 +1053,13 @@
       "ISBN": 9788889210932,
       "Author": "Katrin Stangl",
       "Illustrator": "Katrin Stangl",
+      "Translator": "G. Mirandola",
       "Publication Year": 2013,
       "Publisher": "Topipittori",
       "Synopsis": "Un libro di similitudini tra bambini e animali.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788889210932",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210932",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210932"
+      "Image link": "https://m.media-amazon.com/images/I/91Y-5q9-sOL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/4anLfjU",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/forte-come-orso-libro-katrin-stangl/e/9788889210932"
     }
   },
   {
@@ -1217,16 +1217,17 @@
     "id": "recwWXmyUvwVvpDHL",
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Grande!",
+      "Title": "Grande! Ediz. a colori",
       "ISBN": 9788833701721,
       "Author": "Aurore Petit",
       "Illustrator": "Aurore Petit",
+      "Translator": "Lisa Topi",
       "Publication Year": 2025,
       "Publisher": "Topipittori",
-      "Synopsis": "Cosa vuol dire diventare grandi?",
-      "Amazon Link": "https://www.amazon.it/s?k=9788833701721",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788833701721",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788833701721"
+      "Synopsis": "Lei è grande. Molto molto grande. Infatti, sa già contare, si veste da sola (beh, quasi), sa allacciarsi anche le stringhe, sa dire benissimo di NO, ma sa dire anche SÌ, proprio come i grandi.",
+      "Image link": "https://m.media-amazon.com/images/I/61kaEw6DFLL._SL1404_.jpg",
+      "Amazon Link": "https://amzn.to/3LZ4ND6",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/grande-ediz-a-colori-libro-aurore-petit/e/9788833701721"
     }
   },
   {
@@ -1333,15 +1334,15 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Gita sulla Luna",
-      "ISBN": 9788883624834,
+      "ISBN": 9788883624568,
       "Author": "John Hare",
       "Illustrator": "John Hare",
-      "Publication Year": 2020,
+      "Publication Year": 2019,
       "Publisher": "Babalibri",
-      "Synopsis": "Un bambino si perde durante una gita scolastica sulla luna.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883624834",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883624834",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883624834"
+      "Synopsis": "È il giorno della gita scolastica. Destinazione: la Luna! La classe vola su un’astronave e, una volta arrivati, i bambini iniziano una giornata di avventurosa esplorazione con il maestro. Un piccolo astronauta però si distacca dal gruppo per fermarsi a disegnare il pianeta Terra. Tutto occupato con blocco e colori, non si rende conto che i suoi compagni sono decollati senza di lui. Sembra proprio che sia rimasto solo sulla Luna ma… forse i suoi pastelli a cera possono essere utili a fare nuove emozionanti amicizie extra terrestri!",
+      "Image link": "https://m.media-amazon.com/images/I/61+lsdJm-iL._SL1000_.jpg",
+      "Amazon Link": "https://amzn.to/4r5cZkf",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/gita-sulla-luna-ediz-a-libro-john-hare/e/9788883624568"
     }
   },
   {
