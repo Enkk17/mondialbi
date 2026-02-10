@@ -166,15 +166,16 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Il favoloso club del libro del bus 65",
-      "ISBN": 9788883626708,
+      "ISBN": 9788883627217,
       "Author": "Céline Person",
       "Illustrator": "Sanoe",
-      "Publication Year": 2025,
+      "Translator": "Tanguy Babled",
+      "Publication Year": 2026,
       "Publisher": "Babalibri",
-      "Synopsis": "La magia della lettura su un autobus.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883626708",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883626708",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883626708"
+      "Synopsis": "Un bus accoglie un magico club di lettori: tutti a bordo! Lungo il tragitto per andare a scuola può capitare davvero di tutto: ritrovarsi faccia a faccia con una tartaruga con gli occhiali immersa nella lettura di un romanzo, incontrare uno struzzo che recita le favole di La Fontaine, e addirittura sorseggiare una tazza di tè con una giraffa appassionata di fumetti! Insomma... tutto questo se si è disposti a salire a bordo del bus 65 ed entrare a far parte del suo favoloso club del libro. Chi è pronto per questa avventura?",
+      "Image link": "https://m.media-amazon.com/images/I/71HUSkMr1ZL._SL1361_.jpg",
+      "Amazon Link": "https://amzn.to/4kuut7k",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/favoloso-club-del-libro-del-libro-celine-person/e/9788883627217"
     }
   },
   {
@@ -343,16 +344,17 @@
     "id": "recEm8ZLqMoLCRmV7",
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il compleanno di Baldo",
-      "ISBN": 9788883627491,
-      "Author": "Anne Brouillard",
-      "Illustrator": "Anne Brouillard",
-      "Publication Year": 2025,
-      "Publisher": "Babalibri",
-      "Synopsis": "Baldo festeggia il suo compleanno.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883627491",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883627491",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883627491"
+      "Title": "Il mondo ti aspetta. Ediz. a colori",
+      "ISBN": 9788861896604,
+      "Author": " Kobi Yamada",
+      "Illustrator": "Gabriella Barouch",
+      "Translator": "Giulia Genovesi",
+      "Publication Year": 2020,
+      "Publisher": "Terre di Mezzo",
+      "Synopsis": "Sei qui per illuminare luoghi bui da troppo tempo. Per svelare agli altri la bellezza di ogni giorno. Abbi fiducia, mettiti alla prova: il mondo aspetta qualcuno proprio come te!",
+      "Image link": "https://m.media-amazon.com/images/I/71neMWLyENL._SL1399_.jpg",
+      "Amazon Link": "https://amzn.to/4qrIZhq",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/mondo-ti-aspetta-ediz-a-libro-kobi-yamada-gabriella-barouch/e/9788861896604"
     }
   },
   {
@@ -652,16 +654,17 @@
     "id": "recSmGkAtnKy5ODL3",
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il castello di carte",
-      "ISBN": 9788875703431,
-      "Author": "Gianni Rodari",
-      "Illustrator": "Emanuele Luzzati",
-      "Publication Year": 2012,
-      "Publisher": "Corraini",
-      "Synopsis": "Le rime di Rodari accompagnate dai disegni di Luzzati.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788875703431",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788875703431",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788875703431"
+      "Title": "Tu sei una meraviglia. Ediz. a colori",
+      "ISBN": 9791259962669,
+      "Author": "Kobi Yamada",
+      "Illustrator": "Gabriella Barouch",
+      "Translator": "Giulia Genovesi",
+      "Publication Year": 2024,
+      "Publisher": "Terre di Mezzo",
+      "Synopsis": "La bellezza è ovunque, devi solo imparare a riconoscerla. Sperimenta qualcosa che non hai mai fatto prima. Dai spazio a ciò che ami. Vai alla scoperta delle meraviglie del mondo, e ricorda che anche tu ne sei parte! Dagli autori del best seller \"Il mondo ti aspetta\", un nuovo indimenticabile albo illustrato che invita a esplorare il futuro con curiosità, a coltivare i sogni, a mettersi in gioco senza paura.",
+      "Image link": "https://www.lafeltrinelli.it/images/9791259962669_0_0_464_0_75.jpg",
+      "Amazon Link": "https://amzn.to/3O6uW3n",
+      "Feltrinelli Link": "https://www.lafeltrinelli.it/tu-sei-meraviglia-ediz-a-libro-kobi-yamada/e/9791259962669"
     }
   },
   {
@@ -1209,7 +1212,7 @@
       "Publisher": "Lapis",
       "Synopsis": "Un'anatra non vuole saperne di buttarsi in acqua.",
       "Image link": "https://www.lafeltrinelli.it/images/9788878743236_0_0_464_0_75.jpg",
-      "Amazon Link": "https://www.amazon.it/fatto-Ediz-illustrata-Gek-Tessaro/dp/8878743232?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2DSYT1MUQPETM&dib=eyJ2IjoiMSJ9.iGslc0DGvEiDlrVTKuY7ze6XNTkAHDc3Tpq42G8dlGMRuTOXWWVg0f2Ql87mYRUQLNsb0EQvXtpi3yx7j_IbmPyX7MZN8oyv3kbTjDJcSKeO4107f3gBD4L3FHMzNcNCWNW1C7J8ySqfdDcf1dW5-8wCiELTo7qauaOKOkjsDBpF6isY0xYM6x_HoRgpu159L-52wPDzfBQf0SmxglGIfLVYZv3IU9jIu7-Ib1rvdHI.H3ZmVOLShJHJlMGMr1lSk9QRnAmPhq2CSMK-DohgZR0&dib_tag=se&keywords=il+fatto+%C3%A8&qid=1769810199&s=books&sprefix=il+fatto+%C3%A8%2Cstripbooks%2C263&sr=1-1",
+      "Amazon Link": "https://amzn.to/3ZvoKEB",
       "Feltrinelli Link": "https://www.lafeltrinelli.it/fatto-ediz-illustrata-libro-gek-tessaro/e/9788878743236"
     }
   },
