@@ -4,15 +4,15 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "L'uccellino fa",
-      "ISBN": 9788883621338,
+      "ISBN": 9788883621222,
       "Author": "Soledad Bravi",
       "Illustrator": "Soledad Bravi",
-      "Publication Year": 2006,
+      "Translator": "F.Rocca",
+      "Publication Year": 2005,
       "Publisher": "Babalibri",
-      "Synopsis": "Un catalogo sonoro per i più piccoli.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883621338",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883621338",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883621338"
+      "Synopsis": "Ecco un libro di suoni e di rumori che accompagnano la giornata dei bimbi, per ricordarsi che il bacio fa smack, la tromba pepperepè, gli spinaci bleah! e il raffreddore etciù! ",
+      "Image link": "https://m.media-amazon.com/images/I/6107TtthWJL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/3OaCke3"
     }
   },
   {
@@ -116,15 +116,14 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Il meraviglioso Cicciapelliccia",
-      "ISBN": 9788833700014,
+      "ISBN": 9788898523276,
       "Author": "Beatrice Alemagna",
       "Illustrator": "Beatrice Alemagna",
       "Publication Year": 2015,
       "Publisher": "Topipittori",
       "Synopsis": "Edith cerca un regalo speciale per la sua mamma.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788833700014",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788833700014",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788833700014"
+      "Image link": "https://m.media-amazon.com/images/I/91ybHHlbOWL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/46DoreD"
     }
   },
   {
@@ -150,15 +149,14 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Il venditore di animali",
-      "ISBN": 9788887942644,
+      "ISBN": 9788875700959,
       "Author": "Bruno Munari",
       "Illustrator": "Bruno Munari",
       "Publication Year": 2004,
       "Publisher": "Corraini",
-      "Synopsis": "Un catalogo surreale di animali fantastici.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788887942644",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788887942644",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788887942644"
+      "Synopsis": "Un bizzarro venditore di animali ci propone una serie di fantasiose creature dalle strane abitudini, un fenicottero che fuma la pipa, un armadillo \"un poco brillo\", un istrice brontolone… ma niente soddisfa il suo potenziale compratore, nemmeno un millepiedi da portare a passeggio. Forse quello che cerca non è proprio un animale da compagnia? Insieme ad altri otto testi, Il prestigiatore verde fa parte della storica serie dei Libri del ‘45 a cui Bruno Munari si è dedicato dopo la nascita del figlio Alberto. Libri fatti di fustelle, fori e disegni grandi ed eleganti che invitano ad un gioco di scoperte e ricerche, lasciando tutti appesi alle magie che la carta può fare. Questa serie - un classico intramontabile che nel 2025 festeggia gli 80 anni dalla prima edizione - mantiene inalterata la sua originalità e vuole stimolare la curiosità dei bambini facendogli scoprire che dentro qualcosa c'è sempre qualcos'altro, incoraggiandoli nella ricerca con lo stupore. Molti di questi testi sono stati ispirati da giochi e rituali che Munari faceva insieme al figlio Alberto, e che poi ha scelto di mettere su carta. Per la gioia di tutti i bambini, e non solo.",
+      "Image link": "https://m.media-amazon.com/images/I/81G-eZ9L3FL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/4tK8kWS"
     }
   },
   {
@@ -192,6 +190,21 @@
       "Image link": "https://www.lafeltrinelli.it/images/9788829603527_0_0_464_0_75.jpg",
       "Amazon Link": "https://amzn.to/4ktJ0Aa",
       "Feltrinelli Link": "https://www.lafeltrinelli.it/a-sbagliare-storie-ediz-a-libro-gianni-rodari/e/9788829603527"
+    }
+  },
+  {
+    "id": "rec9f1WNL14hAmKQF",
+    "createdTime": "2026-02-11T11:44:12.000Z",
+    "fields": {
+      "Title": "La piccola fiammiferaia",
+      "ISBN": 9788817198066,
+      "Author": "Benjamin Lacombe",
+      "Translator": " Francesca Mazzurana",
+      "Publication Year": 2026,
+      "Publisher": "Rizzoli",
+      "Synopsis": "È Capodanno, e nel freddo e nel buio cammina una bambina senza scarpe, stringendo tra le mani un mazzetto di fiammiferi. Per riscaldarsi li accende uno a uno e, ogni volta che quelli si infiammano, ecco che davanti a lei prendono forma immagini di felicità: una stufa, una tavola apparecchiata a festa, un albero di Natale illuminato... fino a che, con l'ultimo zolfanello, non appare la nonna scomparsa che, prendendola per mano, la porta insieme a lei su nel cielo. La commovente storia della piccola fiammiferaia, illustrata con delicatezza e poesia da Benjamin Lacombe.",
+      "Image link": "https://m.media-amazon.com/images/I/71hBn-svN9L._SL1365_.jpg",
+      "Amazon Link": "https://amzn.to/4qtrvBm"
     }
   },
   {
@@ -231,15 +244,14 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "L'omino e Dio",
-      "ISBN": 9788889210710,
+      "ISBN": 9788889210697,
       "Author": "Kitty Crowther",
       "Illustrator": "Kitty Crowther",
       "Publication Year": 2011,
       "Publisher": "Topipittori",
-      "Synopsis": "Un incontro filosofico tra un uomo e Dio.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788889210710",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210710",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210710"
+      "Synopsis": "Libricino narrativo per bambini di Kitty Crowther che racconta l'incontro tra il protagonista, l'Omino, e una \"cosa\" chiamata Dio.",
+      "Image link": "https://m.media-amazon.com/images/I/81yynRzDa-L._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/3ZuLJ2A"
     }
   },
   {
@@ -247,15 +259,15 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "La grande fabbrica delle parole",
-      "ISBN": 9788861892798,
-      "Author": "Agnès de Lestrade",
+      "ISBN": 9788861891555,
+      "Author": "Agnès de Lestrade Valeria Docampo",
       "Illustrator": "Valeria Docampo",
+      "Translator": " Rita Dalla Rosa ",
       "Publication Year": 2011,
       "Publisher": "Terre di Mezzo",
       "Synopsis": "In un paese dove le parole si comprano, un bambino ne ha poche.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861892798",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861892798",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861892798"
+      "Image link": "https://m.media-amazon.com/images/I/81F0sNKLYKL._SL1476_.jpg",
+      "Amazon Link": "https://amzn.to/3MpBE3R"
     }
   },
   {
@@ -263,15 +275,14 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Il maglione di Natale",
-      "ISBN": 9788861895607,
-      "Author": "Beatrice Alemagna",
-      "Illustrator": "Beatrice Alemagna",
-      "Publication Year": 2020,
-      "Publisher": "Topipittori",
-      "Synopsis": "Un maglione brutto diventa un tesoro.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861895607",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861895607",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861895607"
+      "ISBN": 9791280694126,
+      "Author": "Cecilia Heikkilä",
+      "Translator": " Samanta K. Milton Knowles",
+      "Publication Year": 2023,
+      "Publisher": "Marameo",
+      "Synopsis": "È quasi Natale quando il maglione del gatto Fransson si disfa diventando un lungo filo di lana rossa che guizza e serpeggia per i vicoli, tra le case e i comiglioli, sopra i tetti e le torri della piccola città. Fransson segue il filo. Chissà dove lo porterà? ",
+      "Image link": "https://m.media-amazon.com/images/I/51OSD5zuV8L.jpg",
+      "Amazon Link": "https://amzn.to/3O8dCuR"
     }
   },
   {
@@ -279,15 +290,14 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "La nuvola Olga",
-      "ISBN": 9788893930437,
+      "ISBN": 9788867147045,
       "Author": "Nicoletta Costa",
       "Illustrator": "Nicoletta Costa",
-      "Publication Year": 2019,
+      "Publication Year": 2017,
       "Publisher": "Emme Edizioni",
       "Synopsis": "Le avventure di Olga, la nuvola che fa la pioggia.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788893930437",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788893930437",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788893930437"
+      "Image link": "https://m.media-amazon.com/images/I/71AF7NgHmpL._SL1375_.jpg",
+      "Amazon Link": "https://amzn.to/4rI2l2T"
     }
   },
   {
@@ -295,15 +305,15 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Insieme",
-      "ISBN": 9788861892222,
-      "Author": "Luke Adam Hawker",
-      "Illustrator": "Luke Adam Hawker",
-      "Publication Year": 2021,
-      "Publisher": "Terre di Mezzo",
-      "Synopsis": "Una metafora sulla tempesta che abbiamo vissuto.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861892222",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861892222",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861892222"
+      "ISBN": 9788857020464,
+      "Author": " Émilie Chazerand",
+      "Illustrator": " Amandine Piu",
+      "Translator": " Giulia Calandra Buonaura",
+      "Publication Year": 2024,
+      "Publisher": "Franco Cosimo Panini",
+      "Synopsis": "Da soli siamo forti, insieme siamo invincibili... Da soli ci facciamo notare, insieme siamo straordinari... Da soli sogniamo, insieme immaginiamo... Da soli contiamo, insieme condividiamo... Un libro delicato che, attraverso un testo essenziale e poetico, dimostra ai più piccoli che insieme tutto è possibile. La collettività amplifica la gioia e la condivisione aiuta a vedere le situazioni da una prospettiva diversa. Un messaggio potente che si sviluppa affiancandosi a un gioco di fustelle tra le pagine.",
+      "Image link": "https://m.media-amazon.com/images/I/61lXGhT+eQL._SL1038_.jpg",
+      "Amazon Link": "https://amzn.to/4rE6ZyJ"
     }
   },
   {
@@ -400,9 +410,8 @@
       "Publication Year": 2013,
       "Publisher": "Topipittori",
       "Synopsis": "Le avventure di un topo in cerca di casa.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788889210994",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788889210994",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788889210994"
+      "Image link": "https://m.media-amazon.com/images/I/71KCNPunwFL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/3MpBlWL"
     }
   },
   {
@@ -410,15 +419,29 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Il venditore di felicità",
-      "ISBN": 9788869186400,
+      "ISBN": 9788867450930,
       "Author": "Davide Calì",
       "Illustrator": "Marco Somà",
       "Publication Year": 2018,
       "Publisher": "Kite Edizioni",
-      "Synopsis": "Un signore vende barattoli pieni di felicità.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788869186400",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788869186400",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788869186400"
+      "Synopsis": "Siccome dicono che la felicità sia la cosa più importante, quando decidono di venderla, in barattoli piccolo, grande, e confezione famiglia, c’è subito la fila: una nonna, un ragazzo, una mamma di tanti figli: tutti a comprare la felicità. Peccato che quando il venditore di felicità se ne va, gli cade un barattolo piccolo ed allora la verità si rivela. La felicità non si può vendere né comprare. E allora dove si trova? Cos’è che si diceva un tempo? Nelle piccole cose?",
+      "Image link": "https://m.media-amazon.com/images/I/81EjqkhNXgL._SL1372_.jpg",
+      "Amazon Link": "https://amzn.to/4kv0e00"
+    }
+  },
+  {
+    "id": "recHm3FQRLjDDjaah",
+    "createdTime": "2026-02-11T11:41:57.000Z",
+    "fields": {
+      "Title": "Le streghe di Venezia",
+      "ISBN": 9791256730049,
+      "Author": " Sébastien Perez",
+      "Translator": " Marco Mazzoni",
+      "Publication Year": 2025,
+      "Publisher": " L'Ippocampo ",
+      "Synopsis": "Nel 2045, in una società post-apocalittica, Simone ha 16 anni e vive in un’Italia segnata dalla segregazione in seguito a una terribile epidemia. Presto però la sua storia finisce per intrecciarsi con quella di una strega vissuta nella Venezia del Quattrocento, forse all’origine del declino del mondo. Attraverso le oniriche illustrazioni di Marco Mazzoni, Le streghe di Venezia ci conduce in un tempo e in uno spazio tanto reali quanto fantastici, al confine tra romanzo di formazione, incanto e riflessione sulla nostra epoca. ",
+      "Image link": "https://m.media-amazon.com/images/I/81j8WXSUcPL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/4qqtuWT"
     }
   },
   {
@@ -443,31 +466,14 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Il lupo che voleva cambiare colore",
-      "ISBN": 9788865320501,
+      "ISBN": 9788858014813,
       "Author": "Orianne Lallemand",
       "Illustrator": "Éléonore Thuillier",
-      "Publication Year": 2012,
+      "Publication Year": 2015,
       "Publisher": "Gribaudo",
-      "Synopsis": "Un lupo prova a colorarsi per non essere più nero.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788865320501",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788865320501",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788865320501"
-    }
-  },
-  {
-    "id": "recIsNmEDTTLtPRtk",
-    "createdTime": "2026-01-30T16:57:58.000Z",
-    "fields": {
-      "Title": "Mappa delle nuvole",
-      "ISBN": 9788861895102,
-      "Author": "Alex Nogués",
-      "Illustrator": "Mónica Bedmar",
-      "Publication Year": 2019,
-      "Publisher": "Terre di Mezzo",
-      "Synopsis": "Un libro poetico per imparare a osservare le nuvole.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861895102",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861895102",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861895102"
+      "Synopsis": "C'era una volta un enorme lupo nero che non amava il proprio colore. Si guardò nello specchio e allora decise: lo avrebbe cambiato, ma non era facile come sembrava...",
+      "Image link": "https://m.media-amazon.com/images/I/616ZvEy01NL._SL1000_.jpg",
+      "Amazon Link": "https://amzn.to/4adKzig"
     }
   },
   {
@@ -641,12 +647,11 @@
       "ISBN": 9788883626500,
       "Author": "Claire Lebourg",
       "Illustrator": "Claire Lebourg",
-      "Publication Year": 2024,
+      "Publication Year": 2025,
       "Publisher": "Babalibri",
-      "Synopsis": "Una storia di amicizia tra un cane e un tasso.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788883626500",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788883626500",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788883626500"
+      "Synopsis": "Un atlante della vita quotidiana per riscoprire il senso della condivisione e dello stare con gli altri. Nel mondo dei gatti, l'alternarsi delle stagioni è lento e il tempo passa in piena serenità. Il lavoro, la spesa, la scuola danno il ritmo alle giornate; l'anno è scandito da feste ed eventi molto attesi. I gatti condividono tutto: spazi, emozioni, avvenimenti grandi e piccoli, felici e tristi. Tutti prendono parte alla vita in comune: ci si incontra e si mangia, si lavora e ci si diverte, tutti insieme!",
+      "Image link": "https://m.media-amazon.com/images/I/713VOwhKdnL._SL1499_.jpg",
+      "Amazon Link": "https://amzn.to/3OzvgI0"
     }
   },
   {
@@ -702,15 +707,15 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "La valle dei mulini",
-      "ISBN": 9788861892804,
-      "Author": "Noelia Blanco",
+      "ISBN": 9788861892675,
+      "Author": "Noelia Blanco Valeria Docampo",
       "Illustrator": "Valeria Docampo",
-      "Publication Year": 2011,
+      "Translator": " R. Dalla Rosa",
+      "Publication Year": 2013,
       "Publisher": "Terre di Mezzo",
-      "Synopsis": "Un inno alla libertà e alle possibilità della vita.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788861891111",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788861892804",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788861892804"
+      "Synopsis": "Nella valle dei mulini abitavano uomini, donne e ragazzi simili a tanti. Poi arrivarono le macchine perfette. Da allora, a quelli della valle basta schiacciare un pulsante per vivere in un mondo perfetto. E noioso. È così che tutti hanno smesso di sognare. Ma proprio tutti?",
+      "Image link": "https://m.media-amazon.com/images/I/812iXqnUStL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/4tvou68"
     }
   },
   {
@@ -737,12 +742,12 @@
       "ISBN": 9788865320747,
       "Author": "Orianne Lallemand",
       "Illustrator": "Éléonore Thuillier",
-      "Publication Year": 2013,
+      "Translator": " D. Capparotto",
+      "Publication Year": 2015,
       "Publisher": "Gribaudo",
-      "Synopsis": "Lupo viaggia per il mondo alla scoperta di nuovi paesi.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788865320747",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788865320747",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788865320747"
+      "Synopsis": "Lupo si annoia nella sua foresta. Ma un giorno ha una brillante idea: e se facesse un viaggio? Ha sempre sognato di fare il giro del mondo! Zaino in spalla, Lupo parte per l'Italia, l'Egitto, l'Africa, il Canada e tanti altri Paesi. Riuscirà a tornare sano e salvo?",
+      "Image link": "https://m.media-amazon.com/images/I/61Ud1gF2-lL._SL1015_.jpg",
+      "Amazon Link": "https://amzn.to/46IiM74"
     }
   },
   {
@@ -901,16 +906,15 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "La chiocciolina e la balena",
-      "ISBN": 9788867147935,
+      "ISBN": 9788867144020,
       "Author": "Julia Donaldson",
       "Illustrator": "Axel Scheffler",
-      "Publication Year": 2003,
+      "Translator": " Arlette Remondi",
+      "Publication Year": 2015,
       "Publisher": "Emme Edizioni",
-      "Synopsis": "Un viaggio intorno al mondo di un'insolita coppia.",
-      "Image link": "https://m.media-amazon.com/images/I/51Bi5mQF9BL._SY445_SX342_.jpg",
-      "Amazon Link": "https://www.amazon.it/chiocciolina-balena-Ediz-colori/dp/8867147935",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788867147935",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788867147935"
+      "Synopsis": "Una chiocciolina scoppia dalla voglia di vedere il mondo, ma è troppo piccola per partire da sola. Per fortuna una balena di passaggio le viene in soccorso e la porta con sé: \"e via verso il mare nero e profondo, per iniziare il giro del mondo, nell'acqua azzurra o rossa di sole, nell'acqua viola del temporale...\" ",
+      "Image link": "https://m.media-amazon.com/images/I/714eFCg-kaL._SL1371_.jpg",
+      "Amazon Link": "https://amzn.to/4kpRh80"
     }
   },
   {
@@ -1102,15 +1106,30 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "Il pinguino che voleva diventare grande",
-      "ISBN": 9788896869505,
+      "ISBN": 9788807923579,
       "Author": "Jill Tomlinson",
-      "Illustrator": "Paul Howard",
-      "Publication Year": 2015,
-      "Publisher": "Camelozampa",
-      "Synopsis": "La storia di un piccolo pinguino che cresce.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788896869505",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788896869505",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788896869505"
+      "Illustrator": " Anna Laura Cantone",
+      "Translator": " Chiara Gandolfi",
+      "Publication Year": 2021,
+      "Publisher": "Feltrinelli",
+      "Synopsis": "Otto è un simpatico pulcino di pinguino imperatore che contesta le regole della propria specie, che impongono che i piccoli vengano accuditi da più adulti che si avvicendano nella loro cura mentre gli altri vanno in cerca di cibo. Una riflessione sulla famiglia umana e le sue declinazioni e sulla positività degli ostacoli nel cammino per l'indipendenza.",
+      "Image link": "https://m.media-amazon.com/images/I/61BaY4Fb3wL._SL1423_.jpg",
+      "Amazon Link": "https://amzn.to/464h7su"
+    }
+  },
+  {
+    "id": "recrAYymXEDbNOpqQ",
+    "createdTime": "2026-02-11T11:41:59.000Z",
+    "fields": {
+      "Title": "Le streghe di Venezia (Vol. 2)",
+      "ISBN": 9791256730933,
+      "Author": " Sébastien Perez",
+      "Translator": "Marco Mazzoni ",
+      "Publication Year": 2025,
+      "Publisher": " L'Ippocampo ",
+      "Synopsis": "Sono passati quasi vent’anni da quando Simone ha strappato la figlia di sua sorella dalle grinfie delle streghe di Venezia. Queste intanto hanno avviato una nuova era, in cui solo i bimbi nati immuni al virus sono risparmiati. Memore di aver letto nel diario di Emilia la formula per un antidoto, Simone ha dedicato la propria vita alla ricerca del manoscritto. Sua nipote Carolina dovrà seguirne le orme e affrontare le potenti streghe, per debellare finalmente la terribile epidemia. A metà fra graphic novel e romanzo illustrato, il secondo volume di una saga visionaria sulle derive del nostro tempo.",
+      "Image link": "https://m.media-amazon.com/images/I/911sPvjlPoL._SL1500_.jpg",
+      "Amazon Link": "https://amzn.to/4tzUQNm"
     }
   },
   {
@@ -1234,31 +1253,30 @@
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
       "Title": "La passeggiata di un distratto",
-      "ISBN": 9788821601361,
+      "ISBN": 9788860793386,
       "Author": "Gianni Rodari",
-      "Illustrator": "Beatrice Alemagna",
-      "Publication Year": 2005,
-      "Publisher": "Einaudi Ragazzi",
-      "Synopsis": "Un bambino perde i pezzi per strada mentre cammina.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788821601361",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788821601361",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788821601361"
+      "Illustrator": "Alistar",
+      "Publication Year": 2009,
+      "Publisher": "Emme Edizioni",
+      "Synopsis": "Lo si chiede spesso, ai bambini distratti: \"Ma dove hai la testa?\" E le loro mani scattano a controllare che la testa sia al suo posto, sopra il collo. Gianni Rodari immagina cosa accade a un bambino molto distratto che dimentica in giro braccia, naso, piedi. Quest'album è tratto da una storia brevissima (una delle celebri \"Favole al telefono\"). Le illustrazioni di Alistar hanno il potere di amplificare il racconto, di farlo gustare ai lettori secondo più registri. Mentre i bambini rimangono incantati dai colori delicati e dalle situazioni divertenti nelle tavole, gli adulti vi leggono echi degli anni Cinquanta e di Carosello: scoprono che questa favola universale è in realtà legata a un momento preciso della recente storia italiana. \"La passeggiata di un distratto\" è album che si può usare in molti modi: è una storia divertente da leggere ad alta voce, si presta a mille giochi da fare con i bambini, è un grande racconto illustrato e anche un omaggio rispettoso a un Paese che non c'è più, e che poco tempo fa era il nostro.",
+      "Image link": "https://m.media-amazon.com/images/I/41VvdZQnB9L.jpg",
+      "Amazon Link": "https://amzn.to/3Mre5Yt"
     }
   },
   {
     "id": "recxMCb1eFcZf6WlC",
     "createdTime": "2026-01-30T16:57:58.000Z",
     "fields": {
-      "Title": "Il piccolo principe (illustrato)",
-      "ISBN": 9788845271168,
-      "Author": "Antoine de Saint-Exupéry",
-      "Illustrator": "Antoine de Saint-Exupéry",
-      "Publication Year": 2014,
-      "Publisher": "Bompiani",
-      "Synopsis": "Il classico senza tempo in edizione illustrata.",
-      "Amazon Link": "https://www.amazon.it/s?k=9788845271168",
-      "Feltrinelli Link": "https://www.lafeltrinelli.it/ricerca?searchQuery=9788845271168",
-      "Mondadori Link": "https://www.mondadoristore.it/search/?g=9788845271168"
+      "Title": "Il Piccolo Principe da Antoine de Saint-Exupéry. Ediz. a colori",
+      "ISBN": 9788861894297,
+      "Author": "Agnès de Lestrade",
+      "Illustrator": " Valeria Docampo",
+      "Translator": " Rita Dalla Rosa",
+      "Publication Year": 2018,
+      "Publisher": "Terre di Mezzo",
+      "Synopsis": "\"Per favore, disegnami una pecora...\" Un albo straordinario e senza tempo sul mistero dell'amore, l'amicizia, l'importanza dei legami. E su come diventare grandi senza perdere il fanciullo che è in noi. Agnès de Lestrade e Valeria Docampo ripercorrono e reinterpretano il capolavoro di Antoine de Saint-Exupéry.",
+      "Image link": "https://m.media-amazon.com/images/I/81C2OBETELL._SL1126_.jpg",
+      "Amazon Link": "https://amzn.to/3OzYaaV"
     }
   },
   {
