@@ -660,4 +660,349 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Chatbot initialization
+    initChatbot();
 });
+
+// ===== Chatbot Logic =====
+
+// Italian stopwords to ignore when scoring
+const STOPWORDS = new Set([
+    'il','lo','la','i','gli','le','un','uno','una',
+    'di','a','da','in','con','su','per','tra','fra',
+    'e','o','ma','che','chi','cui','non','si','è',
+    'mi','ti','ci','vi','ne','ho','hai','ha','abbiamo',
+    'avete','hanno','sono','sei','siamo','siete',
+    'questo','questa','questi','queste','quello','quella',
+    'quelli','quelle','come','quando','dove','perché',
+    'cosa','chi','quale','quali','più','molto','poco',
+    'tutto','tutti','tutte','tutta','del','della','dei',
+    'degli','delle','al','alla','ai','agli','alle','nel',
+    'nella','nei','negli','nelle','sul','sulla','sui',
+    'sugli','sulle','dal','dalla','dai','dagli','dalle',
+    'vorrei','cerco','cercare','voglio','mi','un',
+    'albo','albi','libro','libri','illustrato','illustrati',
+    'storia','storie','racconto','racconti','bello','bella',
+    'consiglia','consigliare','cerca','dimmi','parla',
+    'riguardo','su','tratta','descrive','describe'
+]);
+
+/**
+ * Tokenize and filter Italian text into meaningful keywords.
+ */
+function tokenize(text) {
+    if (!text) return [];
+    return text.toLowerCase()
+        .replace(/[^a-zàáèéìíòóùú\s]/gi, ' ')
+        .split(/\s+/)
+        .filter(w => w.length > 2 && !STOPWORDS.has(w));
+}
+
+/**
+ * Score an album against a list of query tokens.
+ * Returns a numeric score; higher is better.
+ */
+function scoreAlbum(albo, queryTokens) {
+    if (!queryTokens.length) return 0;
+
+    const titleTokens = tokenize(albo.title);
+    const authorTokens = tokenize(albo.author);
+    const synopsisTokens = tokenize(albo.description || albo.fullDescription || '');
+    const tagTokens = (albo.tags || []).flatMap(t => tokenize(t));
+    const publisherTokens = tokenize(albo.publisher);
+
+    let score = 0;
+    queryTokens.forEach(qt => {
+        // Exact match in title (high weight)
+        if (titleTokens.some(t => t === qt)) score += 12;
+        else if (titleTokens.some(t => t.includes(qt) || qt.includes(t))) score += 6;
+
+        // Match in tags (high weight)
+        if (tagTokens.some(t => t === qt)) score += 10;
+        else if (tagTokens.some(t => t.includes(qt) || qt.includes(t))) score += 5;
+
+        // Match in synopsis (medium weight)
+        if (synopsisTokens.some(t => t === qt)) score += 5;
+        else if (synopsisTokens.some(t => t.includes(qt) || qt.includes(t))) score += 2;
+
+        // Match in author (medium weight)
+        if (authorTokens.some(t => t === qt)) score += 7;
+        else if (authorTokens.some(t => t.includes(qt) || qt.includes(t))) score += 3;
+
+        // Match in publisher (low weight)
+        if (publisherTokens.some(t => t === qt)) score += 3;
+        else if (publisherTokens.some(t => t.includes(qt) || qt.includes(t))) score += 1;
+    });
+
+    return score;
+}
+
+/**
+ * Find the top matching albums for a given user query.
+ */
+function findMatchingAlbi(query, maxResults = 3) {
+    const tokens = tokenize(query);
+    if (!tokens.length || !tuttiGliAlbi.length) return [];
+
+    const scored = tuttiGliAlbi
+        .map(albo => ({ albo, score: scoreAlbum(albo, tokens) }))
+        .filter(item => item.score > 0)
+        .sort((a, b) => b.score - a.score);
+
+    return scored.slice(0, maxResults).map(item => item.albo);
+}
+
+/**
+ * Determine if the user message is plausibly about picture books / albums.
+ * Returns false only if the query is clearly off-topic (greetings are ok).
+ */
+function isRelevantQuery(query) {
+    const lower = query.toLowerCase();
+
+    // Always allow greetings / very short inputs
+    const greetings = ['ciao', 'salve', 'buongiorno', 'buonasera', 'hey', 'hello', 'hi', 'ok', 'grazie', 'prego'];
+    if (greetings.some(g => lower.includes(g)) || query.trim().length < 15) return true;
+
+    // Off-topic keywords: things completely unrelated to children's books
+    const offTopic = [
+        'meteo','tempo','sport','calcio','politica','notizie','news',
+        'ricetta','cucina','viaggio','hotel','volo','treno','auto',
+        'smartphone','telefono','computer','programma','codice',
+        'medicina','salute','farmaco','legge','economia','borsa',
+        'film','serie tv','musica','canzone','artista','cantante'
+    ];
+
+    // If message contains no book-related hint and has off-topic keywords, reject
+    const bookHints = [
+        'albo','libro','bambini','storia','racconto','illustra','lettura',
+        'leggere','leggero','consiglia','cerca','emozioni','colori',
+        'animali','natura','amicizia','avventura','fantasia','sogno',
+        'paura','coraggio','famiglia','scuola','gioco','bimbo','piccolo',
+        'grande','amore','tristezza','felicità','autore','editore',
+        'illustratore','testo','immagini','pagine','copertina'
+    ];
+
+    const hasBookHint = bookHints.some(h => lower.includes(h));
+    const hasOffTopic = offTopic.some(h => lower.includes(h));
+
+    if (hasOffTopic && !hasBookHint) return false;
+    return true;
+}
+
+// ---- DOM helpers ----
+
+function appendChatMessage(text, role) {
+    const messages = document.getElementById('chat-messages');
+    if (!messages) return;
+
+    const div = document.createElement('div');
+    div.className = `chat-message ${role}`;
+    div.textContent = text;
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+    return div;
+}
+
+function appendBotRecommendations(intro, albums) {
+    const messages = document.getElementById('chat-messages');
+    if (!messages) return;
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'chat-message bot';
+
+    const introText = document.createTextNode(intro);
+    wrapper.appendChild(introText);
+
+    albums.forEach(albo => {
+        const rec = document.createElement('div');
+        rec.className = 'album-recommendation';
+
+        const titleEl = document.createElement('strong');
+        titleEl.textContent = albo.title;
+        rec.appendChild(titleEl);
+
+        const authorEl = document.createElement('span');
+        authorEl.textContent = `${albo.author}${albo.publisher ? ' — ' + albo.publisher : ''}`;
+        rec.appendChild(authorEl);
+
+        if (albo.description || albo.fullDescription) {
+            const synEl = document.createElement('span');
+            const synopsis = albo.description || albo.fullDescription;
+            synEl.textContent = synopsis.length > 100 ? synopsis.slice(0, 100) + '…' : synopsis;
+            synEl.style.display = 'block';
+            synEl.style.marginTop = '0.25rem';
+            synEl.style.color = '#777';
+            rec.appendChild(synEl);
+        }
+
+        wrapper.appendChild(rec);
+    });
+
+    messages.appendChild(wrapper);
+    messages.scrollTop = messages.scrollHeight;
+}
+
+function showTypingIndicator() {
+    const messages = document.getElementById('chat-messages');
+    if (!messages) return null;
+
+    const div = document.createElement('div');
+    div.className = 'chat-message bot chat-typing';
+    div.id = 'chat-typing-indicator';
+    div.innerHTML = '<span></span><span></span><span></span>';
+    messages.appendChild(div);
+    messages.scrollTop = messages.scrollHeight;
+    return div;
+}
+
+function removeTypingIndicator() {
+    const indicator = document.getElementById('chat-typing-indicator');
+    if (indicator) indicator.remove();
+}
+
+// ---- Main chatbot logic ----
+
+function handleChatSend() {
+    const input = document.getElementById('chat-input');
+    if (!input) return;
+
+    const userText = input.value.trim();
+    if (!userText) return;
+
+    input.value = '';
+    appendChatMessage(userText, 'user');
+
+    const typing = showTypingIndicator();
+
+    // Simulate a short "thinking" delay for natural feel
+    setTimeout(() => {
+        removeTypingIndicator();
+        generateBotResponse(userText);
+    }, 700);
+}
+
+function generateBotResponse(userText) {
+    const lower = userText.toLowerCase();
+
+    // Greetings
+    const greetings = ['ciao', 'salve', 'buongiorno', 'buonasera', 'hey', 'hello', 'hi'];
+    if (greetings.some(g => lower.startsWith(g) || lower === g)) {
+        appendChatMessage(
+            'Ciao! 👋 Descrivimi che tipo di albo illustrato stai cercando — un tema, un\'emozione, dei personaggi — e ti suggerirò i titoli più adatti dalla nostra collezione!',
+            'bot'
+        );
+        return;
+    }
+
+    // Thanks
+    if (['grazie', 'perfetto', 'ottimo', 'ok grazie'].some(g => lower.includes(g))) {
+        appendChatMessage('Prego! 😊 Se vuoi esplorare altri albi, descrivimi un\'altra storia o tema!', 'bot');
+        return;
+    }
+
+    // Off-topic check
+    if (!isRelevantQuery(userText)) {
+        appendChatMessage(
+            'Sono AlbiBot e posso aiutarti solo a trovare albi illustrati nella nostra collezione. Prova a descrivermi una storia, un\'emozione o un tema che ti piace! 📚',
+            'bot'
+        );
+        return;
+    }
+
+    // Not enough catalog loaded yet
+    if (!tuttiGliAlbi || tuttiGliAlbi.length === 0) {
+        appendChatMessage(
+            'Il catalogo è ancora in caricamento. Riprova tra qualche istante! 🔄',
+            'bot'
+        );
+        return;
+    }
+
+    // Search for matching albums
+    const matches = findMatchingAlbi(userText);
+
+    if (matches.length === 0) {
+        appendChatMessage(
+            'Non ho trovato un albo perfettamente in linea con la tua descrizione nella nostra collezione. Prova a usare parole diverse: un tema (amicizia, paura, natura…), un animale, un\'emozione o anche il nome di un autore! 🔍',
+            'bot'
+        );
+        return;
+    }
+
+    const intro = matches.length === 1
+        ? 'Ho trovato un albo che potrebbe fare al caso tuo:\n'
+        : `Ho trovato ${matches.length} albi che potrebbero interessarti:\n`;
+
+    appendBotRecommendations(intro, matches);
+}
+
+function initChatbot() {
+    const toggle = document.getElementById('chat-toggle');
+    const popup = document.getElementById('chat-popup');
+    const closeBtn = document.getElementById('chat-close');
+    const sendBtn = document.getElementById('chat-send');
+    const input = document.getElementById('chat-input');
+
+    if (!toggle || !popup) return;
+
+    // Welcome message
+    const WELCOME_MESSAGE =
+        'Ciao! 👋 Sono AlbiBot, il tuo assistente per gli albi illustrati di MondiAlbi.\n\n' +
+        'Descrivimi che tipo di storia stai cercando — un tema, un\'emozione, dei personaggi o un\'atmosfera — ' +
+        'e ti suggerirò i titoli più adatti dalla nostra collezione.\n\n' +
+        '⚠️ Sono in versione beta e ancora in via di sviluppo: potrei non sempre trovare la risposta perfetta, ' +
+        'ma farò del mio meglio! 📚';
+
+    let welcomed = false;
+
+    function openChat() {
+        popup.classList.add('open');
+        popup.setAttribute('aria-hidden', 'false');
+        toggle.setAttribute('aria-expanded', 'true');
+        if (!welcomed) {
+            appendChatMessage(WELCOME_MESSAGE, 'bot');
+            welcomed = true;
+        }
+        if (input) input.focus();
+    }
+
+    function closeChat() {
+        popup.classList.remove('open');
+        popup.setAttribute('aria-hidden', 'true');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+    }
+
+    toggle.addEventListener('click', () => {
+        if (popup.classList.contains('open')) {
+            closeChat();
+        } else {
+            openChat();
+        }
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeChat);
+    }
+
+    if (sendBtn) {
+        sendBtn.addEventListener('click', handleChatSend);
+    }
+
+    if (input) {
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                handleChatSend();
+            }
+        });
+    }
+
+    // Close with ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && popup.classList.contains('open')) {
+            closeChat();
+        }
+    });
+}
